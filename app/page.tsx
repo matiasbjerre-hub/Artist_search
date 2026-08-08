@@ -1,13 +1,19 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import type { Profession, ShowResult } from "./api/search/route";
+
+import type {
+  Profession,
+  SearchResponse,
+  ShowResult,
+  SourceStatus,
+} from "@/lib/types";
 
 type SearchState =
   | { status: "idle" }
   | { status: "loading" }
   | { status: "error"; message: string }
-  | { status: "success"; results: ShowResult[] };
+  | { status: "success"; data: SearchResponse; query: string };
 
 export default function Home() {
   const [name, setName] = useState("");
@@ -17,16 +23,17 @@ export default function Home() {
 
   async function handleSubmit(event: FormEvent) {
     event.preventDefault();
-    if (!name.trim()) return;
+    const query = name.trim();
+    if (!query) return;
 
     setState({ status: "loading" });
     try {
       const params = new URLSearchParams({
-        name: name.trim(),
+        name: query,
         profession,
         onlyDenmark: String(onlyDenmark),
       });
-      const response = await fetch(`/api/search?${params.toString()}`);
+      const response = await fetch(`/api/search?${params}`);
       const data = await response.json();
       if (!response.ok) {
         setState({
@@ -35,7 +42,7 @@ export default function Home() {
         });
         return;
       }
-      setState({ status: "success", results: data.results });
+      setState({ status: "success", data, query });
     } catch {
       setState({
         status: "error",
@@ -45,15 +52,15 @@ export default function Home() {
   }
 
   return (
-    <div className="flex flex-col flex-1 items-center bg-zinc-50 dark:bg-black">
+    <div className="flex flex-1 flex-col items-center bg-zinc-50 dark:bg-black">
       <main className="flex w-full max-w-2xl flex-col gap-8 px-6 py-16">
         <header className="flex flex-col gap-2 text-center sm:text-left">
           <h1 className="text-3xl font-semibold tracking-tight text-black dark:text-zinc-50">
-            Find forestillinger & koncerter
+            Find forestillinger &amp; koncerter
           </h1>
           <p className="text-zinc-600 dark:text-zinc-400">
-            Søg på en skuespiller eller musiker og få en liste over deres
-            kommende teaterforestillinger og koncerter.
+            Søg på en skuespiller eller musiker og se, hvilke teaterforestillinger
+            og koncerter de medvirker i.
           </p>
         </header>
 
@@ -62,7 +69,10 @@ export default function Home() {
           className="flex flex-col gap-4 rounded-xl border border-black/10 bg-white p-6 dark:border-white/10 dark:bg-zinc-950"
         >
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="name" className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
+            <label
+              htmlFor="name"
+              className="text-sm font-medium text-zinc-700 dark:text-zinc-300"
+            >
               Navn
             </label>
             <input
@@ -70,7 +80,8 @@ export default function Home() {
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="F.eks. Sidse Babett Knudsen"
+              placeholder="F.eks. Henrik Prip"
+              autoComplete="off"
               className="rounded-lg border border-black/10 bg-zinc-50 px-4 py-2.5 text-black outline-none focus:border-black/30 dark:border-white/10 dark:bg-black dark:text-white dark:focus:border-white/30"
               required
             />
@@ -116,11 +127,6 @@ export default function Home() {
         </form>
 
         <Results state={state} />
-
-        <p className="text-center text-xs text-zinc-500 dark:text-zinc-500">
-          Data leveres af Ticketmasters database og dækker derfor ikke
-          nødvendigvis alle danske teatre og spillesteder.
-        </p>
       </main>
     </div>
   );
@@ -169,63 +175,165 @@ function Results({ state }: { state: SearchState }) {
     );
   }
 
-  if (state.results.length === 0) {
-    return (
-      <p className="text-center text-zinc-500">
-        Ingen kommende forestillinger eller koncerter fundet.
-      </p>
-    );
-  }
+  const { results, sources } = state.data;
+  const credited = results.filter((show) => show.matchKind === "credit");
+  const otherCredited = results.filter((show) => show.matchKind === "otherCredit");
+  const titleOnly = results.filter((show) => show.matchKind === "title");
 
   return (
-    <ul className="flex flex-col gap-4">
-      {state.results.map((show) => (
-        <li
-          key={show.id}
-          className="flex gap-4 overflow-hidden rounded-xl border border-black/10 bg-white p-4 dark:border-white/10 dark:bg-zinc-950"
-        >
-          {show.imageUrl && (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              src={show.imageUrl}
-              alt=""
-              className="hidden h-24 w-24 flex-none rounded-lg object-cover sm:block"
-            />
+    <div className="flex flex-col gap-6">
+      {results.length === 0 ? (
+        <p className="text-center text-zinc-500">
+          Ingen kommende forestillinger eller koncerter fundet for{" "}
+          <span className="font-medium">{state.query}</span>.
+        </p>
+      ) : (
+        <>
+          {credited.length > 0 && (
+            <section className="flex flex-col gap-3">
+              <h2 className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
+                Medvirker i ({credited.length})
+              </h2>
+              <ul className="flex flex-col gap-4">
+                {credited.map((show) => (
+                  <ShowCard key={show.id} show={show} />
+                ))}
+              </ul>
+            </section>
           )}
-          <div className="flex flex-1 flex-col gap-1">
-            <h2 className="font-medium text-black dark:text-zinc-50">
-              {show.name}
-            </h2>
-            <p className="text-sm text-zinc-600 dark:text-zinc-400">
-              {formatDate(show.date, show.time)}
-            </p>
-            <p className="text-sm text-zinc-600 dark:text-zinc-400">
-              {[show.venueName, show.city, show.country]
-                .filter(Boolean)
-                .join(", ")}
-            </p>
-            {show.url && (
-              <a
-                href={show.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-1 text-sm font-medium text-black underline underline-offset-2 dark:text-white"
-              >
-                Køb billet →
-              </a>
-            )}
-          </div>
-        </li>
-      ))}
-    </ul>
+
+          {otherCredited.length > 0 && (
+            <section className="flex flex-col gap-3">
+              <h2 className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
+                Krediteret i en anden rolle ({otherCredited.length})
+              </h2>
+              <p className="text-xs text-zinc-500">
+                Samme navn står på rollelisten, men bag scenen — f.eks. som
+                instruktør eller scenograf.
+              </p>
+              <ul className="flex flex-col gap-4">
+                {otherCredited.map((show) => (
+                  <ShowCard key={show.id} show={show} />
+                ))}
+              </ul>
+            </section>
+          )}
+
+          {titleOnly.length > 0 && (
+            <section className="flex flex-col gap-3">
+              <h2 className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
+                Navnet nævnes i titlen ({titleOnly.length})
+              </h2>
+              <p className="text-xs text-zinc-500">
+                Her matcher navnet kun forestillingens titel — ikke en bekræftet
+                rolleliste.
+              </p>
+              <ul className="flex flex-col gap-4">
+                {titleOnly.map((show) => (
+                  <ShowCard key={show.id} show={show} />
+                ))}
+              </ul>
+            </section>
+          )}
+        </>
+      )}
+
+      <SourceNotes sources={sources} />
+    </div>
   );
 }
 
-function formatDate(date: string | null, time: string | null): string {
-  if (!date) return "Dato ukendt";
-  const formatted = new Date(`${date}T${time ?? "00:00:00"}`).toLocaleDateString(
-    "da-DK",
-    { weekday: "short", day: "numeric", month: "long", year: "numeric" },
+function ShowCard({ show }: { show: ShowResult }) {
+  return (
+    <li className="flex gap-4 overflow-hidden rounded-xl border border-black/10 bg-white p-4 dark:border-white/10 dark:bg-zinc-950">
+      {show.imageUrl && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={show.imageUrl}
+          alt=""
+          className="hidden h-24 w-24 flex-none rounded-lg object-cover sm:block"
+        />
+      )}
+      <div className="flex flex-1 flex-col gap-1">
+        <div className="flex flex-wrap items-baseline gap-x-2">
+          <h3 className="font-medium text-black dark:text-zinc-50">
+            {show.title}
+          </h3>
+          {show.credit && (
+            <span className="rounded-full bg-zinc-100 px-2 py-0.5 text-xs font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">
+              {show.credit}
+            </span>
+          )}
+        </div>
+
+        {show.subtitle && (
+          <p className="text-sm text-zinc-500">{show.subtitle}</p>
+        )}
+
+        <p className="text-sm text-zinc-600 dark:text-zinc-400">
+          {formatDate(show.nextDate)}
+          {show.dates.length > 1 && (
+            <span className="text-zinc-500">
+              {" "}
+              · {show.dates.length} forestillinger
+            </span>
+          )}
+        </p>
+
+        <p className="text-sm text-zinc-600 dark:text-zinc-400">
+          {[show.venueName, show.city, show.country === "Danmark" ? null : show.country]
+            .filter(Boolean)
+            .join(", ")}
+        </p>
+
+        <div className="mt-1 flex flex-wrap items-center gap-x-3 text-sm">
+          {show.url && (
+            <a
+              href={show.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-black underline underline-offset-2 dark:text-white"
+            >
+              Se billetter →
+            </a>
+          )}
+          <span className="text-xs text-zinc-500">via {show.source}</span>
+        </div>
+      </div>
+    </li>
   );
-  return time ? `${formatted} kl. ${time.slice(0, 5)}` : formatted;
+}
+
+function SourceNotes({ sources }: { sources: SourceStatus[] }) {
+  const unavailable = sources.filter((source) => !source.ok);
+  return (
+    <div className="flex flex-col gap-2 border-t border-black/10 pt-4 text-xs text-zinc-500 dark:border-white/10">
+      {unavailable.map((source) => (
+        <p key={source.source}>⚠ {source.note}</p>
+      ))}
+      <p>
+        Danske teaterdata kommer fra Teaterbilletter.dk (ca. 100 teatre i
+        København og på Sjælland), hvor rollelister gør det muligt at søge på
+        skuespillere. Koncerter kommer fra Ticketmaster.
+      </p>
+    </div>
+  );
+}
+
+function formatDate(value: string | null): string {
+  if (!value) return "Dato ukendt";
+  const date = new Date(value);
+  if (Number.isNaN(date.valueOf())) return "Dato ukendt";
+
+  const formatted = date.toLocaleDateString("da-DK", {
+    weekday: "short",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+  const time = date.toLocaleTimeString("da-DK", {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+  return time === "00:00" ? formatted : `${formatted} kl. ${time}`;
 }

@@ -1,49 +1,19 @@
 import { NextRequest, NextResponse } from "next/server";
 
-export type Profession = "skuespiller" | "musiker";
+import { searchTeaterbilletter } from "@/lib/sources/teaterbilletter";
+import { searchTicketmaster, TicketmasterError } from "@/lib/sources/ticketmaster";
+import { isProfession, type SearchResponse, type ShowResult, type SourceStatus } from "@/lib/types";
 
-export type ShowResult = {
-  id: string;
-  name: string;
-  date: string | null;
-  time: string | null;
-  venueName: string | null;
-  city: string | null;
-  country: string | null;
-  url: string | null;
-  imageUrl: string | null;
-  genre: string | null;
-};
-
-const CLASSIFICATION_BY_PROFESSION: Record<Profession, string> = {
-  skuespiller: "Arts & Theatre",
-  musiker: "Music",
-};
-
-const TICKETMASTER_EVENTS_URL =
-  "https://app.ticketmaster.com/discovery/v2/events.json";
-
-function isProfession(value: string | null): value is Profession {
-  return value === "skuespiller" || value === "musiker";
-}
-
+/**
+ * Results from every source that answered are merged. A source failing is not
+ * fatal: Teaterbilletter needs no credentials and covers the Danish theatre
+ * side, so the app stays useful even with no Ticketmaster key configured.
+ */
 export async function GET(request: NextRequest) {
-  const apiKey = process.env.TICKETMASTER_API_KEY;
-  if (!apiKey) {
-    return NextResponse.json(
-      {
-        error: "missing_api_key",
-        message:
-          "TICKETMASTER_API_KEY er ikke sat på serveren. Tilføj en gratis nøgle fra developer-acct.ticketmaster.com som miljøvariabel.",
-      },
-      { status: 500 },
-    );
-  }
-
-  const searchParams = request.nextUrl.searchParams;
-  const name = searchParams.get("name")?.trim() ?? "";
-  const professionParam = searchParams.get("profession");
-  const onlyDenmark = searchParams.get("onlyDenmark") === "true";
+  const params = request.nextUrl.searchParams;
+  const name = params.get("name")?.trim() ?? "";
+  const profession = params.get("profession");
+  const onlyDenmark = params.get("onlyDenmark") === "true";
 
   if (!name) {
     return NextResponse.json(
@@ -51,7 +21,7 @@ export async function GET(request: NextRequest) {
       { status: 400 },
     );
   }
-  if (!isProfession(professionParam)) {
+  if (!isProfession(profession)) {
     return NextResponse.json(
       {
         error: "invalid_profession",
@@ -61,86 +31,57 @@ export async function GET(request: NextRequest) {
     );
   }
 
-  const url = new URL(TICKETMASTER_EVENTS_URL);
-  url.searchParams.set("apikey", apiKey);
-  url.searchParams.set("keyword", name);
-  url.searchParams.set(
-    "classificationName",
-    CLASSIFICATION_BY_PROFESSION[professionParam],
-  );
-  url.searchParams.set("sort", "date,asc");
-  url.searchParams.set("size", "20");
-  url.searchParams.set("startDateTime", new Date().toISOString().slice(0, 19) + "Z");
-  if (onlyDenmark) {
-    url.searchParams.set("countryCode", "DK");
+  const apiKey = process.env.TICKETMASTER_API_KEY;
+
+  const [teaterbilletter, ticketmaster] = await Promise.allSettled([
+    searchTeaterbilletter(name, profession),
+    apiKey
+      ? searchTicketmaster(name, profession, { apiKey, onlyDenmark })
+      : Promise.reject(new TicketmasterError("no_key")),
+  ]);
+
+  const results: ShowResult[] = [];
+  const sources: SourceStatus[] = [];
+
+  if (teaterbilletter.status === "fulfilled") {
+    results.push(...teaterbilletter.value);
+    sources.push({ source: "Teaterbilletter", ok: true });
+  } else {
+    sources.push({
+      source: "Teaterbilletter",
+      ok: false,
+      note: "Kunne ikke hente danske teaterforestillinger lige nu.",
+    });
   }
 
-  let upstreamResponse: Response;
-  try {
-    upstreamResponse = await fetch(url.toString(), { cache: "no-store" });
-  } catch {
-    return NextResponse.json(
-      {
-        error: "upstream_unreachable",
-        message: "Kunne ikke kontakte Ticketmaster lige nu. Prøv igen om lidt.",
-      },
-      { status: 502 },
-    );
+  if (ticketmaster.status === "fulfilled") {
+    const events = onlyDenmark
+      ? ticketmaster.value.filter((event) => event.country === "Denmark")
+      : ticketmaster.value;
+    results.push(...events);
+    sources.push({ source: "Ticketmaster", ok: true });
+  } else {
+    sources.push({
+      source: "Ticketmaster",
+      ok: false,
+      note: apiKey
+        ? "Ticketmaster kunne ikke kontaktes — viser kun danske teaterdata."
+        : "Ingen Ticketmaster-nøgle konfigureret — koncerter i udlandet mangler.",
+    });
   }
 
-  if (!upstreamResponse.ok) {
-    return NextResponse.json(
-      {
-        error: "upstream_error",
-        message: `Ticketmaster svarede med fejl (${upstreamResponse.status}).`,
-      },
-      { status: 502 },
-    );
-  }
-
-  const data = await upstreamResponse.json();
-  const events = data?._embedded?.events ?? [];
-
-  const results: ShowResult[] = events.map((event: TicketmasterEvent) => {
-    const venue = event._embedded?.venues?.[0];
-    const image = pickBestImage(event.images);
-    return {
-      id: event.id,
-      name: event.name,
-      date: event.dates?.start?.localDate ?? null,
-      time: event.dates?.start?.localTime ?? null,
-      venueName: venue?.name ?? null,
-      city: venue?.city?.name ?? null,
-      country: venue?.country?.name ?? null,
-      url: event.url ?? null,
-      imageUrl: image,
-      genre: event.classifications?.[0]?.genre?.name ?? null,
-    };
+  // Strongest evidence first — a confirmed acting/music credit beats a credit
+  // in another role, which in turn beats a bare title mention. Then by date.
+  const rank = { credit: 0, otherCredit: 1, title: 2 } as const;
+  results.sort((a, b) => {
+    if (a.matchKind !== b.matchKind) {
+      return rank[a.matchKind] - rank[b.matchKind];
+    }
+    if (!a.nextDate) return 1;
+    if (!b.nextDate) return -1;
+    return a.nextDate.localeCompare(b.nextDate);
   });
 
-  return NextResponse.json({ results });
-}
-
-type TicketmasterEvent = {
-  id: string;
-  name: string;
-  url?: string;
-  dates?: { start?: { localDate?: string; localTime?: string } };
-  images?: { url: string; width: number; ratio?: string }[];
-  classifications?: { genre?: { name?: string } }[];
-  _embedded?: {
-    venues?: {
-      name?: string;
-      city?: { name?: string };
-      country?: { name?: string };
-    }[];
-  };
-};
-
-function pickBestImage(
-  images: TicketmasterEvent["images"],
-): string | null {
-  if (!images || images.length === 0) return null;
-  const wide = images.find((img) => img.ratio === "16_9" && img.width >= 640);
-  return (wide ?? images[0]).url;
+  const body: SearchResponse = { results, sources };
+  return NextResponse.json(body);
 }
