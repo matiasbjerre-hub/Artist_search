@@ -15,6 +15,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+from common import is_orchestra_name
 import scrape_kglteater
 import scrape_aveny
 import scrape_aarhusteater
@@ -22,6 +23,7 @@ import scrape_odenseteater
 import scrape_vega
 import scrape_drkoncerthuset
 import scrape_abb
+import scrape_migogkbh
 
 OUTPUT_PATH = Path(__file__).resolve().parent.parent / "data" / "events.json"
 
@@ -33,6 +35,7 @@ SCRAPERS = [
     ("vega.dk", scrape_vega.scrape),
     ("drkoncerthuset.dk", scrape_drkoncerthuset.scrape),
     ("ab-b.dk", scrape_abb.scrape),
+    ("migogkbh.dk", scrape_migogkbh.scrape),
 ]
 
 
@@ -67,6 +70,12 @@ def main() -> None:
 
     for entry in all_entries:
         entry["searchKey"] = _search_key(entry["person"])
+        # An orchestra/ensemble is credited by its own name, not a person's --
+        # promote it to the third profession regardless of what its source
+        # tagged it as (e.g. drkoncerthuset.dk's "DR Symfoniorkestret" comes
+        # through as an ordinary "musiker" credit otherwise).
+        if entry["profession"] != "orkester" and is_orchestra_name(entry["person"]):
+            entry["profession"] = "orkester"
 
     output = {
         "generatedAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),

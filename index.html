@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Artist Search</title>
-<meta name="description" content="Find teaterforestillinger og koncerter en skuespiller eller musiker medvirker i.">
+<meta name="description" content="Find teaterforestillinger og koncerter en skuespiller, musiker eller orkester medvirker i.">
 <style>
   :root {
     color-scheme: light dark;
@@ -19,6 +19,8 @@
     --tag-actor-text: #8fd19e;
     --tag-musician-bg: #3a2f2a;
     --tag-musician-text: #f0b98d;
+    --tag-orchestra-bg: #2a303a;
+    --tag-orchestra-text: #93b8f0;
     --radius: 10px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
@@ -36,6 +38,8 @@
       --tag-actor-text: #2b7a3b;
       --tag-musician-bg: #fbe9dd;
       --tag-musician-text: #a35a1f;
+      --tag-orchestra-bg: #e2eafc;
+      --tag-orchestra-text: #2851a3;
     }
   }
 
@@ -169,6 +173,7 @@
 
   .tag.skuespiller { background: var(--tag-actor-bg); color: var(--tag-actor-text); }
   .tag.musiker { background: var(--tag-musician-bg); color: var(--tag-musician-text); }
+  .tag.orkester { background: var(--tag-orchestra-bg); color: var(--tag-orchestra-text); }
 
   .meta {
     margin-top: 0.3rem;
@@ -216,6 +221,7 @@
       <button type="button" data-profession="all" aria-pressed="true">Alle</button>
       <button type="button" data-profession="skuespiller" aria-pressed="false">Skuespiller</button>
       <button type="button" data-profession="musiker" aria-pressed="false">Musiker</button>
+      <button type="button" data-profession="orkester" aria-pressed="false">Orkester</button>
     </div>
   </form>
 
@@ -274,7 +280,9 @@
   }
 
   function professionLabel(p) {
-    return p === "musiker" ? "Musiker" : "Skuespiller";
+    if (p === "musiker") return "Musiker";
+    if (p === "orkester") return "Orkester";
+    return "Skuespiller";
   }
 
   function render() {

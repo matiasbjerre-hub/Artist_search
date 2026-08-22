@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T14:04:42Z",
+  "generatedAt": "2026-08-22T16:48:24Z",
   "sources": [
     {
       "source": "kglteater.dk",
@@ -28,6 +28,10 @@
     {
       "source": "ab-b.dk",
       "entries": 115
+    },
+    {
+      "source": "migogkbh.dk",
+      "entries": 46
     }
   ],
   "entries": [
@@ -1964,7 +1968,7 @@
     {
       "person": "Juleshowet med Danmarks Underholdningsorkester",
       "role": "Koncert",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Juleshowet med Danmarks Underholdningsorkester",
       "venue": "Det Kongelige Teater",
       "url": "https://www.kglteater.dk/koncert/2627/juleshowet-med-danmarks-underholdningsorkester/",
@@ -2004,7 +2008,7 @@
     {
       "person": "London Symphonic Rock Orchestra",
       "role": "Koncert",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "London Symphonic Rock Orchestra",
       "venue": "Det Kongelige Teater",
       "url": "https://www.kglteater.dk/koncert/2627/london-symphonic-rock-orchestra/",
@@ -9574,7 +9578,7 @@
     {
       "person": "Odense Symfoniorkester",
       "role": "Musik",
-      "profession": "skuespiller",
+      "profession": "orkester",
       "production": "Carmen",
       "venue": "Odense Teater",
       "url": "https://www.odenseteater.dk/forestillinger/carmen/",
@@ -9894,7 +9898,7 @@
     {
       "person": "Odense Symfoniorkester",
       "role": "Musik",
-      "profession": "skuespiller",
+      "profession": "orkester",
       "production": "Maskarade",
       "venue": "Odense Teater",
       "url": "https://www.odenseteater.dk/forestillinger/maskarade/",
@@ -10594,7 +10598,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "En sommeraften med DR Vokalensemblet",
       "venue": "Trinitatis Kirke, København",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/en-sommeraften-med-dr-vokalensemblet-trinitatis/en-sommeraften-med-dr-vokalensemblet/",
@@ -10614,7 +10618,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "En sommeraften med DR Vokalensemblet",
       "venue": "Sankt Nicolai Kirke i Rønne",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/en-sommeraften-med-dr-vokalensemblet-roenne/en-sommeraften-med-dr-vokalensemblet/",
@@ -10634,7 +10638,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "En sommeraften med DR Vokalensemblet",
       "venue": "Gudhjem Kirke",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/en-sommeraften-med-dr-vokalensemblet-gudhjem/en-sommeraften-med-dr-vokalensemblet/",
@@ -10714,7 +10718,7 @@
     {
       "person": "DR Symfoniorkesteret",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Luisi & Mahlers 4.",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/luisi-mahlers-4/luisi-mahlers-4/",
@@ -10764,7 +10768,7 @@
     {
       "person": "DR Symfoniorkesteret",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Luisi & Mahlers 4.",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/luisi-mahlers-4/luisi-mahlers-4-1/",
@@ -10804,7 +10808,7 @@
     {
       "person": "Bo Kaspers Orkester",
       "role": "Koncert",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Bo Kaspers Orkester",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/bo-kaspers-orkester/bo-kaspers-orkester-il-magnifico/",
@@ -10814,7 +10818,7 @@
     {
       "person": "Bo Kaspers Orkester",
       "role": "Koncert",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Bo Kaspers Orkester",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/bo-kaspers-orkester/bo-kaspers-orkester-il-magnifico-ekstrakoncert/",
@@ -10914,7 +10918,7 @@
     {
       "person": "DR Symfoniorkesteret",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Inkinen & Wagner",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/inkinen-wagner/inkinen-wagner/",
@@ -10974,7 +10978,7 @@
     {
       "person": "DR Symfoniorkesteret",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Inkinen & Wagner",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/inkinen-wagner/inkinen-wagner-1/",
@@ -11054,7 +11058,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Myter & Ekko",
       "venue": "Trinitatis Kirke, København",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/myter-ekko-trinitatis/myter-ekko/",
@@ -11074,7 +11078,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Myter & Ekko",
       "venue": "Sorø Klosterkirke",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/myter-ekko-soroe/myter-ekko/",
@@ -11154,7 +11158,7 @@
     {
       "person": "DR Symfoniorkesteret",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Hickox & Brahms",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/hickox-brahms/hickox-brahms/",
@@ -11214,7 +11218,7 @@
     {
       "person": "DR Symfoniorkesteret",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Hickox & Brahms",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/hickox-brahms/hickox-brahms-1/",
@@ -11244,7 +11248,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Meditationskoncert",
       "venue": "Roskilde Domkirke",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/meditationskoncert-roskilde/meditationskoncert/",
@@ -11264,7 +11268,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Meditationskoncert",
       "venue": "Vor Frue Kirke, Københavns Domkirke",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/meditationskoncert-koebenhavn/meditationskoncert/",
@@ -11304,7 +11308,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Meditationskoncert",
       "venue": "Vor Frue Kirke, Københavns Domkirke",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/meditationskoncert-koebenhavn/meditationskoncert-1/",
@@ -11434,7 +11438,7 @@
     {
       "person": "DR Symfoniorkesteret",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Kavakos & Saint-Saëns",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/kavakos-saint-saens/kavakos-saint-saens/",
@@ -12014,7 +12018,7 @@
     {
       "person": "Folkeklubben & Danmarks Underholdningsorkester",
       "role": "Koncert",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Folkeklubben & Danmarks Underholdningsorkester",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/folkeklubben-danmarks-underholdningsorkester/folkeklubben-danmarks-underholdningsorkester/",
@@ -12034,7 +12038,7 @@
     {
       "person": "Folkeklubben & Danmarks Underholdningsorkester",
       "role": "Koncert",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Folkeklubben & Danmarks Underholdningsorkester",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/folkeklubben-danmarks-underholdningsorkester/folkeklubben-danmarks-underholdningsorkester-3-ekstrakoncert/",
@@ -12054,7 +12058,7 @@
     {
       "person": "Folkeklubben & Danmarks Underholdningsorkester",
       "role": "Koncert",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Folkeklubben & Danmarks Underholdningsorkester",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/folkeklubben-danmarks-underholdningsorkester/folkeklubben-danmarks-underholdningsorkester-ekstrakoncert/",
@@ -12064,7 +12068,7 @@
     {
       "person": "Folkeklubben & Danmarks Underholdningsorkester",
       "role": "Koncert",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Folkeklubben & Danmarks Underholdningsorkester",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/folkeklubben-danmarks-underholdningsorkester/folkeklubben-danmarks-underholdningsorkester-2-ekstrakoncert/",
@@ -12244,7 +12248,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Poetiske mestre",
       "venue": "Sorø Klosterkirke",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/poetiske-mestre-soroe/poetiske-mestre/",
@@ -12274,7 +12278,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Poetiske mestre",
       "venue": "Trinitatis Kirke, København",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/poetiske-mestre/poetiske-mestre/",
@@ -12584,7 +12588,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Fantastiske stemmer",
       "venue": "Trinitatis Kirke, København",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/fantastiske-stemmer/fantastiske-stemmer-20-aars-hoejdepunkter/",
@@ -12674,7 +12678,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "DR Vokalensemblets julekoncert - med Phillip Faber",
       "venue": "Garnisonskirken",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/dr-vokalensemblets-julekoncert-med-phillip-faber/dr-vokalensemblets-julekoncert-med-phillip-faber/",
@@ -12694,7 +12698,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "DR Vokalensemblets julekoncert - med Phillip Faber",
       "venue": "Garnisonskirken",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/dr-vokalensemblets-julekoncert-med-phillip-faber/dr-vokalensemblets-julekoncert-med-phillip-faber-1/",
@@ -12714,7 +12718,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "DR Vokalensemblets julekoncert - med Phillip Faber",
       "venue": "Garnisonskirken",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/dr-vokalensemblets-julekoncert-med-phillip-faber/dr-vokalensemblets-julekoncert-med-phillip-faber-2/",
@@ -12834,7 +12838,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "DR Vokalensemblets julekoncert - med Phillip Faber",
       "venue": "Garnisonskirken",
       "url": "https://www.drkoncerthuset.dk/kalender/2026/dr-vokalensemblets-julekoncert-med-phillip-faber/dr-vokalensemblets-julekoncert-med-phillip-faber-3/",
@@ -13434,7 +13438,7 @@
     {
       "person": "Danmarks Underholdningsorkester hylder Kim Larsen",
       "role": "Koncert",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Danmarks Underholdningsorkester hylder Kim Larsen",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/danmarks-underholdningsorkester-hylder-kim-larsen/danmarks-underholdningsorkester-hylder-kim-larsen-8-ekstrakoncert/",
@@ -13474,7 +13478,7 @@
     {
       "person": "Danmarks Underholdningsorkester hylder Kim Larsen",
       "role": "Koncert",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Danmarks Underholdningsorkester hylder Kim Larsen",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/danmarks-underholdningsorkester-hylder-kim-larsen/danmarks-underholdningsorkester-hylder-kim-larsen-7-ekstrakoncert/",
@@ -13504,7 +13508,7 @@
     {
       "person": "Danmarks Underholdningsorkester hylder Kim Larsen",
       "role": "Koncert",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Danmarks Underholdningsorkester hylder Kim Larsen",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/danmarks-underholdningsorkester-hylder-kim-larsen/danmarks-underholdningsorkester-hylder-kim-larsen/",
@@ -13554,7 +13558,7 @@
     {
       "person": "Danmarks Underholdningsorkester hylder Kim Larsen",
       "role": "Koncert",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Danmarks Underholdningsorkester hylder Kim Larsen",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/danmarks-underholdningsorkester-hylder-kim-larsen/danmarks-underholdningsorkester-hylder-kim-larsen-5-ekstrakoncert/",
@@ -13564,7 +13568,7 @@
     {
       "person": "Danmarks Underholdningsorkester hylder Kim Larsen",
       "role": "Koncert",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Danmarks Underholdningsorkester hylder Kim Larsen",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/danmarks-underholdningsorkester-hylder-kim-larsen/danmarks-underholdningsorkester-hylder-kim-larsen-4-ekstrakoncert/",
@@ -13934,7 +13938,7 @@
     {
       "person": "Danmarks Underholdningsorkester hylder Kim Larsen",
       "role": "Koncert",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Danmarks Underholdningsorkester hylder Kim Larsen",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/danmarks-underholdningsorkester-hylder-kim-larsen/danmarks-underholdningsorkester-hylder-kim-larsen-9-ekstrakoncert/",
@@ -13944,7 +13948,7 @@
     {
       "person": "Danmarks Underholdningsorkester hylder Kim Larsen",
       "role": "Koncert",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Danmarks Underholdningsorkester hylder Kim Larsen",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/danmarks-underholdningsorkester-hylder-kim-larsen/danmarks-underholdningsorkester-hylder-kim-larsen-ekstrakoncert/",
@@ -13954,7 +13958,7 @@
     {
       "person": "Danmarks Underholdningsorkester hylder Kim Larsen",
       "role": "Koncert",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Danmarks Underholdningsorkester hylder Kim Larsen",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/danmarks-underholdningsorkester-hylder-kim-larsen/danmarks-underholdningsorkester-hylder-kim-larsen-10-ekstrakoncert/",
@@ -13964,7 +13968,7 @@
     {
       "person": "Danmarks Underholdningsorkester hylder Kim Larsen",
       "role": "Koncert",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Danmarks Underholdningsorkester hylder Kim Larsen",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/danmarks-underholdningsorkester-hylder-kim-larsen/danmarks-underholdningsorkester-hylder-kim-larsen-2-ekstrakoncert/",
@@ -13974,7 +13978,7 @@
     {
       "person": "Danmarks Underholdningsorkester hylder Kim Larsen",
       "role": "Koncert",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Danmarks Underholdningsorkester hylder Kim Larsen",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/danmarks-underholdningsorkester-hylder-kim-larsen/danmarks-underholdningsorkester-hylder-kim-larsen-3-ekstrakoncert/",
@@ -13984,7 +13988,7 @@
     {
       "person": "Danmarks Underholdningsorkester hylder Kim Larsen",
       "role": "Koncert",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Danmarks Underholdningsorkester hylder Kim Larsen",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/danmarks-underholdningsorkester-hylder-kim-larsen/danmarks-underholdningsorkester-hylder-kim-larsen-6-ekstrakoncert/",
@@ -14044,7 +14048,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Himmelsk lys",
       "venue": "Marmorkirken (Frederikskirken)",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/himmelsk-lys/himmelsk-lys/",
@@ -14074,7 +14078,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Himmelsk lys",
       "venue": "Marmorkirken (Frederikskirken)",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/himmelsk-lys/himmelsk-lys-1/",
@@ -14124,7 +14128,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Himmelsk lys",
       "venue": "Marmorkirken (Frederikskirken)",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/himmelsk-lys/himmelsk-lys-2/",
@@ -14154,7 +14158,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Himmelsk lys",
       "venue": "Marmorkirken (Frederikskirken)",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/himmelsk-lys/himmelsk-lys-3/",
@@ -14204,7 +14208,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Himmelsk lys",
       "venue": "Marmorkirken (Frederikskirken)",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/himmelsk-lys/himmelsk-lys-4/",
@@ -14334,7 +14338,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Kom og syng - Mozarts Requiem",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/kom-og-syng-mozarts-requiem-workshop/kom-og-syng-mozarts-requiem-workshop/",
@@ -14354,7 +14358,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Workshopkoncert - Mozarts Requiem",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/workshopkoncert-mozarts-requiem/workshopkoncert-mozarts-requiem/",
@@ -14384,7 +14388,7 @@
     {
       "person": "Alberte Winding & Danmarks Underholdningsorkester",
       "role": "Koncert",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Alberte Winding & Danmarks Underholdningsorkester",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/alberte-winding-danmarks-underholdningsorkester/alberte-winding-danmarks-underholdningsorkester-ekstrakoncert/",
@@ -14394,7 +14398,7 @@
     {
       "person": "Alberte Winding & Danmarks Underholdningsorkester",
       "role": "Koncert",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Alberte Winding & Danmarks Underholdningsorkester",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/alberte-winding-danmarks-underholdningsorkester/alberte-winding-danmarks-underholdningsorkester/",
@@ -14554,7 +14558,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "DR Vokalensemblets påskekoncert",
       "venue": "Roskilde Domkirke",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/dr-vokalensemblets-paaskekoncert-roskilde/dr-vokalensemblets-paaskekoncert/",
@@ -14574,7 +14578,7 @@
     {
       "person": "Alberte Winding & Danmarks Underholdningsorkester",
       "role": "Koncert",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Alberte Winding & Danmarks Underholdningsorkester",
       "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/alberte-winding-danmarks-underholdningsorkester/alberte-winding-danmarks-underholdningsorkester-2-ekstrakoncert/",
@@ -14614,7 +14618,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "DR Vokalensemblets påskekoncert",
       "venue": "Trinitatis Kirke, København",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/dr-vokalensemblets-paaskekoncert-trinitatis/dr-vokalensemblets-paaskekoncert/",
@@ -14784,7 +14788,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Lys & Mørke",
       "venue": "Trinitatis Kirke, København",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/lys-moerke-trinitatis/lys-moerke/",
@@ -15244,7 +15248,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "DR Vokalensemblet 20 år",
       "venue": "Roskilde Domkirke",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/dr-vokalensemblet-20-aar-roskilde/dr-vokalensemblet-20-aar/",
@@ -15314,7 +15318,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "DR Vokalensemblet 20 år",
       "venue": "Trinitatis Kirke, København",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/dr-vokalensemblet-20-aar-trinitatis/dr-vokalensemblet-20-aar/",
@@ -15334,7 +15338,7 @@
     {
       "person": "DR Vokalensemblet",
       "role": "Medvirkende",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Højsangen og kærlighed",
       "venue": "Trinitatis Kirke, København",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/hoejsangen-og-kaerlighed/hoejsangen-og-kaerlighed/",
@@ -15944,7 +15948,7 @@
     {
       "person": "Mega Ball – Mads Hansens Kapel 10 års jubilæumsbal",
       "role": "Hovednavn",
-      "profession": "musiker",
+      "profession": "orkester",
       "production": "Mega Ball – Mads Hansens Kapel 10 års jubilæumsbal",
       "venue": "Amager Bio",
       "url": "https://ab-b.dk/k/mega-ball-mads-hansens-kapel-10-aars-jubilaeumsbal/",
@@ -16510,6 +16514,466 @@
       "url": "https://ab-b.dk/k/young-gun-silver-fox/",
       "source": "ab-b.dk",
       "searchKey": "young gun silver fox"
+    },
+    {
+      "person": "BENCHED",
+      "role": "Forestilling",
+      "profession": "skuespiller",
+      "production": "BENCHED",
+      "venue": "Dansekapellet",
+      "url": "https://migogkbh.dk/kalender/begivenhed/benched/",
+      "source": "migogkbh.dk",
+      "searchKey": "benched"
+    },
+    {
+      "person": "English Comedy // The Hygge Show",
+      "role": "Forestilling",
+      "profession": "skuespiller",
+      "production": "English Comedy // The Hygge Show",
+      "venue": "Lygten Station",
+      "url": "https://migogkbh.dk/kalender/begivenhed/english-comedy-the-hygge-show/",
+      "source": "migogkbh.dk",
+      "searchKey": "english comedy // the hygge show"
+    },
+    {
+      "person": "ER DU HJEMME? – fortællinger om økonomisk mistrivsel",
+      "role": "Forestilling",
+      "profession": "skuespiller",
+      "production": "ER DU HJEMME? – fortællinger om økonomisk mistrivsel",
+      "venue": "EDISON",
+      "url": "https://migogkbh.dk/kalender/begivenhed/er-du-hjemme-fortaellinger-om-oekonomisk-mistrivsel/",
+      "source": "migogkbh.dk",
+      "searchKey": "er du hjemme? – fortallinger om okonomisk mistrivsel"
+    },
+    {
+      "person": "Crazy Comedy Banko",
+      "role": "Forestilling",
+      "profession": "skuespiller",
+      "production": "Crazy Comedy Banko",
+      "venue": "Comedy Zoo",
+      "url": "https://migogkbh.dk/kalender/begivenhed/crazy-comedy-banko/",
+      "source": "migogkbh.dk",
+      "searchKey": "crazy comedy banko"
+    },
+    {
+      "person": "BRØK IMPRO COMEDY",
+      "role": "Forestilling",
+      "profession": "skuespiller",
+      "production": "BRØK IMPRO COMEDY",
+      "venue": "Brøk",
+      "url": "https://migogkbh.dk/kalender/begivenhed/broek-impro-comedy/",
+      "source": "migogkbh.dk",
+      "searchKey": "brok impro comedy"
+    },
+    {
+      "person": "Grand Comedy Night",
+      "role": "Forestilling",
+      "profession": "skuespiller",
+      "production": "Grand Comedy Night",
+      "venue": "Cirkusbygningen",
+      "url": "https://migogkbh.dk/kalender/begivenhed/grand-comedy-night/",
+      "source": "migogkbh.dk",
+      "searchKey": "grand comedy night"
+    },
+    {
+      "person": "Stand-up Staldene",
+      "role": "Forestilling",
+      "profession": "skuespiller",
+      "production": "Stand-up Staldene",
+      "venue": "Cirkusbygningen",
+      "url": "https://migogkbh.dk/kalender/begivenhed/stand-up-staldene/",
+      "source": "migogkbh.dk",
+      "searchKey": "stand-up staldene"
+    },
+    {
+      "person": "Kanan Gill",
+      "role": "Forestilling",
+      "profession": "skuespiller",
+      "production": "Kanan Gill",
+      "venue": "Hotel Cecil",
+      "url": "https://migogkbh.dk/kalender/begivenhed/kanan-gill/",
+      "source": "migogkbh.dk",
+      "searchKey": "kanan gill"
+    },
+    {
+      "person": "Jakob Svendsen",
+      "role": "Forestilling",
+      "profession": "skuespiller",
+      "production": "Jakob Svendsen",
+      "venue": "Hotel Cecil",
+      "url": "https://migogkbh.dk/kalender/begivenhed/jakob-svendsen/",
+      "source": "migogkbh.dk",
+      "searchKey": "jakob svendsen"
+    },
+    {
+      "person": "BIG BANG festival – Lørdag",
+      "role": "Forestilling",
+      "profession": "skuespiller",
+      "production": "BIG BANG festival – Lørdag",
+      "venue": "Amager",
+      "url": "https://migogkbh.dk/kalender/begivenhed/big-bang-festival-loerdag/",
+      "source": "migogkbh.dk",
+      "searchKey": "big bang festival – lordag"
+    },
+    {
+      "person": "TOY TONICS JAM",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "TOY TONICS JAM",
+      "venue": "REFFEN",
+      "url": "https://migogkbh.dk/kalender/begivenhed/toy-tonics-jam/",
+      "source": "migogkbh.dk",
+      "searchKey": "toy tonics jam"
+    },
+    {
+      "person": "Oplev Gospelstjernen Donald Lawrence: Workshop og koncert",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Oplev Gospelstjernen Donald Lawrence: Workshop og koncert",
+      "venue": "Vandværket",
+      "url": "https://migogkbh.dk/kalender/begivenhed/oplev-gospelstjernen-donald-lawrence-workshop-og-koncert/",
+      "source": "migogkbh.dk",
+      "searchKey": "oplev gospelstjernen donald lawrence: workshop og koncert"
+    },
+    {
+      "person": "Femme Fiesta",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Femme Fiesta",
+      "venue": "Halvandet",
+      "url": "https://migogkbh.dk/kalender/begivenhed/femme-fiesta-2/",
+      "source": "migogkbh.dk",
+      "searchKey": "femme fiesta"
+    },
+    {
+      "person": "Calby Koncert",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Calby Koncert",
+      "venue": "Frederiksberg Centeret",
+      "url": "https://migogkbh.dk/kalender/begivenhed/calby-koncert/",
+      "source": "migogkbh.dk",
+      "searchKey": "calby koncert"
+    },
+    {
+      "person": "HipHop historisk bustur 2026",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "HipHop historisk bustur 2026",
+      "venue": "København",
+      "url": "https://migogkbh.dk/kalender/begivenhed/hiphop-historisk-bustur-2026/",
+      "source": "migogkbh.dk",
+      "searchKey": "hiphop historisk bustur 2026"
+    },
+    {
+      "person": "Søndagskoncert på Nemoland",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Søndagskoncert på Nemoland",
+      "venue": "Christiania",
+      "url": "https://migogkbh.dk/kalender/begivenhed/soendagskoncert-paa-nemoland/",
+      "source": "migogkbh.dk",
+      "searchKey": "sondagskoncert pa nemoland"
+    },
+    {
+      "person": "Stjernestøv – en aften med jazz og astrofysik",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Stjernestøv – en aften med jazz og astrofysik",
+      "venue": "La Oficina",
+      "url": "https://migogkbh.dk/kalender/begivenhed/stjernestoev-en-aften-med-jazz-og-astrofysik/",
+      "source": "migogkbh.dk",
+      "searchKey": "stjernestov – en aften med jazz og astrofysik"
+    },
+    {
+      "person": "Det Brune Værtshus",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Det Brune Værtshus",
+      "venue": "La Oficina",
+      "url": "https://migogkbh.dk/kalender/begivenhed/det-brune-vaertshus/",
+      "source": "migogkbh.dk",
+      "searchKey": "det brune vartshus"
+    },
+    {
+      "person": "Fællesspisning og dans under åben himmel",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Fællesspisning og dans under åben himmel",
+      "venue": "Halmtorvet",
+      "url": "https://migogkbh.dk/kalender/begivenhed/faellesspisning-og-dans-under-aaben-himmel/",
+      "source": "migogkbh.dk",
+      "searchKey": "fallesspisning og dans under aben himmel"
+    },
+    {
+      "person": "Langbordsmiddag med Gasbox Duo koncert",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Langbordsmiddag med Gasbox Duo koncert",
+      "venue": "Frederiksberg Centeret",
+      "url": "https://migogkbh.dk/kalender/begivenhed/langbordsmiddag-med-gasbox-duo-koncert/",
+      "source": "migogkbh.dk",
+      "searchKey": "langbordsmiddag med gasbox duo koncert"
+    },
+    {
+      "person": "Nytårsfest med Stine & Martin i De Gamle Stalde",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Nytårsfest med Stine & Martin i De Gamle Stalde",
+      "venue": "Cirkusbygningen",
+      "url": "https://migogkbh.dk/kalender/begivenhed/nytaarsfest-med-stine-martin-i-de-gamle-stalde/",
+      "source": "migogkbh.dk",
+      "searchKey": "nytarsfest med stine & martin i de gamle stalde"
+    },
+    {
+      "person": "The Rat Pack at Christmas",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "The Rat Pack at Christmas",
+      "venue": "Cirkusbygningen",
+      "url": "https://migogkbh.dk/kalender/begivenhed/the-rat-pack-at-christmas/",
+      "source": "migogkbh.dk",
+      "searchKey": "the rat pack at christmas"
+    },
+    {
+      "person": "Karaoke i Purple Bar",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Karaoke i Purple Bar",
+      "venue": "Cirkusbygningen",
+      "url": "https://migogkbh.dk/kalender/begivenhed/karaoke-i-purple-bar/",
+      "source": "migogkbh.dk",
+      "searchKey": "karaoke i purple bar"
+    },
+    {
+      "person": "Von Quar i K.B Hallen",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Von Quar i K.B Hallen",
+      "venue": "K.B.Hallen",
+      "url": "https://migogkbh.dk/kalender/begivenhed/von-quar-i-k-b-hallen/",
+      "source": "migogkbh.dk",
+      "searchKey": "von quar i k.b hallen"
+    },
+    {
+      "person": "Den store sommerfest",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Den store sommerfest",
+      "venue": "Nordhavn",
+      "url": "https://migogkbh.dk/kalender/begivenhed/den-store-sommerfest/",
+      "source": "migogkbh.dk",
+      "searchKey": "den store sommerfest"
+    },
+    {
+      "person": "MD-Duo",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "MD-Duo",
+      "venue": "Hotel Cecil",
+      "url": "https://migogkbh.dk/kalender/begivenhed/md-duo/",
+      "source": "migogkbh.dk",
+      "searchKey": "md-duo"
+    },
+    {
+      "person": "Country & høstfest",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Country & høstfest",
+      "venue": "Broens gadekøkken",
+      "url": "https://migogkbh.dk/kalender/begivenhed/country-hoestfest/",
+      "source": "migogkbh.dk",
+      "searchKey": "country & hostfest"
+    },
+    {
+      "person": "BIG BANG festival – Lørdag",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "BIG BANG festival – Lørdag",
+      "venue": "Amager",
+      "url": "https://migogkbh.dk/kalender/begivenhed/big-bang-festival-loerdag/",
+      "source": "migogkbh.dk",
+      "searchKey": "big bang festival – lordag"
+    },
+    {
+      "person": "Nicklas Sahl",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Nicklas Sahl",
+      "venue": "Hvidovre",
+      "url": "https://migogkbh.dk/kalender/begivenhed/nicklas-sahl/",
+      "source": "migogkbh.dk",
+      "searchKey": "nicklas sahl"
+    },
+    {
+      "person": "Kata.pult (support: tba) | LYDBAR",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Kata.pult (support: tba) | LYDBAR",
+      "venue": "Hvidovre",
+      "url": "https://migogkbh.dk/kalender/begivenhed/kata-pult-support-tba-lydbar/",
+      "source": "migogkbh.dk",
+      "searchKey": "kata.pult (support: tba) | lydbar"
+    },
+    {
+      "person": "Freddy and the Phantoms",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Freddy and the Phantoms",
+      "venue": "Hvidovre",
+      "url": "https://migogkbh.dk/kalender/begivenhed/freddy-and-the-phantoms/",
+      "source": "migogkbh.dk",
+      "searchKey": "freddy and the phantoms"
+    },
+    {
+      "person": "Tue West",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Tue West",
+      "venue": "Hvidovre",
+      "url": "https://migogkbh.dk/kalender/begivenhed/tue-west/",
+      "source": "migogkbh.dk",
+      "searchKey": "tue west"
+    },
+    {
+      "person": "Piano Night",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Piano Night",
+      "venue": "Hvidovre",
+      "url": "https://migogkbh.dk/kalender/begivenhed/piano-night/",
+      "source": "migogkbh.dk",
+      "searchKey": "piano night"
+    },
+    {
+      "person": "Kaya Brüel",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Kaya Brüel",
+      "venue": "Hvidovre",
+      "url": "https://migogkbh.dk/kalender/begivenhed/kaya-bruel/",
+      "source": "migogkbh.dk",
+      "searchKey": "kaya bruel"
+    },
+    {
+      "person": "Anna David",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Anna David",
+      "venue": "Hvidovre",
+      "url": "https://migogkbh.dk/kalender/begivenhed/anna-david/",
+      "source": "migogkbh.dk",
+      "searchKey": "anna david"
+    },
+    {
+      "person": "North Folk (support: Nora Quinn) | LYDBAR",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "North Folk (support: Nora Quinn) | LYDBAR",
+      "venue": "Hvidovre",
+      "url": "https://migogkbh.dk/kalender/begivenhed/north-folk-support-nora-quinn-lydbar/",
+      "source": "migogkbh.dk",
+      "searchKey": "north folk (support: nora quinn) | lydbar"
+    },
+    {
+      "person": "DOORS LEGACY PÅ RIGA",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "DOORS LEGACY PÅ RIGA",
+      "venue": "Hvidovre",
+      "url": "https://migogkbh.dk/kalender/begivenhed/doors-legacy-paa-riga/",
+      "source": "migogkbh.dk",
+      "searchKey": "doors legacy pa riga"
+    },
+    {
+      "person": "Oplev Gasboxhos cecilie’s amar",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Oplev Gasboxhos cecilie’s amar",
+      "venue": "Amager",
+      "url": "https://migogkbh.dk/kalender/begivenhed/oplev-gasboxhos-cecilies-amar/",
+      "source": "migogkbh.dk",
+      "searchKey": "oplev gasboxhos cecilie’s amar"
+    },
+    {
+      "person": "Love Club På Reffen",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Love Club På Reffen",
+      "venue": "REFFEN",
+      "url": "https://migogkbh.dk/kalender/begivenhed/love-club-paa-reffen/",
+      "source": "migogkbh.dk",
+      "searchKey": "love club pa reffen"
+    },
+    {
+      "person": "Jul i De Gamle Stalde med Stine og Martin",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Jul i De Gamle Stalde med Stine og Martin",
+      "venue": "Cirkusbygningen",
+      "url": "https://migogkbh.dk/kalender/begivenhed/jul-i-de-gamle-stalde-med-stine-og-martin/",
+      "source": "migogkbh.dk",
+      "searchKey": "jul i de gamle stalde med stine og martin"
+    },
+    {
+      "person": "Ida Duelund x Maya SB på Rundetaarn",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Ida Duelund x Maya SB på Rundetaarn",
+      "venue": "Rundetaarn",
+      "url": "https://migogkbh.dk/kalender/begivenhed/ida-duelund-x-maya-sb-paa-rundetaarn/",
+      "source": "migogkbh.dk",
+      "searchKey": "ida duelund x maya sb pa rundetarn"
+    },
+    {
+      "person": "Livekoncert: AySay",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Livekoncert: AySay",
+      "venue": "REFFEN",
+      "url": "https://migogkbh.dk/kalender/begivenhed/livekoncert-aysay/",
+      "source": "migogkbh.dk",
+      "searchKey": "livekoncert: aysay"
+    },
+    {
+      "person": "Phoebe Bridgers giver stor dansk koncert i Royal Arena",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Phoebe Bridgers giver stor dansk koncert i Royal Arena",
+      "venue": "Royal Arena",
+      "url": "https://migogkbh.dk/kalender/begivenhed/phoebe-bridgers-giver-stor-dansk-koncert-i-royal-arena/",
+      "source": "migogkbh.dk",
+      "searchKey": "phobe bridgers giver stor dansk koncert i royal arena"
+    },
+    {
+      "person": "SMK Fridays på SMK Thy",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "SMK Fridays på SMK Thy",
+      "venue": "SMK",
+      "url": "https://migogkbh.dk/kalender/begivenhed/smk-fridays-paa-smk-thy/",
+      "source": "migogkbh.dk",
+      "searchKey": "smk fridays pa smk thy"
+    },
+    {
+      "person": "SMK Fridays: Parterapi",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "SMK Fridays: Parterapi",
+      "venue": "SMK",
+      "url": "https://migogkbh.dk/kalender/begivenhed/smk-fridays-parterapi/",
+      "source": "migogkbh.dk",
+      "searchKey": "smk fridays: parterapi"
+    },
+    {
+      "person": "milo",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "milo",
+      "venue": "DR Studio 2",
+      "url": "https://migogkbh.dk/kalender/begivenhed/milo/",
+      "source": "migogkbh.dk",
+      "searchKey": "milo"
     }
   ]
 }

@@ -74,3 +74,24 @@ def fetch(url: str, delay: float = REQUEST_DELAY_SECONDS) -> str:
 
 def absolute_url(base: str, href: str) -> str:
     return urljoin(base, href)
+
+
+# An orchestra/ensemble is usually credited by its own name rather than a
+# person's, so it needs a third profession ("orkester") applied to the
+# *name itself* -- on top of, and after, each source's own role-based
+# skuespiller/musiker classification. Keep in sync with the ORCHESTRA_
+# equivalent nowhere else -- this is the only place it's defined.
+ORCHESTRA_KEYWORDS = (
+    "orkester",
+    "orchestra",
+    "symfoniker",
+    "philharmonik",
+    "philharmonic",
+    "ensemble",
+    "kapel",
+)
+
+
+def is_orchestra_name(name: str) -> bool:
+    lowered = name.lower()
+    return any(keyword in lowered for keyword in ORCHESTRA_KEYWORDS)

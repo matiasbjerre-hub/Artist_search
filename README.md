@@ -1,14 +1,21 @@
 # Artist Search
 
-Find teaterforestillinger og koncerter en skuespiller eller musiker
-medvirker i. Indtast et navn, vælg profession, og få en liste med
-rolle, produktion, spillested og link.
+Find teaterforestillinger og koncerter en skuespiller, musiker eller
+orkester medvirker i. Indtast et navn, vælg profession, og få en liste
+med rolle, produktion, spillested og link.
 
 Ren statisk side: `index.html` (HTML + CSS + JS, ingen build, intet
 framework) søger client-side i `data/events.json`. Data genereres af
-Python-scripts i `scripts/`, der scraper offentlige sider hos syv danske
-teatre og spillesteder. Deployes til GitHub Pages via
+Python-scripts i `scripts/`, der scraper offentlige sider hos otte danske
+teatre, spillesteder og kulturkalendere. Deployes til GitHub Pages via
 `.github/workflows/deploy-pages.yml`, som publicerer repo-roden ved push.
+
+En separat session arbejdede parallelt videre på den gamle Next.js-app
+(på `claude/artist-performance-search-vcywg7`) og tilføjede der en ottende
+kilde (MigogKBH) og en tredje profession ("orkester"). Begge dele er
+portet ind i denne statiske version — se kilde-tabellen og
+"Tre professioner" nedenfor — resten af den commit (Next.js-koden selv)
+er ikke, da hele pointen med denne gren er at gøre appen statisk.
 
 `vercel.json` er kun der fordi repoet allerede havde en Vercel GitHub-
 integration fra den tidligere (nu fjernede) Next.js-app; uden den fejlede
@@ -35,6 +42,8 @@ kilde (netværk, ændret HTML), fortsætter de andre, og fejlen logges.
 
 Alle syv URL'er fra opgavebeskrivelsen blev afprøvet med rigtige
 HTTP-kald (robots.txt + faktiske sider), ikke gættet ud fra søgning.
+Den ottende kilde (MigogKBH) stammer fra den parallelle Next.js-session
+nævnt ovenfor og er efterprøvet på samme måde her, ikke bare kopieret.
 
 | Kilde | robots.txt | Struktur | Cast-data |
 | --- | --- | --- | --- |
@@ -45,6 +54,7 @@ HTTP-kald (robots.txt + faktiske sider), ikke gættet ud fra søgning.
 | **vega.dk** | `www.vega.dk` redirecter til `vega.dk`, hvis robots.txt tillader alt (`Disallow:` tom) | Next.js, server-renderet (`__NEXT_DATA__`) | **Delvis.** Kalendersiden indlejrer de ~25 nærmeste kommende koncerter (ud af i alt ~200) direkte i HTML. Resten hentes af en "Load more"-knap via en klient-API (`/api/events`), som konsekvent gav HTTP 500 uanset hvilke query-parametre vi prøvede, og `?page=N` på selve kalender-URL'en ignoreres server-side. Vi forsøgte at finde det rigtige kald med en headless browser (Playwright/Chromium), men miljøets udgående netværk går gennem en proxy som Chromium ikke selv ville route igennem. Titlen er selve kunstnernavnet; en evt. opvarmningsakt (`contributor`-feltet) tilføjes som egen linje. |
 | **drkoncerthuset.dk** | robots.txt selv giver **HTTP 403 "Access Denied"** fra en Akamai-edge, uanset user agent — men den faktiske `/kalender/`-side svarer 200. Vi kunne derfor ikke bekræfte crawl-tilladelser og scraper konservativt: ét enkelt kald til denne side, intet andet fra domænet. | Server-renderet HTML | Ja — hele kalenderen (299 koncerter) ligger allerede i siden som en HTML-escaped JSON-blob i et Vue-komponent-attribut (`data-component-args`). Feltet `info.label` ("DR Vokalensemblet \| Carsten Seyer-Hansen dirigent") splittes på "\|" og navn/rolle adskilles med en ordliste over kendte roller (dirigent, klaver, sopran, …). |
 | **ab-b.dk** (Amager Bio) | `Disallow:` tom (Yoast SEO-standard) | Server-renderet HTML (WordPress) | Ja — hovednavn er sidens `<h1>`, support-acts står i `.support-bands`. WordPress REST API (`/wp-json/`) er blokeret af et sikkerhedsplugin, så vi bruger den almindelige HTML-side. Alle sider findes via `concert-sitemap.xml`, ikke ved at gætte en listeside. |
+| **migogkbh.dk** (Mig & Byen, Københavns kommunale kulturkalender) | robots.txt tom (intet forbudt) | WordPress REST API (`/wp-json/wp/v2/events`), filtreret på `event-category`-id'er for teater/musik-relevante kategorier — resten af de ca. 6.000 events (markeder, foredrag, madture …) springes over. Ingen server-side navnesøgning, så hele det relevante udsnit hentes én gang. | Nej — kun titel, ligesom et spillesteds event-titel. ~660 teater-events og ~1.400 musik-events ved sidste kørsel. HTML-entities (`&#8211;` m.fl.) i titler afkodes med Pythons indbyggede `html.unescape`. |
 
 ## Kendte begrænsninger
 
@@ -60,10 +70,24 @@ HTTP-kald (robots.txt + faktiske sider), ikke gættet ud fra søgning.
 - Al scraping bruger en fast pause mellem kald (`REQUEST_DELAY_SECONDS` i
   `scripts/common.py`) og en identificerbar User-Agent, og respekterer
   `robots.txt` hvor den kunne læses.
-- Profession (`skuespiller`/`musiker`) er en heuristik: teater-kilder
-  tagges `skuespiller` som udgangspunkt, medmindre rollen matcher en liste
-  af musik-relaterede ord (dirigent, sanger, musiker, …); spillested-kilder
-  tagges altid `musiker`. Det er en forenkling, ikke en garanti.
+- Profession (`skuespiller`/`musiker`/`orkester`) er en heuristik: teater-
+  kilder tagges `skuespiller` som udgangspunkt, medmindre rollen matcher en
+  liste af musik-relaterede ord (dirigent, sanger, musiker, …); spillested-
+  kilder tagges altid `musiker`. Det er en forenkling, ikke en garanti.
+
+## Tre professioner
+
+`orkester` er den tredje profession, tilføjet ved siden af `skuespiller` og
+`musiker`. Et orkester eller ensemble optræder under sit eget navn snarere
+end en person, så det håndteres anderledes end rolle-baseret klassifikation:
+`scripts/build_data.py` kører hver indgangs `person`-navn igennem
+`common.is_orchestra_name()` (søger efter "orkester", "orchestra",
+"symfoniker", "philharmonik", "ensemble", "kapel") og forfremmer den til
+`orkester`, uanset hvad kilden selv gættede. Det er derfor `drkoncerthuset.dk`s
+`ensembleLabel`-felt ("DR Symfoniorkestret", "DR Vokalensemblet") ender som
+`orkester` i stedet for `musiker` — den eneste kilde med et eksplicit
+ensemble-felt i sine rådata — mens de øvrige kilder rammes af det samme
+navne-tjek som et generelt sikkerhedsnet.
 
 ## Dansk-tolerant søgning
 
