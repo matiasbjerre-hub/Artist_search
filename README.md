@@ -10,6 +10,12 @@ Python-scripts i `scripts/`, der scraper offentlige sider hos syv danske
 teatre og spillesteder. Deployes til GitHub Pages via
 `.github/workflows/deploy-pages.yml`, som publicerer repo-roden ved push.
 
+`vercel.json` er kun der fordi repoet allerede havde en Vercel GitHub-
+integration fra den tidligere (nu fjernede) Next.js-app; uden den fejlede
+Vercel-status-checket på hver push, fordi der ikke længere er noget
+`package.json` at bygge. Den fortæller Vercel at servere repo-roden som
+statiske filer i stedet — GitHub Pages er stadig den tilsigtede deploy-mål.
+
 ## Kør lokalt
 
 Åbn `index.html` i en browser (eller `python3 -m http.server` og gå til
