@@ -1,13 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 
+import { searchMigogKBH } from "@/lib/sources/migogkbh";
 import { searchTeaterbilletter } from "@/lib/sources/teaterbilletter";
 import { searchTicketmaster, TicketmasterError } from "@/lib/sources/ticketmaster";
 import { isProfession, type SearchResponse, type ShowResult, type SourceStatus } from "@/lib/types";
 
 /**
  * Results from every source that answered are merged. A source failing is not
- * fatal: Teaterbilletter needs no credentials and covers the Danish theatre
- * side, so the app stays useful even with no Ticketmaster key configured.
+ * fatal: Teaterbilletter and MigogKBH need no credentials, so the app stays
+ * useful even with no Ticketmaster key configured.
  */
 export async function GET(request: NextRequest) {
   const params = request.nextUrl.searchParams;
@@ -25,7 +26,8 @@ export async function GET(request: NextRequest) {
     return NextResponse.json(
       {
         error: "invalid_profession",
-        message: "Profession skal være 'skuespiller' eller 'musiker'.",
+        message:
+          "Profession skal være 'skuespiller', 'musiker' eller 'orkester'.",
       },
       { status: 400 },
     );
@@ -33,8 +35,9 @@ export async function GET(request: NextRequest) {
 
   const apiKey = process.env.TICKETMASTER_API_KEY;
 
-  const [teaterbilletter, ticketmaster] = await Promise.allSettled([
+  const [teaterbilletter, migogkbh, ticketmaster] = await Promise.allSettled([
     searchTeaterbilletter(name, profession),
+    searchMigogKBH(name, profession),
     apiKey
       ? searchTicketmaster(name, profession, { apiKey, onlyDenmark })
       : Promise.reject(new TicketmasterError("no_key")),
@@ -54,6 +57,17 @@ export async function GET(request: NextRequest) {
     });
   }
 
+  if (migogkbh.status === "fulfilled") {
+    results.push(...migogkbh.value);
+    sources.push({ source: "MigogKBH", ok: true });
+  } else {
+    sources.push({
+      source: "MigogKBH",
+      ok: false,
+      note: "Kunne ikke hente Københavns begivenhedskalender lige nu.",
+    });
+  }
+
   if (ticketmaster.status === "fulfilled") {
     const events = onlyDenmark
       ? ticketmaster.value.filter((event) => event.country === "Denmark")
@@ -65,7 +79,7 @@ export async function GET(request: NextRequest) {
       source: "Ticketmaster",
       ok: false,
       note: apiKey
-        ? "Ticketmaster kunne ikke kontaktes — viser kun danske teaterdata."
+        ? "Ticketmaster kunne ikke kontaktes."
         : "Ingen Ticketmaster-nøgle konfigureret — koncerter i udlandet mangler.",
     });
   }

@@ -15,6 +15,7 @@ const EVENTS_URL = "https://app.ticketmaster.com/discovery/v2/events.json";
 const CLASSIFICATION_BY_PROFESSION: Record<Profession, string> = {
   skuespiller: "Arts & Theatre",
   musiker: "Music",
+  orkester: "Music",
 };
 
 type TicketmasterEvent = {

@@ -1,6 +1,6 @@
-export type Profession = "skuespiller" | "musiker";
+export type Profession = "skuespiller" | "musiker" | "orkester";
 
-export type SourceName = "Teaterbilletter" | "Ticketmaster";
+export type SourceName = "Teaterbilletter" | "Ticketmaster" | "MigogKBH";
 
 /** Why a show showed up for the searched person, strongest evidence first. */
 export type MatchKind =
@@ -44,5 +44,5 @@ export type SearchResponse = {
 };
 
 export function isProfession(value: unknown): value is Profession {
-  return value === "skuespiller" || value === "musiker";
+  return value === "skuespiller" || value === "musiker" || value === "orkester";
 }

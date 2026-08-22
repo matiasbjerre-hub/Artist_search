@@ -104,6 +104,12 @@ export default function Home() {
                 current={profession}
                 onSelect={setProfession}
               />
+              <ProfessionOption
+                label="Orkester"
+                value="orkester"
+                current={profession}
+                onSelect={setProfession}
+              />
             </div>
           </div>
 
@@ -314,7 +320,9 @@ function SourceNotes({ sources }: { sources: SourceStatus[] }) {
       <p>
         Danske teaterdata kommer fra Teaterbilletter.dk (ca. 100 teatre i
         København og på Sjælland), hvor rollelister gør det muligt at søge på
-        skuespillere. Koncerter kommer fra Ticketmaster.
+        skuespillere og orkestre. MigogKBH.dk bidrager med flere Københavnske
+        koncerter og forestillinger (kun titelmatch). Internationale koncerter
+        kommer fra Ticketmaster.
       </p>
     </div>
   );

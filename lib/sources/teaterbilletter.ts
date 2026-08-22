@@ -40,6 +40,8 @@ type TeaterbilletterEvent = {
   accreditations?: Accreditation[];
   images?: { url?: string; orientation?: string }[];
   venue?: { name?: string; city?: string };
+  organizer?: { name?: string };
+  producer?: { name?: string };
 };
 
 type EventsPage = {
@@ -89,6 +91,26 @@ function roleFitsProfession(
   return profession === "skuespiller"
     ? ACTING_ROLES.has(key)
     : MUSIC_ROLES.has(key);
+}
+
+/**
+ * An orchestra is usually the show's producer or organizer, not a named
+ * "cast" member, so it needs its own check rather than the accreditations
+ * loop — e.g. "Det Olske Orkester" appears as `producer.name`.
+ */
+function ensembleMatch(
+  event: TeaterbilletterEvent,
+  name: string,
+): { role: string; matchedName: string } | null {
+  const producer = event.producer?.name;
+  if (producer && nameMatches(name, producer)) {
+    return { role: "Orkester (producent)", matchedName: producer };
+  }
+  const organizer = event.organizer?.name;
+  if (organizer && nameMatches(name, organizer)) {
+    return { role: "Orkester (arrangør)", matchedName: organizer };
+  }
+  return null;
 }
 
 async function fetchPage(page: number): Promise<EventsPage> {
@@ -153,41 +175,50 @@ export async function searchTeaterbilletter(
     const dates = upcomingDates(event, now);
     if (dates.length === 0) continue;
 
-    // Prefer a credit whose role matches the chosen profession. A credit in
-    // some other role still counts, but is reported as weaker evidence rather
-    // than being ranked alongside genuine acting/music credits.
+    // An orchestra is usually the producing ensemble, not a listed cast
+    // member, so check that first. Otherwise prefer a credit whose role
+    // matches the chosen profession; a credit in some other role still
+    // counts, but is reported as weaker evidence rather than being ranked
+    // alongside genuine acting/music credits.
+    const ensemble = profession === "orkester" ? ensembleMatch(event, name) : null;
+
     let chosen: Accreditation | undefined;
     let chosenFits = false;
-    for (const credit of event.accreditations ?? []) {
-      const fullName = `${credit.firstName ?? ""} ${credit.lastName ?? ""}`;
-      if (!fullName.trim() || !nameMatches(name, fullName)) continue;
-      if (roleFitsProfession(credit.positionName, profession)) {
-        chosen = credit;
-        chosenFits = true;
-        break;
+    if (!ensemble) {
+      for (const credit of event.accreditations ?? []) {
+        const fullName = `${credit.firstName ?? ""} ${credit.lastName ?? ""}`;
+        if (!fullName.trim() || !nameMatches(name, fullName)) continue;
+        if (roleFitsProfession(credit.positionName, profession)) {
+          chosen = credit;
+          chosenFits = true;
+          break;
+        }
+        chosen ??= credit;
       }
-      chosen ??= credit;
     }
 
     const matchedTitle =
+      !ensemble &&
       !chosen &&
       (nameMatches(name, event.title ?? "") ||
         nameMatches(name, event.subtitle ?? ""));
 
-    if (!chosen && !matchedTitle) continue;
+    if (!ensemble && !chosen && !matchedTitle) continue;
 
-    const creditedName = chosen
-      ? `${chosen.firstName ?? ""} ${chosen.lastName ?? ""}`.trim()
-      : null;
+    const creditedName = ensemble
+      ? ensemble.matchedName
+      : chosen
+        ? `${chosen.firstName ?? ""} ${chosen.lastName ?? ""}`.trim()
+        : null;
 
     results.push({
       id: `tb-${event.eventNo}`,
       source: "Teaterbilletter",
       title: event.title ?? "Ukendt forestilling",
       subtitle: event.subtitle?.trim() || null,
-      credit: chosen?.positionName?.trim() || null,
+      credit: ensemble?.role ?? chosen?.positionName?.trim() ?? null,
       creditedName: creditedName || null,
-      matchKind: chosen ? (chosenFits ? "credit" : "otherCredit") : "title",
+      matchKind: ensemble ? "credit" : chosen ? (chosenFits ? "credit" : "otherCredit") : "title",
       venueName: event.venue?.name ?? null,
       city: event.venue?.city ?? null,
       country: "Danmark",
