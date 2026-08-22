@@ -1,103 +1,106 @@
 # Artist Search
 
-Find teaterforestillinger og koncerter, som en bestemt skuespiller, musiker
-eller et orkester medvirker i. Indtast et navn, vælg profession, og få en
-liste med rolle, spillested, datoer og link til billetter.
+Find teaterforestillinger og koncerter en skuespiller, musiker eller
+orkester medvirker i. Indtast et navn, vælg profession, og få en liste
+med rolle, produktion, spillested og link.
 
-Bygget med [Next.js](https://nextjs.org) (App Router).
+Ren statisk side: `index.html` (HTML + CSS + JS, ingen build, intet
+framework) søger client-side i `data/events.json`. Data genereres af
+Python-scripts i `scripts/`, der scraper offentlige sider hos otte danske
+teatre, spillesteder og kulturkalendere. Deployes til GitHub Pages via
+`.github/workflows/deploy-pages.yml`, som publicerer repo-roden ved push.
 
-## Datakilder
+En separat session arbejdede parallelt videre på den gamle Next.js-app
+(på `claude/artist-performance-search-vcywg7`) og tilføjede der en ottende
+kilde (MigogKBH) og en tredje profession ("orkester"). Begge dele er
+portet ind i denne statiske version — se kilde-tabellen og
+"Tre professioner" nedenfor — resten af den commit (Next.js-koden selv)
+er ikke, da hele pointen med denne gren er at gøre appen statisk.
 
-| Kilde | Dækker | Nøgle kræves |
-| --- | --- | --- |
-| [Teaterbilletter.dk](https://teaterbilletter.dk) | ~100 teatre i København og på Sjælland | Nej |
-| [MigogKBH.dk](https://migogkbh.dk) | Koncerter, forestillinger m.m. i København | Nej |
-| [Ticketmaster Discovery](https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/) | Koncerter og store shows, internationalt | Ja (valgfri) |
+`vercel.json` er kun der fordi repoet allerede havde en Vercel GitHub-
+integration fra den tidligere (nu fjernede) Next.js-app; uden den fejlede
+Vercel-status-checket på hver push, fordi der ikke længere er noget
+`package.json` at bygge. Den fortæller Vercel at servere repo-roden som
+statiske filer i stedet — GitHub Pages er stadig den tilsigtede deploy-mål.
 
-Teaterbilletter er den vigtigste kilde for skuespillere og orkestre: deres API
-leverer **rollelister** (`accreditations`) med navn og funktion, og et
-orkester optræder typisk som forestillingens `producer`/`organizer`. MigogKBH
-og Ticketmaster indekserer kun begivenhedens egen titel, og finder derfor
-primært navngivne hovednavne eller orkestre, hvis navnet står i titlen.
+## Kør lokalt
 
-### Sådan rangeres resultaterne
+Åbn `index.html` i en browser (eller `python3 -m http.server` og gå til
+`localhost:8000`) — ingen server eller build nødvendig.
 
-1. **Medvirker i** — personen (eller orkestret) er krediteret i en rolle, der
-   passer til den valgte profession (skuespiller: Skuespiller, Medvirkende,
-   Performer …; musiker: Musiker, Sanger, Kapelmester, Komponist …; orkester:
-   navnet matcher forestillingens producent/arrangør).
-2. **Krediteret i en anden rolle** — samme navn står på rollelisten, men bag
-   scenen (instruktør, scenograf, tekniker …).
-3. **Navnet nævnes i titlen** — svageste match; ingen bekræftet rolleliste.
-
-Navnesøgning er dansk-tolerant: `soren`, `Søren` og `soeren` giver samme
-resultat, ligesom `bogelund` og `Bøgelund`.
-
-## Andre kulturkalendere, der blev undersøgt
-
-Ud over de tre kilder ovenfor blev følgende sider gennemgået for en offentlig
-API: Kultunaut.dk, Billetto.dk, brugbyen.kk.dk, kulturkbh.dk,
-momentdanmark.dk, oplev.frederiksberg.dk, kulturkvarteret.dk,
-opdagdanmark.dk og visitorservice.kk.dk. Ingen af dem eksponerer en brugbar
-offentlig JSON-API:
-
-- **Kultunaut.dk** blokerer de relevante stier i `robots.txt` og har ingen
-  synlig API — formentlig kommerciel datafeed.
-- **Billetto.dk** har ingen offentlig REST-API på de gængse stier.
-- **brugbyen.kk.dk** og **visitorservice.kk.dk** kører Drupal, men uden
-  JSON:API-modulet slået til.
-- **momentdanmark.dk** og **kulturkvarteret.dk** kører WordPress, men uden at
-  begivenheds-typen er eksponeret i REST'en.
-- **opdagdanmark.dk** har faktisk en `event-artist`-taksonomi med rigtige
-  orkesternavne (fx "Aalborg Symfoniorkester"), men selve begivenheds-typen er
-  ikke REST-eksponeret, så navnene kan ikke kobles til konkrete datoer.
-- **kulturkbh.dk** og **oplev.frederiksberg.dk** har ingen synlig API og
-  kræver formentlig JavaScript-rendering for at se de faktiske data.
-
-## Kom i gang lokalt
+## Gendan data
 
 ```bash
-npm install
-npm run dev
+pip install -r scripts/requirements.txt
+python3 scripts/build_data.py
 ```
 
-Åbn [http://localhost:3000](http://localhost:3000). Appen virker med det
-samme — der kræves ingen API-nøgle for at søge i danske forestillinger og
-koncerter.
+Skriver `data/events.json`. Hver kilde scrapes uafhængigt — fejler én
+kilde (netværk, ændret HTML), fortsætter de andre, og fejlen logges.
 
-### Valgfrit: tilføj Ticketmaster
+## Kilder og hvad der rent faktisk blev fundet
 
-For også at få internationale koncerter med, hent en gratis nøgle på
-[developer-acct.ticketmaster.com](https://developer-acct.ticketmaster.com/user/register):
+Alle syv URL'er fra opgavebeskrivelsen blev afprøvet med rigtige
+HTTP-kald (robots.txt + faktiske sider), ikke gættet ud fra søgning.
+Den ottende kilde (MigogKBH) stammer fra den parallelle Next.js-session
+nævnt ovenfor og er efterprøvet på samme måde her, ikke bare kopieret.
 
-```bash
-cp .env.example .env.local
-# udfyld TICKETMASTER_API_KEY=... i .env.local
-```
+| Kilde | robots.txt | Struktur | Cast-data |
+| --- | --- | --- | --- |
+| **kglteater.dk** | `Allow: /` | Server-renderet HTML | Ja — men delvist. Hver forestilling har en "cast grid" (fotokort) og en separat "contribution group"-liste (instruktør, koreograf, komponist, designere — altid komplet). For store produktioner (ballet/opera) viser cast-grid kun 1-2 navne plus en "Se alle medvirkende"-knap, der loader resten via JavaScript. Vi fandt ikke det bagvedliggende API trods forsøg. Koncert-sider (kategori `/koncert/`) har ofte ingen liste — der er kunstnerens navn selve titlen, ligesom hos et spillested. |
+| **aveny-t.dk** | Squarespace-standard robots.txt: disallow `/api/`, `/search`, `/config`, `/account`, diverse `?format=`-parametre. Indhold på `/forestillinger/*` er tilladt. | Server-renderet HTML | Ja — fri tekst-credits ("**MEDVIRKENDE** Navn1, Navn2, Navn3") udtrækkes med regex. |
+| **aarhusteater.dk** | `Allow: /` | **Client-renderet React SPA** — både listen og hver forestillingsside er samme ~2 KB HTML-skal (`<div id="root">`). | Fandt et rigtigt JSON-API, `GET /api/shows`, med alle aktuelle forestillinger (titel, spillested, datoer, billetlink) — men **ingen cast-data**. Bundlen refererer et Umbraco-agtigt `/api/content/<sti>`-endpoint, men enhver sti vi prøvede gav 404. Forestillinger indekseres derfor uden medvirkende (se Begrænsninger). |
+| **odenseteater.dk** | `Disallow: /App_Plugins/`, `/umbraco/` (kun CMS-admin) | Server-renderet HTML (Umbraco) | Ja — cast står som fri tekst under en "medvirkende"-overskrift (rolle + navn i par), fundet ved at søge på overskriftens tekst frem for en CSS-klasse, da klasserne genbruges andre steder på siden. |
+| **vega.dk** | `www.vega.dk` redirecter til `vega.dk`, hvis robots.txt tillader alt (`Disallow:` tom) | Next.js, server-renderet (`__NEXT_DATA__`) | **Delvis.** Kalendersiden indlejrer de ~25 nærmeste kommende koncerter (ud af i alt ~200) direkte i HTML. Resten hentes af en "Load more"-knap via en klient-API (`/api/events`), som konsekvent gav HTTP 500 uanset hvilke query-parametre vi prøvede, og `?page=N` på selve kalender-URL'en ignoreres server-side. Vi forsøgte at finde det rigtige kald med en headless browser (Playwright/Chromium), men miljøets udgående netværk går gennem en proxy som Chromium ikke selv ville route igennem. Titlen er selve kunstnernavnet; en evt. opvarmningsakt (`contributor`-feltet) tilføjes som egen linje. |
+| **drkoncerthuset.dk** | robots.txt selv giver **HTTP 403 "Access Denied"** fra en Akamai-edge, uanset user agent — men den faktiske `/kalender/`-side svarer 200. Vi kunne derfor ikke bekræfte crawl-tilladelser og scraper konservativt: ét enkelt kald til denne side, intet andet fra domænet. | Server-renderet HTML | Ja — hele kalenderen (299 koncerter) ligger allerede i siden som en HTML-escaped JSON-blob i et Vue-komponent-attribut (`data-component-args`). Feltet `info.label` ("DR Vokalensemblet \| Carsten Seyer-Hansen dirigent") splittes på "\|" og navn/rolle adskilles med en ordliste over kendte roller (dirigent, klaver, sopran, …). |
+| **ab-b.dk** (Amager Bio) | `Disallow:` tom (Yoast SEO-standard) | Server-renderet HTML (WordPress) | Ja — hovednavn er sidens `<h1>`, support-acts står i `.support-bands`. WordPress REST API (`/wp-json/`) er blokeret af et sikkerhedsplugin, så vi bruger den almindelige HTML-side. Alle sider findes via `concert-sitemap.xml`, ikke ved at gætte en listeside. |
+| **migogkbh.dk** (Mig & Byen, Københavns kommunale kulturkalender) | robots.txt tom (intet forbudt) | WordPress REST API (`/wp-json/wp/v2/events`), filtreret på `event-category`-id'er for teater/musik-relevante kategorier — resten af de ca. 6.000 events (markeder, foredrag, madture …) springes over. Ingen server-side navnesøgning, så hele det relevante udsnit hentes én gang. | Nej — kun titel, ligesom et spillesteds event-titel. ~660 teater-events og ~1.400 musik-events ved sidste kørsel. HTML-entities (`&#8211;` m.fl.) i titler afkodes med Pythons indbyggede `html.unescape`. |
 
-Uden nøgle fungerer appen fint, men skriver i bunden af resultaterne, at
-koncerter fra Ticketmaster mangler.
+## Kendte begrænsninger
 
-## Deploy
+- **Aarhus Teater har ingen medvirkende-data.** Kun forestillingens titel
+  indekseres (som `skuespiller`), så et opslag på stykket stadig finder
+  det — men individuelle skuespillere fra dette teater kan ikke søges frem.
+- **VEGA dækker kun de ~25 nærmeste koncerter**, ikke hele kalenderen.
+  Se tabellen ovenfor for hvorfor.
+- **kglteater.dk: store ensemble-produktioners fulde danserliste mangler**
+  (kun instruktør/koreograf/komponist/dirigent + evt. første solist er med).
+- **DR Koncerthusets robots.txt kunne ikke bekræftes** (selve filen blokeres
+  af deres edge-beskyttelse); vi har derfor holdt os til ét høfligt kald.
+- Al scraping bruger en fast pause mellem kald (`REQUEST_DELAY_SECONDS` i
+  `scripts/common.py`) og en identificerbar User-Agent, og respekterer
+  `robots.txt` hvor den kunne læses.
+- Profession (`skuespiller`/`musiker`/`orkester`) er en heuristik: teater-
+  kilder tagges `skuespiller` som udgangspunkt, medmindre rollen matcher en
+  liste af musik-relaterede ord (dirigent, sanger, musiker, …); spillested-
+  kilder tagges altid `musiker`. Det er en forenkling, ikke en garanti.
 
-Appen er en helt almindelig Next.js-app og kan hostes hos enhver udbyder der
-kører Node — f.eks. Vercel, Netlify, Cloudflare Pages eller Render. Der kræves
-en server (ikke bare statiske filer), fordi API-nøglen skal holdes hemmelig,
-og fordi browsere ikke må hente data på tværs af domæner.
+## Tre professioner
 
-Skal Ticketmaster med, tilføj `TICKETMASTER_API_KEY` som miljøvariabel hos
-udbyderen.
+`orkester` er den tredje profession, tilføjet ved siden af `skuespiller` og
+`musiker`. Et orkester eller ensemble optræder under sit eget navn snarere
+end en person, så det håndteres anderledes end rolle-baseret klassifikation:
+`scripts/build_data.py` kører hver indgangs `person`-navn igennem
+`common.is_orchestra_name()` (søger efter "orkester", "orchestra",
+"symfoniker", "philharmonik", "ensemble", "kapel") og forfremmer den til
+`orkester`, uanset hvad kilden selv gættede. Det er derfor `drkoncerthuset.dk`s
+`ensembleLabel`-felt ("DR Symfoniorkestret", "DR Vokalensemblet") ender som
+`orkester` i stedet for `musiker` — den eneste kilde med et eksplicit
+ensemble-felt i sine rådata — mens de øvrige kilder rammes af det samme
+navne-tjek som et generelt sikkerhedsnet.
 
-## Begrænsninger
+## Dansk-tolerant søgning
 
-- **Geografi.** Teaterbilletter og MigogKBH dækker København og Sjælland.
-  Jylland og Fyn er kun med, hvis de også sælger via Ticketmaster.
-- **Billetlugen** er undersøgt, men kan ikke bruges: deres bot-beskyttelse
-  blokerer al servertrafik, så hverken denne app eller en anden server kan
-  hente data derfra.
-- **MigogKBH matcher kun titler**, ikke rollelister — samme begrænsning som
-  Ticketmaster.
-- **Rollelister er ikke altid komplette.** Nogle forestillinger krediterer kun
-  produktionsholdet. Mangler en skuespiller, er det som regel fordi teatret
-  ikke har indberettet rollelisten.
-- Data caches i 6 timer, så helt nye forestillinger kan mangle kortvarigt.
+Både `index.html` (klient) og `scripts/build_data.py` (ved generering)
+folder navne ens, så `søren`, `soren` og `soeren` — og `bøgelund` /
+`bogelund` / `boegelund` — giver samme resultat: æ/ø/å konverteres først
+til deres udskrevne form (`æ`→a, `ø`→o, `å`→a, og omvendt `ae`/`oe`/`aa`→
+samme bogstav) inden der søges. `æøå` er selvstændige Unicode-tegn (ikke
+et grundbogstav + kombinerende accent), så NFKD-normalisering alene ikke
+er nok.
+
+## Netværksadgang i denne session
+
+Udgående HTTP virkede (testet mod `kglteater.dk` og `google.com` før
+scraping gik i gang) — modsat en tidligere session hvor netværkspolitikken
+blokerede alt undtagen GitHub.
