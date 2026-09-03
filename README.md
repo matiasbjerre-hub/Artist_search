@@ -17,11 +17,13 @@ portet ind i denne statiske version — se kilde-tabellen og
 "Tre professioner" nedenfor — resten af den commit (Next.js-koden selv)
 er ikke, da hele pointen med denne gren er at gøre appen statisk.
 
-`vercel.json` er kun der fordi repoet allerede havde en Vercel GitHub-
-integration fra den tidligere (nu fjernede) Next.js-app; uden den fejlede
-Vercel-status-checket på hver push, fordi der ikke længere er noget
-`package.json` at bygge. Den fortæller Vercel at servere repo-roden som
-statiske filer i stedet — GitHub Pages er stadig den tilsigtede deploy-mål.
+Repoet havde allerede en Vercel GitHub-integration fra den tidligere
+Next.js-app. Fremfor at fjerne den bruges den nu som et andet, bevidst
+deploy-mål ved siden af GitHub Pages: `vercel.json` sætter `framework`,
+`buildCommand` og `installCommand` til `null`, så Vercel ikke længere
+prøver at bygge et Next.js-projekt (der er intet `package.json` mere) og
+i stedet blot servererer repo-roden som statiske filer, ligesom GitHub
+Pages gør.
 
 ## Kør lokalt
 
