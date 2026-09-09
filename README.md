@@ -4,6 +4,14 @@ Find teaterforestillinger og koncerter en skuespiller, musiker eller
 orkester medvirker i. Indtast et navn, vælg profession, og få en liste
 med rolle, produktion, spillested og link.
 
+## Live URL
+
+**https://artist-search-navy.vercel.app/** — dette er den URL der deles med
+andre og linkes til. GitHub Pages
+(`https://matiasbjerre-hub.github.io/Artist_search/`) kører stadig samme
+kode og opdateres automatisk ved hver push, men er en passiv reserve, ikke
+den der arbejdes videre på eller peges hen på.
+
 Ren statisk side: `index.html` (HTML + CSS + JS, ingen build, intet
 framework) søger client-side i `data/events.json`. Data genereres af
 Python-scripts i `scripts/`, der scraper offentlige sider hos otte danske
