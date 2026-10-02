@@ -47,6 +47,17 @@ python3 scripts/build_data.py
 
 Skriver `data/events.json`. Hver kilde scrapes uafhængigt — fejler én
 kilde (netværk, ændret HTML), fortsætter de andre, og fejlen logges.
+Returnerer en kilde intet, genbruges dens indgange fra forrige kørsel, så
+den ikke forsvinder fra siden. Fejler alle kilder, røres filen ikke, og
+scriptet afslutter med fejlkode 1.
+
+### Automatisk opdatering
+
+`.github/workflows/refresh-data.yml` kører hver mandag kl. 04:17 UTC (og
+kan startes manuelt under Actions → "Refresh event data" → Run workflow).
+Den scraper alle kilder, committer `data/events.json`, hvorefter Vercel
+redeployer af sig selv, og workflowet starter GitHub Pages-deployet
+eksplicit (et push lavet med `GITHUB_TOKEN` trigger ikke andre workflows).
 
 ## Kilder og hvad der rent faktisk blev fundet
 

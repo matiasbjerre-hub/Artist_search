@@ -51,9 +51,26 @@ def _search_key(name: str) -> str:
     return "".join(ch for ch in normalized if not unicodedata.combining(ch))
 
 
+def _load_previous_entries() -> dict[str, list[dict]]:
+    """Entries from the last good events.json, grouped by source. Used as a
+    fallback so one source failing (network, changed HTML, rate limit) in an
+    unattended scheduled run keeps that source's old data instead of wiping
+    it from the site."""
+    try:
+        previous = json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    grouped: dict[str, list[dict]] = {}
+    for entry in previous.get("entries", []):
+        grouped.setdefault(entry.get("source", ""), []).append(entry)
+    return grouped
+
+
 def main() -> None:
     all_entries: list[dict] = []
     summary: list[dict] = []
+    previous = _load_previous_entries()
+    fresh_sources = 0
 
     for name, scrape_fn in SCRAPERS:
         print(f"=== {name} ===")
@@ -64,9 +81,22 @@ def main() -> None:
             print(f"  !! {name} scraper crashed: {exc}")
             entries = []
         elapsed = time.time() - start
+        stale = False
+        if entries:
+            fresh_sources += 1
+        elif previous.get(name):
+            entries = previous[name]
+            stale = True
+            print(f"  !! {name} returned nothing -- keeping {len(entries)} entries from the previous run")
         print(f"=== {name}: {len(entries)} entries in {elapsed:.1f}s ===\n")
-        summary.append({"source": name, "entries": len(entries)})
+        summary.append({"source": name, "entries": len(entries), "stale": stale})
         all_entries.extend(entries)
+
+    if fresh_sources == 0:
+        # Every source failed (e.g. the runner has no network): leave the
+        # existing file untouched rather than rewriting it with a new date.
+        print("!! No source returned fresh data -- events.json left unchanged")
+        sys.exit(1)
 
     for entry in all_entries:
         entry["searchKey"] = _search_key(entry["person"])
