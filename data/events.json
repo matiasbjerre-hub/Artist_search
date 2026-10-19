@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-12T12:17:29Z",
+  "generatedAt": "2026-10-19T10:08:40Z",
   "sources": [
     {
       "source": "kglteater.dk",
-      "entries": 680,
+      "entries": 657,
       "stale": false
     },
     {
       "source": "aveny-t.dk",
-      "entries": 163,
+      "entries": 155,
       "stale": false
     },
     {
       "source": "aarhusteater.dk",
-      "entries": 25,
+      "entries": 22,
       "stale": false
     },
     {
@@ -23,22 +23,22 @@
     },
     {
       "source": "vega.dk",
-      "entries": 41,
+      "entries": 37,
       "stale": false
     },
     {
       "source": "drkoncerthuset.dk",
-      "entries": 437,
+      "entries": 435,
       "stale": false
     },
     {
       "source": "ab-b.dk",
-      "entries": 137,
+      "entries": 131,
       "stale": false
     },
     {
       "source": "migogkbh.dk",
-      "entries": 39,
+      "entries": 36,
       "stale": false
     }
   ],
@@ -1604,16 +1604,6 @@
       "searchKey": "bootleg beatles"
     },
     {
-      "person": "Cæcilie Norby",
-      "role": "Koncert",
-      "profession": "musiker",
-      "production": "Cæcilie Norby",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/koncert/2627/caecilie-norby/",
-      "source": "kglteater.dk",
-      "searchKey": "cacilie norby"
-    },
-    {
       "person": "Cooler Stars Glow Red",
       "role": "Koncert",
       "profession": "musiker",
@@ -1662,16 +1652,6 @@
       "url": "https://www.kglteater.dk/koncert/2627/james-bond-galla-sinne-eeg/",
       "source": "kglteater.dk",
       "searchKey": "james bond galla – sinne eeg"
-    },
-    {
-      "person": "Jethro Tull",
-      "role": "Koncert",
-      "profession": "musiker",
-      "production": "Jethro Tull",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/koncert/2627/jethro-tull/",
-      "source": "kglteater.dk",
-      "searchKey": "jethro tull"
     },
     {
       "person": "Juleshowet med Danmarks Underholdningsorkester",
@@ -1854,16 +1834,6 @@
       "searchKey": "marie borup"
     },
     {
-      "person": "Mikkel Frees Steensen",
-      "role": "OA-sanger",
-      "profession": "musiker",
-      "production": "Operabar med morgendagens stjerner",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/koncert/2627/operabar-med-morgendagens-stjerner/",
-      "source": "kglteater.dk",
-      "searchKey": "mikkel frees steensen"
-    },
-    {
       "person": "Per Svenson",
       "role": "OA-sanger",
       "profession": "musiker",
@@ -1914,16 +1884,6 @@
       "searchKey": "julie husballe hansen"
     },
     {
-      "person": "Linnea Nordenback",
-      "role": "YAP",
-      "profession": "skuespiller",
-      "production": "Operabar med morgendagens stjerner",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/koncert/2627/operabar-med-morgendagens-stjerner/",
-      "source": "kglteater.dk",
-      "searchKey": "linnea nordenback"
-    },
-    {
       "person": "Mathilda Sidén Silfver",
       "role": "YAP",
       "profession": "skuespiller",
@@ -1932,6 +1892,16 @@
       "url": "https://www.kglteater.dk/koncert/2627/operabar-med-morgendagens-stjerner/",
       "source": "kglteater.dk",
       "searchKey": "mathilda siden silfver"
+    },
+    {
+      "person": "Sofia Wilkman",
+      "role": "Repetitør (O)",
+      "profession": "skuespiller",
+      "production": "Operabar med morgendagens stjerner",
+      "venue": "Det Kongelige Teater",
+      "url": "https://www.kglteater.dk/koncert/2627/operabar-med-morgendagens-stjerner/",
+      "source": "kglteater.dk",
+      "searchKey": "sofia wilkman"
     },
     {
       "person": "Operabar",
@@ -2184,6 +2154,16 @@
       "searchKey": "carsten svendsen"
     },
     {
+      "person": "Dafne Stilund Nielsen",
+      "role": "Juan Peróns elskerinde",
+      "profession": "skuespiller",
+      "production": "Evita",
+      "venue": "Det Kongelige Teater",
+      "url": "https://www.kglteater.dk/musical/2627/evita/",
+      "source": "kglteater.dk",
+      "searchKey": "dafne stilund nielsen"
+    },
+    {
       "person": "Astrid Højgaard",
       "role": "Evitas mor/Ensemble",
       "profession": "skuespiller",
@@ -2214,14 +2194,14 @@
       "searchKey": "sigurd thomasen"
     },
     {
-      "person": "Sebastian Harris",
+      "person": "N. N.",
       "role": "Ensemble/US Juan Péron",
       "profession": "skuespiller",
       "production": "Evita",
       "venue": "Det Kongelige Teater",
       "url": "https://www.kglteater.dk/musical/2627/evita/",
       "source": "kglteater.dk",
-      "searchKey": "sebastian harris"
+      "searchKey": "n. n."
     },
     {
       "person": "Anders Bilberg",
@@ -4354,56 +4334,6 @@
       "searchKey": "operakademiets eksamensforestilling"
     },
     {
-      "person": "Frederik Rolin",
-      "role": "Operasanger/Papageno",
-      "profession": "musiker",
-      "production": "Papageno og Papagena - en PixiOpera",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/opera/2627/papageno-og-papagena-en-pixiopera/",
-      "source": "kglteater.dk",
-      "searchKey": "frederik rolin"
-    },
-    {
-      "person": "Julie Meera Lindberg",
-      "role": "Forestillingsleder/Papagena",
-      "profession": "skuespiller",
-      "production": "Papageno og Papagena - en PixiOpera",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/opera/2627/papageno-og-papagena-en-pixiopera/",
-      "source": "kglteater.dk",
-      "searchKey": "julie meera lindberg"
-    },
-    {
-      "person": "Kristoffer Hyldig",
-      "role": "Pianist",
-      "profession": "skuespiller",
-      "production": "Papageno og Papagena - en PixiOpera",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/opera/2627/papageno-og-papagena-en-pixiopera/",
-      "source": "kglteater.dk",
-      "searchKey": "kristoffer hyldig"
-    },
-    {
-      "person": "Simon Duus",
-      "role": "Instruktør",
-      "profession": "skuespiller",
-      "production": "Papageno og Papagena - en PixiOpera",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/opera/2627/papageno-og-papagena-en-pixiopera/",
-      "source": "kglteater.dk",
-      "searchKey": "simon duus"
-    },
-    {
-      "person": "Simon Duus",
-      "role": "Tekst og idé",
-      "profession": "skuespiller",
-      "production": "Papageno og Papagena - en PixiOpera",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/opera/2627/papageno-og-papagena-en-pixiopera/",
-      "source": "kglteater.dk",
-      "searchKey": "simon duus"
-    },
-    {
       "person": "Signe Sneh Durholm",
       "role": "Due 1, Den grimme ælling, Svanen",
       "profession": "skuespiller",
@@ -4574,14 +4504,14 @@
       "searchKey": "nanna skarup voss"
     },
     {
-      "person": "Minna Flyvholm Tode",
+      "person": "Minna Flyvholm",
       "role": "ensemble",
       "profession": "skuespiller",
       "production": "Billedet af Dorian Gray",
       "venue": "Det Kongelige Teater",
       "url": "https://www.kglteater.dk/skuespil/2627/billedet-af-dorian-gray/",
       "source": "kglteater.dk",
-      "searchKey": "minna flyvholm tode"
+      "searchKey": "minna flyvholm"
     },
     {
       "person": "Anton Hjejle",
@@ -5744,196 +5674,6 @@
       "searchKey": "niels brunse"
     },
     {
-      "person": "Emil Blak",
-      "role": "ERIC GLASS / Ung mand 9",
-      "profession": "skuespiller",
-      "production": "Matthew Lopez' Arven, del 1 & 2",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/matthew-lopez-arven-del-1-2/",
-      "source": "kglteater.dk",
-      "searchKey": "emil blak"
-    },
-    {
-      "person": "Alvin Olid Bursøe",
-      "role": "TOBY DARLING / Ung mand 10",
-      "profession": "skuespiller",
-      "production": "Matthew Lopez' Arven, del 1 & 2",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/matthew-lopez-arven-del-1-2/",
-      "source": "kglteater.dk",
-      "searchKey": "alvin olid bursoe"
-    },
-    {
-      "person": "Jonathan Bergholdt Jørgensen",
-      "role": "ADAM / LEO / Ung mand 1",
-      "profession": "skuespiller",
-      "production": "Matthew Lopez' Arven, del 1 & 2",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/matthew-lopez-arven-del-1-2/",
-      "source": "kglteater.dk",
-      "searchKey": "jonathan bergholdt jorgensen"
-    },
-    {
-      "person": "Anton Hjejle",
-      "role": "JASON 1 / dørmand / Ung mand 2",
-      "profession": "skuespiller",
-      "production": "Matthew Lopez' Arven, del 1 & 2",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/matthew-lopez-arven-del-1-2/",
-      "source": "kglteater.dk",
-      "searchKey": "anton hjejle"
-    },
-    {
-      "person": "Kristoffer Eriknauer",
-      "role": "JASON 2 / læge / Ung mand 8",
-      "profession": "skuespiller",
-      "production": "Matthew Lopez' Arven, del 1 & 2",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/matthew-lopez-arven-del-1-2/",
-      "source": "kglteater.dk",
-      "searchKey": "kristoffer eriknauer"
-    },
-    {
-      "person": "August Issac Carter",
-      "role": "UNGE HENRY / Ung mand 3 / dealer",
-      "profession": "skuespiller",
-      "production": "Matthew Lopez' Arven, del 1 & 2",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/matthew-lopez-arven-del-1-2/",
-      "source": "kglteater.dk",
-      "searchKey": "august issac carter"
-    },
-    {
-      "person": "Troels Kortegaard Ullerup",
-      "role": "UNGE WALTER / TUCKER / Ung mand 4",
-      "profession": "skuespiller",
-      "production": "Matthew Lopez' Arven, del 1 & 2",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/matthew-lopez-arven-del-1-2/",
-      "source": "kglteater.dk",
-      "searchKey": "trols kortegard ullerup"
-    },
-    {
-      "person": "Hervé Toure",
-      "role": "TRISTAN / Ung mand 6",
-      "profession": "skuespiller",
-      "production": "Matthew Lopez' Arven, del 1 & 2",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/matthew-lopez-arven-del-1-2/",
-      "source": "kglteater.dk",
-      "searchKey": "herve toure"
-    },
-    {
-      "person": "Magnus Haugaard",
-      "role": "JASPER / PAUL WILCOX / Ung mand 7 / dørmand / agent",
-      "profession": "skuespiller",
-      "production": "Matthew Lopez' Arven, del 1 & 2",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/matthew-lopez-arven-del-1-2/",
-      "source": "kglteater.dk",
-      "searchKey": "magnus haugard"
-    },
-    {
-      "person": "Sigurd Holmen le Dous",
-      "role": "CHARLES WILCOX / TOBYS AGENT / Peter West / Ung mand 5",
-      "profession": "skuespiller",
-      "production": "Matthew Lopez' Arven, del 1 & 2",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/matthew-lopez-arven-del-1-2/",
-      "source": "kglteater.dk",
-      "searchKey": "sigurd holmen le dous"
-    },
-    {
-      "person": "Jens Jørn Spottag",
-      "role": "WALTER POOLE / MORGAN",
-      "profession": "skuespiller",
-      "production": "Matthew Lopez' Arven, del 1 & 2",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/matthew-lopez-arven-del-1-2/",
-      "source": "kglteater.dk",
-      "searchKey": "jens jorn spottag"
-    },
-    {
-      "person": "Morten Kirkskov",
-      "role": "HENRY WILCOX",
-      "profession": "skuespiller",
-      "production": "Matthew Lopez' Arven, del 1 & 2",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/matthew-lopez-arven-del-1-2/",
-      "source": "kglteater.dk",
-      "searchKey": "morten kirkskov"
-    },
-    {
-      "person": "Karen-Lise Mynster",
-      "role": "Margaret",
-      "profession": "skuespiller",
-      "production": "Matthew Lopez' Arven, del 1 & 2",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/matthew-lopez-arven-del-1-2/",
-      "source": "kglteater.dk",
-      "searchKey": "karen-lise mynster"
-    },
-    {
-      "person": "Matthew Lopez",
-      "role": "Manuskript",
-      "profession": "skuespiller",
-      "production": "Matthew Lopez' Arven, del 1 & 2",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/matthew-lopez-arven-del-1-2/",
-      "source": "kglteater.dk",
-      "searchKey": "matthew lopez"
-    },
-    {
-      "person": "Thomas Bendixen",
-      "role": "Iscenesættelse",
-      "profession": "skuespiller",
-      "production": "Matthew Lopez' Arven, del 1 & 2",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/matthew-lopez-arven-del-1-2/",
-      "source": "kglteater.dk",
-      "searchKey": "thomas bendixen"
-    },
-    {
-      "person": "Palle Steen Christensen",
-      "role": "Scenografi, kostume- og videodesign",
-      "profession": "skuespiller",
-      "production": "Matthew Lopez' Arven, del 1 & 2",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/matthew-lopez-arven-del-1-2/",
-      "source": "kglteater.dk",
-      "searchKey": "palle steen christensen"
-    },
-    {
-      "person": "Mathias Hersland",
-      "role": "Lysdesign",
-      "profession": "skuespiller",
-      "production": "Matthew Lopez' Arven, del 1 & 2",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/matthew-lopez-arven-del-1-2/",
-      "source": "kglteater.dk",
-      "searchKey": "mathias hersland"
-    },
-    {
-      "person": "Mogens Laursen Hastrup",
-      "role": "Lyddesign",
-      "profession": "skuespiller",
-      "production": "Matthew Lopez' Arven, del 1 & 2",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/matthew-lopez-arven-del-1-2/",
-      "source": "kglteater.dk",
-      "searchKey": "mogens laursen hastrup"
-    },
-    {
-      "person": "Niels Henning Krag Jensby",
-      "role": "Oversættelse",
-      "profession": "skuespiller",
-      "production": "Matthew Lopez' Arven, del 1 & 2",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/matthew-lopez-arven-del-1-2/",
-      "source": "kglteater.dk",
-      "searchKey": "niels henning krag jensby"
-    },
-    {
       "person": "Jens Albinus",
       "role": "Alceste",
       "profession": "skuespiller",
@@ -6744,6 +6484,36 @@
       "searchKey": "oskar salvatore"
     },
     {
+      "person": "Mads Emil Duelund Hansen",
+      "role": "Performer",
+      "profession": "skuespiller",
+      "production": "Troja (Dyrehaven)",
+      "venue": "Det Kongelige Teater",
+      "url": "https://www.kglteater.dk/skuespil/2627/troja-dyrehaven/",
+      "source": "kglteater.dk",
+      "searchKey": "mads emil duelund hansen"
+    },
+    {
+      "person": "Troels Graakjær",
+      "role": "Performer",
+      "profession": "skuespiller",
+      "production": "Troja (Dyrehaven)",
+      "venue": "Det Kongelige Teater",
+      "url": "https://www.kglteater.dk/skuespil/2627/troja-dyrehaven/",
+      "source": "kglteater.dk",
+      "searchKey": "trols grakjar"
+    },
+    {
+      "person": "Jasmine Gordon",
+      "role": "Performer",
+      "profession": "skuespiller",
+      "production": "Troja (Dyrehaven)",
+      "venue": "Det Kongelige Teater",
+      "url": "https://www.kglteater.dk/skuespil/2627/troja-dyrehaven/",
+      "source": "kglteater.dk",
+      "searchKey": "jasmine gordon"
+    },
+    {
       "person": "Henrik Szklany",
       "role": "Manuskript",
       "profession": "skuespiller",
@@ -7434,46 +7204,6 @@
       "searchKey": "kirstine fogh vindelev"
     },
     {
-      "person": "Ene Øster Bendtsen",
-      "role": "Medvirkende",
-      "profession": "skuespiller",
-      "production": "KALD PÅ MIG IGEN (CPH STAGE)",
-      "venue": "Aveny-T",
-      "url": "https://www.aveny-t.dk/forestillinger/kald-p-mig-igen",
-      "source": "aveny-t.dk",
-      "searchKey": "ene oster bendtsen"
-    },
-    {
-      "person": "Lars Dammark",
-      "role": "Medvirkende",
-      "profession": "skuespiller",
-      "production": "KALD PÅ MIG IGEN (CPH STAGE)",
-      "venue": "Aveny-T",
-      "url": "https://www.aveny-t.dk/forestillinger/kald-p-mig-igen",
-      "source": "aveny-t.dk",
-      "searchKey": "lars dammark"
-    },
-    {
-      "person": "Thit Helbo og Johannes Smed",
-      "role": "Medvirkende",
-      "profession": "skuespiller",
-      "production": "KALD PÅ MIG IGEN (CPH STAGE)",
-      "venue": "Aveny-T",
-      "url": "https://www.aveny-t.dk/forestillinger/kald-p-mig-igen",
-      "source": "aveny-t.dk",
-      "searchKey": "thit helbo og johannes smed"
-    },
-    {
-      "person": "Johannes Smed",
-      "role": "Komponist",
-      "profession": "musiker",
-      "production": "KALD PÅ MIG IGEN (CPH STAGE)",
-      "venue": "Aveny-T",
-      "url": "https://www.aveny-t.dk/forestillinger/kald-p-mig-igen",
-      "source": "aveny-t.dk",
-      "searchKey": "johannes smed"
-    },
-    {
       "person": "Lisbeth Kjærulff",
       "role": "Medvirkende",
       "profession": "skuespiller",
@@ -7772,46 +7502,6 @@
       "url": "https://www.aveny-t.dk/forestillinger/p-vej",
       "source": "aveny-t.dk",
       "searchKey": "rasmus arved monrad"
-    },
-    {
-      "person": "Luise Kirsten Skov",
-      "role": "Medvirkende",
-      "profession": "skuespiller",
-      "production": "P4RADIS 2.0 (CPH STAGE)",
-      "venue": "Aveny-T",
-      "url": "https://www.aveny-t.dk/forestillinger/p4r4dis-20",
-      "source": "aveny-t.dk",
-      "searchKey": "luise kirsten skov"
-    },
-    {
-      "person": "Thomas Kristian Bek",
-      "role": "Medvirkende",
-      "profession": "skuespiller",
-      "production": "P4RADIS 2.0 (CPH STAGE)",
-      "venue": "Aveny-T",
-      "url": "https://www.aveny-t.dk/forestillinger/p4r4dis-20",
-      "source": "aveny-t.dk",
-      "searchKey": "thomas kristian bek"
-    },
-    {
-      "person": "improviserende kunstig intelligens",
-      "role": "Medvirkende",
-      "profession": "skuespiller",
-      "production": "P4RADIS 2.0 (CPH STAGE)",
-      "venue": "Aveny-T",
-      "url": "https://www.aveny-t.dk/forestillinger/p4r4dis-20",
-      "source": "aveny-t.dk",
-      "searchKey": "improviserende kunstig intelligens"
-    },
-    {
-      "person": "Paul Khadra",
-      "role": "Komponist",
-      "profession": "musiker",
-      "production": "P4RADIS 2.0 (CPH STAGE)",
-      "venue": "Aveny-T",
-      "url": "https://www.aveny-t.dk/forestillinger/p4r4dis-20",
-      "source": "aveny-t.dk",
-      "searchKey": "paul khadra"
     },
     {
       "person": "Mira Elisa Obling",
@@ -8474,36 +8164,6 @@
       "searchKey": "workshop: feministisk selvforsvar (cph stage)"
     },
     {
-      "person": "Vegetaren",
-      "role": "Forestilling (ingen rolleliste tilgængelig)",
-      "profession": "skuespiller",
-      "production": "Vegetaren",
-      "venue": "Aarhus Teater",
-      "url": "https://www.aarhusteater.dk/det-sker/forestillinger/aktuelt/vegetaren",
-      "source": "aarhusteater.dk",
-      "searchKey": "vegetaren"
-    },
-    {
-      "person": "Tone",
-      "role": "Forestilling (ingen rolleliste tilgængelig)",
-      "profession": "skuespiller",
-      "production": "Tone",
-      "venue": "Aarhus Teater",
-      "url": "https://www.aarhusteater.dk/det-sker/forestillinger/aktuelt/tone",
-      "source": "aarhusteater.dk",
-      "searchKey": "tone"
-    },
-    {
-      "person": "Lyt til månen",
-      "role": "Forestilling (ingen rolleliste tilgængelig)",
-      "profession": "skuespiller",
-      "production": "Lyt til månen",
-      "venue": "Aarhus Teater",
-      "url": "https://www.aarhusteater.dk/det-sker/forestillinger/aktuelt/lyt-til-maanen",
-      "source": "aarhusteater.dk",
-      "searchKey": "lyt til manen"
-    },
-    {
       "person": "Mann",
       "role": "Forestilling (ingen rolleliste tilgængelig)",
       "profession": "skuespiller",
@@ -8544,14 +8204,24 @@
       "searchKey": "eksistens"
     },
     {
-      "person": "Christlike",
+      "person": "Julekoncert med Aarhus Teaters Kor",
       "role": "Forestilling (ingen rolleliste tilgængelig)",
       "profession": "skuespiller",
-      "production": "Christlike",
+      "production": "Julekoncert med Aarhus Teaters Kor",
       "venue": "Aarhus Teater",
-      "url": "https://www.aarhusteater.dk/det-sker/forestillinger/aktuelt/christlike",
+      "url": "https://www.aarhusteater.dk/det-sker/forestillinger/aktuelt/julekoncert-med-aarhus-teaters-kor",
       "source": "aarhusteater.dk",
-      "searchKey": "christlike"
+      "searchKey": "julekoncert med arhus teaters kor"
+    },
+    {
+      "person": "Teater Bingo-Banko",
+      "role": "Forestilling (ingen rolleliste tilgængelig)",
+      "profession": "skuespiller",
+      "production": "Teater Bingo-Banko",
+      "venue": "Aarhus Teater",
+      "url": "https://www.aarhusteater.dk/det-sker/forestillinger/aktuelt/teater-bingo-banko",
+      "source": "aarhusteater.dk",
+      "searchKey": "teater bingo-banko"
     },
     {
       "person": "Hamlet",
@@ -8564,36 +8234,6 @@
       "searchKey": "hamlet"
     },
     {
-      "person": "HVAD BLEV DER AF BABY JANE?",
-      "role": "Forestilling (ingen rolleliste tilgængelig)",
-      "profession": "skuespiller",
-      "production": "HVAD BLEV DER AF BABY JANE?",
-      "venue": "Aarhus Teater",
-      "url": "https://www.aarhusteater.dk/det-sker/forestillinger/aktuelt/hvad-blev-der-af-baby-jane",
-      "source": "aarhusteater.dk",
-      "searchKey": "hvad blev der af baby jane?"
-    },
-    {
-      "person": "SOLO",
-      "role": "Forestilling (ingen rolleliste tilgængelig)",
-      "profession": "skuespiller",
-      "production": "SOLO",
-      "venue": "Aarhus Teater",
-      "url": "https://www.aarhusteater.dk/det-sker/forestillinger/aktuelt/solo",
-      "source": "aarhusteater.dk",
-      "searchKey": "solo"
-    },
-    {
-      "person": "Julekoncert med Aarhus Teaters Kor",
-      "role": "Forestilling (ingen rolleliste tilgængelig)",
-      "profession": "skuespiller",
-      "production": "Julekoncert med Aarhus Teaters Kor",
-      "venue": "Aarhus Teater",
-      "url": "https://www.aarhusteater.dk/det-sker/forestillinger/aktuelt/julekoncert-med-aarhus-teaters-kor",
-      "source": "aarhusteater.dk",
-      "searchKey": "julekoncert med arhus teaters kor"
-    },
-    {
       "person": "Rodfæstet",
       "role": "Forestilling (ingen rolleliste tilgængelig)",
       "profession": "skuespiller",
@@ -8604,6 +8244,16 @@
       "searchKey": "rodfastet"
     },
     {
+      "person": "HVAD BLEV DER AF BABY JANE?",
+      "role": "Forestilling (ingen rolleliste tilgængelig)",
+      "profession": "skuespiller",
+      "production": "HVAD BLEV DER AF BABY JANE?",
+      "venue": "Aarhus Teater",
+      "url": "https://www.aarhusteater.dk/det-sker/forestillinger/aktuelt/hvad-blev-der-af-baby-jane",
+      "source": "aarhusteater.dk",
+      "searchKey": "hvad blev der af baby jane?"
+    },
+    {
       "person": "Very Rich Angels",
       "role": "Forestilling (ingen rolleliste tilgængelig)",
       "profession": "skuespiller",
@@ -8612,6 +8262,16 @@
       "url": "https://www.aarhusteater.dk/det-sker/forestillinger/aktuelt/very-rich-angels",
       "source": "aarhusteater.dk",
       "searchKey": "very rich angels"
+    },
+    {
+      "person": "Christlike",
+      "role": "Forestilling (ingen rolleliste tilgængelig)",
+      "profession": "skuespiller",
+      "production": "Christlike",
+      "venue": "Aarhus Teater",
+      "url": "https://www.aarhusteater.dk/det-sker/forestillinger/aktuelt/christlike",
+      "source": "aarhusteater.dk",
+      "searchKey": "christlike"
     },
     {
       "person": "Leslie",
@@ -8634,14 +8294,14 @@
       "searchKey": "studio saloner"
     },
     {
-      "person": "Teater Bingo-Banko",
+      "person": "SOLO",
       "role": "Forestilling (ingen rolleliste tilgængelig)",
       "profession": "skuespiller",
-      "production": "Teater Bingo-Banko",
+      "production": "SOLO",
       "venue": "Aarhus Teater",
-      "url": "https://www.aarhusteater.dk/det-sker/forestillinger/aktuelt/teater-bingo-banko",
+      "url": "https://www.aarhusteater.dk/det-sker/forestillinger/aktuelt/solo",
       "source": "aarhusteater.dk",
-      "searchKey": "teater bingo-banko"
+      "searchKey": "solo"
     },
     {
       "person": "Faust",
@@ -9454,216 +9114,6 @@
       "searchKey": "ingrid moller hedegard"
     },
     {
-      "person": "VEGA BACKSTAGE ",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "VEGA BACKSTAGE ",
-      "venue": "VEGA",
-      "url": "https://vega.dk/en/event/2026-09-29",
-      "source": "vega.dk",
-      "searchKey": "vega backstage "
-    },
-    {
-      "person": "Eve",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "Eve",
-      "venue": "Store VEGA",
-      "url": "https://vega.dk/en/event/eve-2026-10-13",
-      "source": "vega.dk",
-      "searchKey": "eve"
-    },
-    {
-      "person": "Hypnosis Therapy",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "Hypnosis Therapy",
-      "venue": "Ideal Bar",
-      "url": "https://vega.dk/en/event/hypnosis-therapy-2026-10-13",
-      "source": "vega.dk",
-      "searchKey": "hypnosis therapy"
-    },
-    {
-      "person": "Matt Mason",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "Matt Mason",
-      "venue": "Lille VEGA",
-      "url": "https://vega.dk/en/event/matt-mason-2026-10-13",
-      "source": "vega.dk",
-      "searchKey": "matt mason"
-    },
-    {
-      "person": "Steinza",
-      "role": "Special Guest",
-      "profession": "musiker",
-      "production": "Matt Mason",
-      "venue": "Lille VEGA",
-      "url": "https://vega.dk/en/event/matt-mason-2026-10-13",
-      "source": "vega.dk",
-      "searchKey": "steinza"
-    },
-    {
-      "person": "VEGA BACKSTAGE ",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "VEGA BACKSTAGE ",
-      "venue": "VEGA",
-      "url": "https://vega.dk/en/event/2026-09-29-1",
-      "source": "vega.dk",
-      "searchKey": "vega backstage "
-    },
-    {
-      "person": "FED & Phil",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "FED & Phil",
-      "venue": "Lille VEGA",
-      "url": "https://vega.dk/en/event/fed-and-phil-2026-10-14",
-      "source": "vega.dk",
-      "searchKey": "fed & phil"
-    },
-    {
-      "person": "Hvil i Bas",
-      "role": "Support",
-      "profession": "musiker",
-      "production": "FED & Phil",
-      "venue": "Lille VEGA",
-      "url": "https://vega.dk/en/event/fed-and-phil-2026-10-14",
-      "source": "vega.dk",
-      "searchKey": "hvil i bas"
-    },
-    {
-      "person": "Haken",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "Haken",
-      "venue": "Store VEGA",
-      "url": "https://vega.dk/en/event/haken-2026-10-15",
-      "source": "vega.dk",
-      "searchKey": "haken"
-    },
-    {
-      "person": "Ihlo +  Avkrvst",
-      "role": "Support",
-      "profession": "musiker",
-      "production": "Haken",
-      "venue": "Store VEGA",
-      "url": "https://vega.dk/en/event/haken-2026-10-15",
-      "source": "vega.dk",
-      "searchKey": "ihlo +  avkrvst"
-    },
-    {
-      "person": "Grandmas House",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "Grandmas House",
-      "venue": "Ideal Bar",
-      "url": "https://vega.dk/en/event/grandmas-house-2026-10-16",
-      "source": "vega.dk",
-      "searchKey": "grandmas house"
-    },
-    {
-      "person": "MØL",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "MØL",
-      "venue": "Lille VEGA",
-      "url": "https://vega.dk/en/event/mol-2026-10-16",
-      "source": "vega.dk",
-      "searchKey": "mol"
-    },
-    {
-      "person": "Puke Wolf",
-      "role": "Support",
-      "profession": "musiker",
-      "production": "MØL",
-      "venue": "Lille VEGA",
-      "url": "https://vega.dk/en/event/mol-2026-10-16",
-      "source": "vega.dk",
-      "searchKey": "puke wolf"
-    },
-    {
-      "person": "DJ Aligator",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "DJ Aligator",
-      "venue": "Store VEGA",
-      "url": "https://vega.dk/en/event/dj-aligator-2026-10-16",
-      "source": "vega.dk",
-      "searchKey": "dj aligator"
-    },
-    {
-      "person": "Hexis",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "Hexis",
-      "venue": "Ideal Bar",
-      "url": "https://vega.dk/en/event/hexis-2026-10-17",
-      "source": "vega.dk",
-      "searchKey": "hexis"
-    },
-    {
-      "person": "Violence",
-      "role": "Special Guest",
-      "profession": "musiker",
-      "production": "Hexis",
-      "venue": "Ideal Bar",
-      "url": "https://vega.dk/en/event/hexis-2026-10-17",
-      "source": "vega.dk",
-      "searchKey": "violence"
-    },
-    {
-      "person": "DJ Aligator",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "DJ Aligator",
-      "venue": "Store VEGA",
-      "url": "https://vega.dk/en/event/dj-aligator-2026-10-16-2",
-      "source": "vega.dk",
-      "searchKey": "dj aligator"
-    },
-    {
-      "person": "World Brain ",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "World Brain ",
-      "venue": "Ideal Bar",
-      "url": "https://vega.dk/en/event/world-brain-2026-10-18",
-      "source": "vega.dk",
-      "searchKey": "world brain "
-    },
-    {
-      "person": "Counterglow",
-      "role": "Support",
-      "profession": "musiker",
-      "production": "World Brain ",
-      "venue": "Ideal Bar",
-      "url": "https://vega.dk/en/event/world-brain-2026-10-18",
-      "source": "vega.dk",
-      "searchKey": "counterglow"
-    },
-    {
-      "person": "Kaizers Orchestra – Extra concert",
-      "role": "Hovednavn",
-      "profession": "orkester",
-      "production": "Kaizers Orchestra – Extra concert",
-      "venue": "Store VEGA",
-      "url": "https://vega.dk/en/event/kaizers-orchestra-extra-concert-2026-10-18",
-      "source": "vega.dk",
-      "searchKey": "kaizers orchestra – extra concert"
-    },
-    {
-      "person": "Diskopunk",
-      "role": "Support",
-      "profession": "musiker",
-      "production": "Kaizers Orchestra – Extra concert",
-      "venue": "Store VEGA",
-      "url": "https://vega.dk/en/event/kaizers-orchestra-extra-concert-2026-10-18",
-      "source": "vega.dk",
-      "searchKey": "diskopunk"
-    },
-    {
       "person": "MOLIY",
       "role": "Hovednavn",
       "profession": "musiker",
@@ -9694,26 +9144,6 @@
       "searchKey": "diskopunk"
     },
     {
-      "person": "FKJ",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "FKJ",
-      "venue": "Store VEGA",
-      "url": "https://vega.dk/en/event/fkj-2026-10-20",
-      "source": "vega.dk",
-      "searchKey": "fkj"
-    },
-    {
-      "person": "Richie Griner",
-      "role": "Support",
-      "profession": "musiker",
-      "production": "FKJ",
-      "venue": "Store VEGA",
-      "url": "https://vega.dk/en/event/fkj-2026-10-20",
-      "source": "vega.dk",
-      "searchKey": "richie griner"
-    },
-    {
       "person": "lucca",
       "role": "Hovednavn",
       "profession": "musiker",
@@ -9732,6 +9162,26 @@
       "url": "https://vega.dk/en/event/lucca-2026-10-20",
       "source": "vega.dk",
       "searchKey": "frederik o"
+    },
+    {
+      "person": "FKJ",
+      "role": "Hovednavn",
+      "profession": "musiker",
+      "production": "FKJ",
+      "venue": "Store VEGA",
+      "url": "https://vega.dk/en/event/fkj-2026-10-20",
+      "source": "vega.dk",
+      "searchKey": "fkj"
+    },
+    {
+      "person": "Richie Griner",
+      "role": "Support",
+      "profession": "musiker",
+      "production": "FKJ",
+      "venue": "Store VEGA",
+      "url": "https://vega.dk/en/event/fkj-2026-10-20",
+      "source": "vega.dk",
+      "searchKey": "richie griner"
     },
     {
       "person": "Krallice ",
@@ -9864,74 +9314,174 @@
       "searchKey": "loke deph"
     },
     {
-      "person": "Efterårsferie i DR Koncerthuset",
-      "role": "Medvirkende",
+      "person": "LIARS",
+      "role": "Hovednavn",
       "profession": "musiker",
-      "production": "Eventyrlig Efterårsferie",
-      "venue": "Studie 1",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/eventyrlig-efteraarsferie/eventyrlig-efteraarsferie-5/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "efterarsferie i dr koncerthuset"
+      "production": "LIARS",
+      "venue": "Ideal Bar",
+      "url": "https://vega.dk/en/event/liars-2026-10-24",
+      "source": "vega.dk",
+      "searchKey": "liars"
     },
     {
-      "person": "P3 GULD",
-      "role": "Medvirkende",
+      "person": "Draghouse",
+      "role": "Hovednavn",
       "profession": "musiker",
-      "production": "P3 Guld",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/p3-guld/p3-guld/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "p3 guld"
+      "production": "Draghouse",
+      "venue": "Lille VEGA",
+      "url": "https://vega.dk/en/event/draghouse-2026-10-24",
+      "source": "vega.dk",
+      "searchKey": "draghouse"
     },
     {
-      "person": "P3 Guld - Efterfesten",
-      "role": "Koncert",
+      "person": "EST Gee",
+      "role": "Hovednavn",
       "profession": "musiker",
-      "production": "P3 Guld - Efterfesten",
-      "venue": "DR Koncerthuset",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/p3-guld-efterfesten/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "p3 guld - efterfesten"
+      "production": "EST Gee",
+      "venue": "Lille VEGA",
+      "url": "https://vega.dk/en/event/est-gee-2026-10-26",
+      "source": "vega.dk",
+      "searchKey": "est gee"
     },
     {
-      "person": "Young The Giant",
-      "role": "Koncert",
-      "profession": "musiker",
-      "production": "Young The Giant",
-      "venue": "Studie 2",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/young-the-giant/young-the-giant-victory-garden-tour/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "young the giant"
+      "person": "The KILIMANJARO Darkjazz Ensemble",
+      "role": "Hovednavn",
+      "profession": "orkester",
+      "production": "The KILIMANJARO Darkjazz Ensemble",
+      "venue": "Lille VEGA",
+      "url": "https://vega.dk/en/event/the-kilimanjaro-darkjazz-ensemble-2026-10-27",
+      "source": "vega.dk",
+      "searchKey": "the kilimanjaro darkjazz ensemble"
     },
     {
-      "person": "Zucchero",
-      "role": "Koncert",
+      "person": "Superfan",
+      "role": "Hovednavn",
       "profession": "musiker",
-      "production": "Zucchero",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/zucchero/zucchero-ekstrakoncert/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "zucchero"
+      "production": "Superfan",
+      "venue": "Ideal Bar",
+      "url": "https://vega.dk/en/event/superfan-2026-10-28",
+      "source": "vega.dk",
+      "searchKey": "superfan"
     },
     {
-      "person": "Alba Akvama",
-      "role": "Koncert",
+      "person": "Kelly No Brakes",
+      "role": "Support",
       "profession": "musiker",
-      "production": "Alba Akvama",
-      "venue": "Studie 3",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/alba-akvama/alba-akvama/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "alba akvama"
+      "production": "Superfan",
+      "venue": "Ideal Bar",
+      "url": "https://vega.dk/en/event/superfan-2026-10-28",
+      "source": "vega.dk",
+      "searchKey": "kelly no brakes"
     },
     {
-      "person": "Zucchero",
-      "role": "Koncert",
+      "person": "Alex Vargas - Extra Concert",
+      "role": "Hovednavn",
       "profession": "musiker",
-      "production": "Zucchero",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/zucchero/zucchero/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "zucchero"
+      "production": "Alex Vargas - Extra Concert",
+      "venue": "Store VEGA",
+      "url": "https://vega.dk/en/event/alex-vargas-extra-concert-2026-10-28",
+      "source": "vega.dk",
+      "searchKey": "alex vargas - extra concert"
+    },
+    {
+      "person": "Alex Vargas ",
+      "role": "Hovednavn",
+      "profession": "musiker",
+      "production": "Alex Vargas ",
+      "venue": "Store VEGA",
+      "url": "https://vega.dk/en/event/alex-vargas-2026-10-29",
+      "source": "vega.dk",
+      "searchKey": "alex vargas "
+    },
+    {
+      "person": "Karla Korsbak",
+      "role": "Hovednavn",
+      "profession": "musiker",
+      "production": "Karla Korsbak",
+      "venue": "Ideal Bar",
+      "url": "https://vega.dk/en/event/karla-korsbak-2026-10-29",
+      "source": "vega.dk",
+      "searchKey": "karla korsbak"
+    },
+    {
+      "person": "The Clockworks",
+      "role": "Hovednavn",
+      "profession": "musiker",
+      "production": "The Clockworks",
+      "venue": "Lille VEGA",
+      "url": "https://vega.dk/en/event/the-clockworks-2026-10-29",
+      "source": "vega.dk",
+      "searchKey": "the clockworks"
+    },
+    {
+      "person": "Danny Blue",
+      "role": "Support",
+      "profession": "musiker",
+      "production": "The Clockworks",
+      "venue": "Lille VEGA",
+      "url": "https://vega.dk/en/event/the-clockworks-2026-10-29",
+      "source": "vega.dk",
+      "searchKey": "danny blue"
+    },
+    {
+      "person": "Tvivler + Båndet + Birds in Flight + Marí",
+      "role": "Hovednavn",
+      "profession": "musiker",
+      "production": "Tvivler + Båndet + Birds in Flight + Marí",
+      "venue": "Ideal Bar",
+      "url": "https://vega.dk/en/event/tvivler-bandet-birds-in-flight-mari-2026-10-30",
+      "source": "vega.dk",
+      "searchKey": "tvivler + bandet + birds in flight + mari"
+    },
+    {
+      "person": "CARLLO YABOY",
+      "role": "Hovednavn",
+      "profession": "musiker",
+      "production": "CARLLO YABOY",
+      "venue": "Lille VEGA",
+      "url": "https://vega.dk/en/event/carllo-yaboy-2026-10-30",
+      "source": "vega.dk",
+      "searchKey": "carllo yaboy"
+    },
+    {
+      "person": "HALO GHOST",
+      "role": "Hovednavn",
+      "profession": "musiker",
+      "production": "HALO GHOST",
+      "venue": "Lille VEGA",
+      "url": "https://vega.dk/en/event/halo-ghost-2026-10-31",
+      "source": "vega.dk",
+      "searchKey": "halo ghost"
+    },
+    {
+      "person": "Fancy Lee + Smooch + DJ Rafla",
+      "role": "Support",
+      "profession": "musiker",
+      "production": "HALO GHOST",
+      "venue": "Lille VEGA",
+      "url": "https://vega.dk/en/event/halo-ghost-2026-10-31",
+      "source": "vega.dk",
+      "searchKey": "fancy lee + smooch + dj rafla"
+    },
+    {
+      "person": "SUPER JET KINOKO",
+      "role": "Hovednavn",
+      "profession": "musiker",
+      "production": "SUPER JET KINOKO",
+      "venue": "Ideal Bar",
+      "url": "https://vega.dk/en/event/super-jet-kinoko-2026-10-31",
+      "source": "vega.dk",
+      "searchKey": "super jet kinoko"
+    },
+    {
+      "person": "Kenton Slash Demon",
+      "role": "Hovednavn",
+      "profession": "musiker",
+      "production": "Kenton Slash Demon",
+      "venue": "Store VEGA",
+      "url": "https://vega.dk/en/event/kenton-slash-demon-2026-10-31",
+      "source": "vega.dk",
+      "searchKey": "kenton slash demon"
     },
     {
       "person": "TV-2",
@@ -12564,6 +12114,16 @@
       "searchKey": "sebastian & lis – tiderne skifter"
     },
     {
+      "person": "Michael Learns To Rock",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Michael Learns To Rock",
+      "venue": "Koncertsalen",
+      "url": "https://www.drkoncerthuset.dk/kalender/2027/michael-learns-to-rock/michael-learns-to-rock-mltr-dk-2027-1/",
+      "source": "drkoncerthuset.dk",
+      "searchKey": "michal learns to rock"
+    },
+    {
       "person": "The Tallest Man On Earth",
       "role": "Koncert",
       "profession": "musiker",
@@ -13259,6 +12819,16 @@
       "profession": "musiker",
       "production": "Hermanos Gutiérrez",
       "venue": "Koncertsalen",
+      "url": "https://www.drkoncerthuset.dk/kalender/2027/hermanos-gutierrez/hermanos-gutierrez-1/",
+      "source": "drkoncerthuset.dk",
+      "searchKey": "hermanos gutierrez"
+    },
+    {
+      "person": "Hermanos Gutiérrez",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Hermanos Gutiérrez",
+      "venue": "Koncertsalen",
       "url": "https://www.drkoncerthuset.dk/kalender/2027/hermanos-gutierrez/hermanos-gutierrez/",
       "source": "drkoncerthuset.dk",
       "searchKey": "hermanos gutierrez"
@@ -13744,6 +13314,16 @@
       "searchKey": "bianca del rio"
     },
     {
+      "person": "Levi.Sct",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Levi.Sct",
+      "venue": "Koncertsalen",
+      "url": "https://www.drkoncerthuset.dk/kalender/2027/levisct/levisct/",
+      "source": "drkoncerthuset.dk",
+      "searchKey": "levi.sct"
+    },
+    {
       "person": "Berliner Filharmonikerne",
       "role": "Koncert",
       "profession": "musiker",
@@ -13802,6 +13382,16 @@
       "url": "https://www.drkoncerthuset.dk/kalender/2027/luisi-mozart/luisi-mozart/",
       "source": "drkoncerthuset.dk",
       "searchKey": "kirill gerstein"
+    },
+    {
+      "person": "Dorthe Gerlach",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Dorthe Gerlach",
+      "venue": "Studie 2",
+      "url": "https://www.drkoncerthuset.dk/kalender/2027/dorthe-gerlach/dorthe-gerlach-live-2027/",
+      "source": "drkoncerthuset.dk",
+      "searchKey": "dorthe gerlach"
     },
     {
       "person": "En Hyldestkoncert til Brian Wilson & The Beach Boys",
@@ -14194,6 +13784,16 @@
       "searchKey": "beethoven orkestret bonn: kaftan, shirinyan og beethoven"
     },
     {
+      "person": "Fallulah",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Fallulah",
+      "venue": "Studie 3",
+      "url": "https://www.drkoncerthuset.dk/kalender/2027/fallulah/fallulah/",
+      "source": "drkoncerthuset.dk",
+      "searchKey": "fallulah"
+    },
+    {
       "person": "Michael Falch",
       "role": "Koncert",
       "profession": "musiker",
@@ -14292,6 +13892,16 @@
       "url": "https://ab-b.dk/k/artillery/",
       "source": "ab-b.dk",
       "searchKey": "artillery"
+    },
+    {
+      "person": "TheNimbWits",
+      "role": "Support",
+      "profession": "musiker",
+      "production": "Artillery",
+      "venue": "Amager Bio",
+      "url": "https://ab-b.dk/k/artillery/",
+      "source": "ab-b.dk",
+      "searchKey": "thenimbwits"
     },
     {
       "person": "Aynur",
@@ -14424,26 +14034,6 @@
       "searchKey": "dawn of demise"
     },
     {
-      "person": "Declan Welsh and The Decadent West",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "Declan Welsh and The Decadent West",
-      "venue": "Amager Bio",
-      "url": "https://ab-b.dk/k/declan-welsh-and-the-decadent-west/",
-      "source": "ab-b.dk",
-      "searchKey": "declan welsh and the decadent west"
-    },
-    {
-      "person": "Theo Bleak",
-      "role": "Support",
-      "profession": "musiker",
-      "production": "Declan Welsh and The Decadent West",
-      "venue": "Amager Bio",
-      "url": "https://ab-b.dk/k/declan-welsh-and-the-decadent-west/",
-      "source": "ab-b.dk",
-      "searchKey": "theo bleak"
-    },
-    {
       "person": "Dodo & The Dodo’s",
       "role": "Hovednavn",
       "profession": "musiker",
@@ -14542,16 +14132,6 @@
       "url": "https://ab-b.dk/k/eagles-of-death-metal/",
       "source": "ab-b.dk",
       "searchKey": "james and the cold gun"
-    },
-    {
-      "person": "El Tri",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "El Tri",
-      "venue": "Amager Bio",
-      "url": "https://ab-b.dk/k/el-tri/",
-      "source": "ab-b.dk",
-      "searchKey": "el tri"
     },
     {
       "person": "Enslaved & Solstafir",
@@ -14924,26 +14504,6 @@
       "searchKey": "manfred mann’s earth band"
     },
     {
-      "person": "Matt Hansen",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "Matt Hansen",
-      "venue": "Amager Bio",
-      "url": "https://ab-b.dk/k/matt-hansen/",
-      "source": "ab-b.dk",
-      "searchKey": "matt hansen"
-    },
-    {
-      "person": "Hudson Ingram",
-      "role": "Support",
-      "profession": "musiker",
-      "production": "Matt Hansen",
-      "venue": "Amager Bio",
-      "url": "https://ab-b.dk/k/matt-hansen/",
-      "source": "ab-b.dk",
-      "searchKey": "hudson ingram"
-    },
-    {
       "person": "Melt-Banana",
       "role": "Hovednavn",
       "profession": "musiker",
@@ -15024,14 +14584,14 @@
       "searchKey": "no te va gustar"
     },
     {
-      "person": "Nordic Break League",
+      "person": "Ocean Grove",
       "role": "Hovednavn",
       "profession": "musiker",
-      "production": "Nordic Break League",
+      "production": "Ocean Grove",
       "venue": "Amager Bio",
-      "url": "https://ab-b.dk/k/nordic-break-league/",
+      "url": "https://ab-b.dk/k/ocean-grove/",
       "source": "ab-b.dk",
-      "searchKey": "nordic break league"
+      "searchKey": "ocean grove"
     },
     {
       "person": "Orden Ogan",
@@ -15354,26 +14914,6 @@
       "searchKey": "tarja turunen"
     },
     {
-      "person": "The Bones of J.R. Jones",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "The Bones of J.R. Jones",
-      "venue": "Amager Bio",
-      "url": "https://ab-b.dk/k/the-bones-of-j-r-jones/",
-      "source": "ab-b.dk",
-      "searchKey": "the bones of j.r. jones"
-    },
-    {
-      "person": "Seba Safe",
-      "role": "Support",
-      "profession": "musiker",
-      "production": "The Bones of J.R. Jones",
-      "venue": "Amager Bio",
-      "url": "https://ab-b.dk/k/the-bones-of-j-r-jones/",
-      "source": "ab-b.dk",
-      "searchKey": "seba safe"
-    },
-    {
       "person": "The Chains",
       "role": "Hovednavn",
       "profession": "musiker",
@@ -15634,26 +15174,6 @@
       "searchKey": "tatty macleod"
     },
     {
-      "person": "Kriti Prajapati: Rødgrød Med MASALA",
-      "role": "Forestilling",
-      "profession": "skuespiller",
-      "production": "Kriti Prajapati: Rødgrød Med MASALA",
-      "venue": "Indre By",
-      "url": "https://migogkbh.dk/kalender/begivenhed/kriti-prajapati-roedgroed-med-masala/",
-      "source": "migogkbh.dk",
-      "searchKey": "kriti prajapati: rodgrod med masala"
-    },
-    {
-      "person": "Patrick Haunberg: Pengetræ",
-      "role": "Forestilling",
-      "profession": "skuespiller",
-      "production": "Patrick Haunberg: Pengetræ",
-      "venue": "ICC Theatre",
-      "url": "https://migogkbh.dk/kalender/begivenhed/patrick-haunberg-pengetrae/",
-      "source": "migogkbh.dk",
-      "searchKey": "patrick haunberg: pengetra"
-    },
-    {
       "person": "Victor Pãtrãşcan – Stand up Comedy in broken English",
       "role": "Forestilling",
       "profession": "skuespiller",
@@ -15694,14 +15214,14 @@
       "searchKey": "show – bedovende"
     },
     {
-      "person": "Danielle Dahlhus: Det må du ikke sige",
-      "role": "Forestilling",
-      "profession": "skuespiller",
-      "production": "Danielle Dahlhus: Det må du ikke sige",
-      "venue": "Undergrunden",
-      "url": "https://migogkbh.dk/kalender/begivenhed/danielle-dahlhus-det-maa-du-ikke-sige/",
+      "person": "Halloween Night med Jimilian",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Halloween Night med Jimilian",
+      "venue": "Halvandet",
+      "url": "https://migogkbh.dk/kalender/begivenhed/halloween-night-med-jimilian/",
       "source": "migogkbh.dk",
-      "searchKey": "danielle dahlhus: det ma du ikke sige"
+      "searchKey": "halloween night med jimilian"
     },
     {
       "person": "Tivoli-Gardens juleparade",
@@ -15752,16 +15272,6 @@
       "url": "https://migogkbh.dk/kalender/begivenhed/debbie-sings-hotel-cecil/",
       "source": "migogkbh.dk",
       "searchKey": "debbie sings – hotel cecil"
-    },
-    {
-      "person": "Ama’r fri Efterårsudstilling 2026",
-      "role": "Koncert",
-      "profession": "musiker",
-      "production": "Ama’r fri Efterårsudstilling 2026",
-      "venue": "Amager",
-      "url": "https://migogkbh.dk/kalender/begivenhed/amar-fri-efteraarsudstilling-2026/",
-      "source": "migogkbh.dk",
-      "searchKey": "ama’r fri efterarsudstilling 2026"
     },
     {
       "person": "Bullet For My Valentine og Pendulum i K.B. Hallen",
