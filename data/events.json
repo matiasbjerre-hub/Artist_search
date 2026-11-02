@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-26T10:22:57Z",
+  "generatedAt": "2026-11-02T12:42:53Z",
   "sources": [
     {
       "source": "kglteater.dk",
-      "entries": 678,
+      "entries": 612,
       "stale": false
     },
     {
@@ -18,27 +18,27 @@
     },
     {
       "source": "odenseteater.dk",
-      "entries": 73,
+      "entries": 61,
       "stale": false
     },
     {
       "source": "vega.dk",
-      "entries": 38,
+      "entries": 39,
       "stale": false
     },
     {
       "source": "drkoncerthuset.dk",
-      "entries": 422,
+      "entries": 404,
       "stale": false
     },
     {
       "source": "ab-b.dk",
-      "entries": 133,
+      "entries": 130,
       "stale": false
     },
     {
       "source": "migogkbh.dk",
-      "entries": 41,
+      "entries": 44,
       "stale": false
     }
   ],
@@ -1204,346 +1204,6 @@
       "searchKey": "christelle horna"
     },
     {
-      "person": "Astrid Elbo",
-      "role": "1. pas de deux dame",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "astrid elbo"
-    },
-    {
-      "person": "Ji Min Hong",
-      "role": "1. pas de deux dame",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "ji min hong"
-    },
-    {
-      "person": "Silvia Selvini",
-      "role": "1. pas de deux dame",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "silvia selvini"
-    },
-    {
-      "person": "Alexander Bozinoff",
-      "role": "1. pas de deux herre",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "alexander bozinoff"
-    },
-    {
-      "person": "Mathieu Rouaux",
-      "role": "1. pas de deux herre",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "mathieu rouaux"
-    },
-    {
-      "person": "Sebastian Pico Haynes",
-      "role": "1. pas de deux herre",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "sebastian pico haynes"
-    },
-    {
-      "person": "Damian Iorio",
-      "role": "Dirigent",
-      "profession": "musiker",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "damian iorio"
-    },
-    {
-      "person": "Stephanie Chen Gundorph",
-      "role": "2. pas de deux dame",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "stephanie chen gundorph"
-    },
-    {
-      "person": "Tomoka Kawazoe",
-      "role": "2. pas de deux dame",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "tomoka kawazo"
-    },
-    {
-      "person": "Wilma Giglio",
-      "role": "2. pas de deux dame, Pas de deux (Diamanter) dame",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "wilma giglio"
-    },
-    {
-      "person": "Joseph Aumeer",
-      "role": "2. pas de deux herre",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "joseph aumeer"
-    },
-    {
-      "person": "Phillip Katsnelson",
-      "role": "2. pas de deux herre",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "phillip katsnelson"
-    },
-    {
-      "person": "Schonan Greve",
-      "role": "2. pas de deux herre",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "schonan greve"
-    },
-    {
-      "person": "Eukene Sagues",
-      "role": "Pas de deux (Rubiner) dame",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "eukene sagues"
-    },
-    {
-      "person": "Holly Dorger",
-      "role": "Pas de deux (Rubiner) dame, Pas de deux (Diamanter) dame",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "holly dorger"
-    },
-    {
-      "person": "Tara Schaufuss",
-      "role": "Pas de deux (Rubiner) dame",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "tara schaufuss"
-    },
-    {
-      "person": "Jón Axel Fransson",
-      "role": "Pas de deux (Rubiner) herre",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "jon axel fransson"
-    },
-    {
-      "person": "Philip Duclos",
-      "role": "Pas de deux (Rubiner) herre",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "philip duclos"
-    },
-    {
-      "person": "Tobias Praetorius",
-      "role": "Pas de deux (Rubiner) herre",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "tobias pratorius"
-    },
-    {
-      "person": "Emma McKenzie",
-      "role": "Solo",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "emma mckenzie"
-    },
-    {
-      "person": "Isabella Walsh",
-      "role": "Solo",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "isabella walsh"
-    },
-    {
-      "person": "Joscelyn Reneé Dolson",
-      "role": "Solo",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "joscelyn renee dolson"
-    },
-    {
-      "person": "Lania Atkins",
-      "role": "Solo",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "lania atkins"
-    },
-    {
-      "person": "Caroline Baldwin",
-      "role": "Pas de deux (Diamanter) dame",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "caroline baldwin"
-    },
-    {
-      "person": "Emma Riis-Kofoed",
-      "role": "Pas de deux (Diamanter) dame",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "emma riis-kofod"
-    },
-    {
-      "person": "Jonathan Chmelensky",
-      "role": "Pas de deux (Diamanter) herre",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "jonathan chmelensky"
-    },
-    {
-      "person": "Ryan Tomash",
-      "role": "Pas de deux (Diamanter) herre",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "ryan tomash"
-    },
-    {
-      "person": "Sylvester Jønson",
-      "role": "Pas de deux (Diamanter) herre",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "sylvester jonson"
-    },
-    {
-      "person": "George Balanchine",
-      "role": "Koreografi",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "george balanchine"
-    },
-    {
-      "person": "Gabriel Fauré",
-      "role": "Musik",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "gabriel faure"
-    },
-    {
-      "person": "Igor Stravinskij",
-      "role": "Musik",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "igor stravinskij"
-    },
-    {
-      "person": "Pjotr Tjajkovskij",
-      "role": "Musik",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "pjotr tjajkovskij"
-    },
-    {
-      "person": "Thomas Bek Jensen",
-      "role": "Lysdesign",
-      "profession": "skuespiller",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "thomas bek jensen"
-    },
-    {
-      "person": "Kelly Lenahan",
-      "role": "Pianosolist",
-      "profession": "musiker",
-      "production": "Juveler",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/ballet/2627/juveler/",
-      "source": "kglteater.dk",
-      "searchKey": "kelly lenahan"
-    },
-    {
       "person": "Femke Mølbach Slot",
       "role": "Prinsesser",
       "profession": "skuespiller",
@@ -1964,156 +1624,6 @@
       "searchKey": "ellen hillingso"
     },
     {
-      "person": "Albin Jansson",
-      "role": "OA-sanger",
-      "profession": "musiker",
-      "production": "Operabar med morgendagens stjerner",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/koncert/2627/operabar-med-morgendagens-stjerner/",
-      "source": "kglteater.dk",
-      "searchKey": "albin jansson"
-    },
-    {
-      "person": "Berte Wiggers Lyneborg",
-      "role": "OA-sanger",
-      "profession": "musiker",
-      "production": "Operabar med morgendagens stjerner",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/koncert/2627/operabar-med-morgendagens-stjerner/",
-      "source": "kglteater.dk",
-      "searchKey": "berte wiggers lyneborg"
-    },
-    {
-      "person": "Brina Vukovič",
-      "role": "OA-sanger",
-      "profession": "musiker",
-      "production": "Operabar med morgendagens stjerner",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/koncert/2627/operabar-med-morgendagens-stjerner/",
-      "source": "kglteater.dk",
-      "searchKey": "brina vukovic"
-    },
-    {
-      "person": "Guro Thronæs-Sivertsen",
-      "role": "OA-sanger",
-      "profession": "musiker",
-      "production": "Operabar med morgendagens stjerner",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/koncert/2627/operabar-med-morgendagens-stjerner/",
-      "source": "kglteater.dk",
-      "searchKey": "guro thronas-sivertsen"
-    },
-    {
-      "person": "Hanno Egger",
-      "role": "OA-sanger",
-      "profession": "musiker",
-      "production": "Operabar med morgendagens stjerner",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/koncert/2627/operabar-med-morgendagens-stjerner/",
-      "source": "kglteater.dk",
-      "searchKey": "hanno egger"
-    },
-    {
-      "person": "Jo Angeloff",
-      "role": "OA-sanger",
-      "profession": "musiker",
-      "production": "Operabar med morgendagens stjerner",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/koncert/2627/operabar-med-morgendagens-stjerner/",
-      "source": "kglteater.dk",
-      "searchKey": "jo angeloff"
-    },
-    {
-      "person": "Linnéa Andersson",
-      "role": "OA-sanger",
-      "profession": "musiker",
-      "production": "Operabar med morgendagens stjerner",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/koncert/2627/operabar-med-morgendagens-stjerner/",
-      "source": "kglteater.dk",
-      "searchKey": "linnea andersson"
-    },
-    {
-      "person": "Louise Engeseth",
-      "role": "OA-sanger",
-      "profession": "musiker",
-      "production": "Operabar med morgendagens stjerner",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/koncert/2627/operabar-med-morgendagens-stjerner/",
-      "source": "kglteater.dk",
-      "searchKey": "louise engeseth"
-    },
-    {
-      "person": "Marie Borup",
-      "role": "OA-sanger",
-      "profession": "musiker",
-      "production": "Operabar med morgendagens stjerner",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/koncert/2627/operabar-med-morgendagens-stjerner/",
-      "source": "kglteater.dk",
-      "searchKey": "marie borup"
-    },
-    {
-      "person": "Per Svenson",
-      "role": "OA-sanger",
-      "profession": "musiker",
-      "production": "Operabar med morgendagens stjerner",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/koncert/2627/operabar-med-morgendagens-stjerner/",
-      "source": "kglteater.dk",
-      "searchKey": "per svenson"
-    },
-    {
-      "person": "William Tarrach",
-      "role": "OA-sanger",
-      "profession": "musiker",
-      "production": "Operabar med morgendagens stjerner",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/koncert/2627/operabar-med-morgendagens-stjerner/",
-      "source": "kglteater.dk",
-      "searchKey": "william tarrach"
-    },
-    {
-      "person": "Annika Beinnes",
-      "role": "YAP",
-      "profession": "skuespiller",
-      "production": "Operabar med morgendagens stjerner",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/koncert/2627/operabar-med-morgendagens-stjerner/",
-      "source": "kglteater.dk",
-      "searchKey": "annika beinnes"
-    },
-    {
-      "person": "Ava Line Shokooh",
-      "role": "YAP",
-      "profession": "skuespiller",
-      "production": "Operabar med morgendagens stjerner",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/koncert/2627/operabar-med-morgendagens-stjerner/",
-      "source": "kglteater.dk",
-      "searchKey": "ava line shokooh"
-    },
-    {
-      "person": "Julie Husballe Hansen",
-      "role": "YAP",
-      "profession": "skuespiller",
-      "production": "Operabar med morgendagens stjerner",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/koncert/2627/operabar-med-morgendagens-stjerner/",
-      "source": "kglteater.dk",
-      "searchKey": "julie husballe hansen"
-    },
-    {
-      "person": "Mathilda Sidén Silfver",
-      "role": "YAP",
-      "profession": "skuespiller",
-      "production": "Operabar med morgendagens stjerner",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/koncert/2627/operabar-med-morgendagens-stjerner/",
-      "source": "kglteater.dk",
-      "searchKey": "mathilda siden silfver"
-    },
-    {
       "person": "Operabar",
       "role": "Koncert",
       "profession": "musiker",
@@ -2402,6 +1912,16 @@
       "url": "https://www.kglteater.dk/musical/2627/evita/",
       "source": "kglteater.dk",
       "searchKey": "sigurd thomasen"
+    },
+    {
+      "person": "Kristian Rossen",
+      "role": "Ensemble/US Juan Péron",
+      "profession": "skuespiller",
+      "production": "Evita",
+      "venue": "Det Kongelige Teater",
+      "url": "https://www.kglteater.dk/musical/2627/evita/",
+      "source": "kglteater.dk",
+      "searchKey": "kristian rossen"
     },
     {
       "person": "Anders Bilberg",
@@ -5484,116 +5004,6 @@
       "searchKey": "steffen stubager"
     },
     {
-      "person": "Arian Kashef",
-      "role": "Abdullah (mellemste bror)",
-      "profession": "skuespiller",
-      "production": "Familien Hassan",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/familien-hassan/",
-      "source": "kglteater.dk",
-      "searchKey": "arian kashef"
-    },
-    {
-      "person": "Ellaha Lack",
-      "role": "Kawther (storesøster)",
-      "profession": "skuespiller",
-      "production": "Familien Hassan",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/familien-hassan/",
-      "source": "kglteater.dk",
-      "searchKey": "ellaha lack"
-    },
-    {
-      "person": "Zere Celik",
-      "role": "Khadeeja (lillesøster)",
-      "profession": "skuespiller",
-      "production": "Familien Hassan",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/familien-hassan/",
-      "source": "kglteater.dk",
-      "searchKey": "zere celik"
-    },
-    {
-      "person": "Wahid Sui",
-      "role": "Abd Al-Salam (lillebror)",
-      "profession": "skuespiller",
-      "production": "Familien Hassan",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/familien-hassan/",
-      "source": "kglteater.dk",
-      "searchKey": "wahid sui"
-    },
-    {
-      "person": "Rezwan Taha",
-      "role": "Hanan (mor) /musiker og sanger",
-      "profession": "musiker",
-      "production": "Familien Hassan",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/familien-hassan/",
-      "source": "kglteater.dk",
-      "searchKey": "rezwan taha"
-    },
-    {
-      "person": "Sargun Oshana",
-      "role": "Iscenesættelse og dramatisering",
-      "profession": "skuespiller",
-      "production": "Familien Hassan",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/familien-hassan/",
-      "source": "kglteater.dk",
-      "searchKey": "sargun oshana"
-    },
-    {
-      "person": "Benjamin la Cour",
-      "role": "Scenografi og lysdesign",
-      "profession": "skuespiller",
-      "production": "Familien Hassan",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/familien-hassan/",
-      "source": "kglteater.dk",
-      "searchKey": "benjamin la cour"
-    },
-    {
-      "person": "Cengiz Güdücü",
-      "role": "Kostumedesign",
-      "profession": "skuespiller",
-      "production": "Familien Hassan",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/familien-hassan/",
-      "source": "kglteater.dk",
-      "searchKey": "cengiz guducu"
-    },
-    {
-      "person": "David Andreas Hjerting",
-      "role": "Lyddesign",
-      "profession": "skuespiller",
-      "production": "Familien Hassan",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/familien-hassan/",
-      "source": "kglteater.dk",
-      "searchKey": "david andreas hjerting"
-    },
-    {
-      "person": "Rezwan Taha",
-      "role": "Musik",
-      "profession": "skuespiller",
-      "production": "Familien Hassan",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/familien-hassan/",
-      "source": "kglteater.dk",
-      "searchKey": "rezwan taha"
-    },
-    {
-      "person": "Steffen Stubager",
-      "role": "Konsulent",
-      "profession": "skuespiller",
-      "production": "Familien Hassan",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/familien-hassan/",
-      "source": "kglteater.dk",
-      "searchKey": "steffen stubager"
-    },
-    {
       "person": "Alvilda Lyneborg Lassen",
       "role": "Skuespiller",
       "profession": "skuespiller",
@@ -6294,76 +5704,6 @@
       "searchKey": "janus jensen"
     },
     {
-      "person": "Sibylle Glosted",
-      "role": "",
-      "profession": "skuespiller",
-      "production": "PixiForestilling-Teaterfuglene",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/pixiforestilling-teaterfuglene/",
-      "source": "kglteater.dk",
-      "searchKey": "sibylle glosted"
-    },
-    {
-      "person": "Morten Eggert",
-      "role": "",
-      "profession": "skuespiller",
-      "production": "PixiForestilling-Teaterfuglene",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/pixiforestilling-teaterfuglene/",
-      "source": "kglteater.dk",
-      "searchKey": "morten eggert"
-    },
-    {
-      "person": "David Hildebrandt",
-      "role": "",
-      "profession": "skuespiller",
-      "production": "PixiForestilling-Teaterfuglene",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/pixiforestilling-teaterfuglene/",
-      "source": "kglteater.dk",
-      "searchKey": "david hildebrandt"
-    },
-    {
-      "person": "Kasper Holten",
-      "role": "Tekst og instruktion",
-      "profession": "skuespiller",
-      "production": "PixiForestilling-Teaterfuglene",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/pixiforestilling-teaterfuglene/",
-      "source": "kglteater.dk",
-      "searchKey": "kasper holten"
-    },
-    {
-      "person": "Mathias Friis-Hansen",
-      "role": "Musikalsk arrangement",
-      "profession": "skuespiller",
-      "production": "PixiForestilling-Teaterfuglene",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/pixiforestilling-teaterfuglene/",
-      "source": "kglteater.dk",
-      "searchKey": "mathias friis-hansen"
-    },
-    {
-      "person": "Rolf Søborg Hansen",
-      "role": "Scenografi, dukkedesign og dukkeinstruktion",
-      "profession": "skuespiller",
-      "production": "PixiForestilling-Teaterfuglene",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/pixiforestilling-teaterfuglene/",
-      "source": "kglteater.dk",
-      "searchKey": "rolf soborg hansen"
-    },
-    {
-      "person": "Reumert !!",
-      "role": "Forestilling",
-      "profession": "skuespiller",
-      "production": "Reumert !!",
-      "venue": "Det Kongelige Teater",
-      "url": "https://www.kglteater.dk/skuespil/2627/reumert/",
-      "source": "kglteater.dk",
-      "searchKey": "reumert !!"
-    },
-    {
       "person": "Lars Mikkelsen",
       "role": "Hamm",
       "profession": "skuespiller",
@@ -7054,6 +6394,16 @@
       "searchKey": "mathilde passer"
     },
     {
+      "person": "Christian Rønn",
+      "role": "Komponist",
+      "profession": "musiker",
+      "production": "DOUBLE BILL: KUN OVERGÅET AF VIRKELIGHEDEN + BONNIE & FRIENDS",
+      "venue": "Aveny-T",
+      "url": "https://www.aveny-t.dk/forestillinger/double-bill-overget-bonnie",
+      "source": "aveny-t.dk",
+      "searchKey": "christian ronn"
+    },
+    {
       "person": "DUO PETRI / HANNIBAL OG POUL NYRUP RASMUSSEN",
       "role": "Koncert",
       "profession": "musiker",
@@ -7194,14 +6544,14 @@
       "searchKey": "zere celik"
     },
     {
-      "person": "Niels Skovgaard Andersen og Sune Skuldbøl Vraa",
+      "person": "Morten Hemmingsen og Sune Skuldbøl Vraa",
       "role": "Medvirkende",
       "profession": "skuespiller",
       "production": "EN MAGISK DRENG",
       "venue": "Aveny-T",
       "url": "https://www.aveny-t.dk/forestillinger/en-magisk-dreng",
       "source": "aveny-t.dk",
-      "searchKey": "niels skovgard andersen og sune skuldbol vra"
+      "searchKey": "morten hemmingsen og sune skuldbol vra"
     },
     {
       "person": "Sune Skuldbøl Vraa",
@@ -7512,16 +6862,6 @@
       "url": "https://www.aveny-t.dk/forestillinger/koncert-med-julie-pavon-ifm-kvinde-kend-din-krop",
       "source": "aveny-t.dk",
       "searchKey": "koncert med julie pavon (cph stage)"
-    },
-    {
-      "person": "Henrik Prip og Maria Rich&nbsp;",
-      "role": "Medvirkende",
-      "profession": "skuespiller",
-      "production": "KVINDE KEND DIN KROP (CPH STAGE)",
-      "venue": "Aveny-T",
-      "url": "https://www.aveny-t.dk/forestillinger/kvinde-kend-din-krop",
-      "source": "aveny-t.dk",
-      "searchKey": "henrik prip og maria rich&nbsp;"
     },
     {
       "person": "LANGBORDSMIDDAG (TILKØB TIL DA SISSE MØDTE BISSE)",
@@ -7894,16 +7234,6 @@
       "searchKey": "ramn alfredsson"
     },
     {
-      "person": "Christian Rønn",
-      "role": "Komponist",
-      "profession": "musiker",
-      "production": "KUN OVERGÅET AF VIRKELIGHEDEN",
-      "venue": "Aveny-T",
-      "url": "https://www.aveny-t.dk/forestillinger/q0mk8c0ljokv8g9jktuvjdp22e46e6",
-      "source": "aveny-t.dk",
-      "searchKey": "christian ronn"
-    },
-    {
       "person": "Sara Hjort Ditlevsen",
       "role": "Medvirkende",
       "profession": "skuespiller",
@@ -8244,6 +7574,16 @@
       "searchKey": "laura spottag fog"
     },
     {
+      "person": "Nikolaj Lie Kaas",
+      "role": "Medvirkende",
+      "profession": "skuespiller",
+      "production": "VANYA",
+      "venue": "Aveny-T",
+      "url": "https://www.aveny-t.dk/forestillinger/vanya",
+      "source": "aveny-t.dk",
+      "searchKey": "nikolaj lie kas"
+    },
+    {
       "person": "Eva Johanna Forsehag",
       "role": "Medvirkende",
       "profession": "skuespiller",
@@ -8314,26 +7654,6 @@
       "searchKey": "lille eyolf"
     },
     {
-      "person": "Eksistens",
-      "role": "Forestilling (ingen rolleliste tilgængelig)",
-      "profession": "skuespiller",
-      "production": "Eksistens",
-      "venue": "Aarhus Teater",
-      "url": "https://www.aarhusteater.dk/det-sker/forestillinger/aktuelt/eksistens",
-      "source": "aarhusteater.dk",
-      "searchKey": "eksistens"
-    },
-    {
-      "person": "Julekoncert med Aarhus Teaters Kor",
-      "role": "Forestilling (ingen rolleliste tilgængelig)",
-      "profession": "skuespiller",
-      "production": "Julekoncert med Aarhus Teaters Kor",
-      "venue": "Aarhus Teater",
-      "url": "https://www.aarhusteater.dk/det-sker/forestillinger/aktuelt/julekoncert-med-aarhus-teaters-kor",
-      "source": "aarhusteater.dk",
-      "searchKey": "julekoncert med arhus teaters kor"
-    },
-    {
       "person": "Hamlet",
       "role": "Forestilling (ingen rolleliste tilgængelig)",
       "profession": "skuespiller",
@@ -8352,6 +7672,16 @@
       "url": "https://www.aarhusteater.dk/det-sker/forestillinger/aktuelt/rodfaestet",
       "source": "aarhusteater.dk",
       "searchKey": "rodfastet"
+    },
+    {
+      "person": "Snehvide - en beauty-horror musical",
+      "role": "Forestilling (ingen rolleliste tilgængelig)",
+      "profession": "skuespiller",
+      "production": "Snehvide - en beauty-horror musical",
+      "venue": "Aarhus Teater",
+      "url": "https://www.aarhusteater.dk/det-sker/forestillinger/aktuelt/snehvide-en-beauty-horror-musical",
+      "source": "aarhusteater.dk",
+      "searchKey": "snehvide - en beauty-horror musical"
     },
     {
       "person": "HVAD BLEV DER AF BABY JANE?",
@@ -8392,6 +7722,26 @@
       "url": "https://www.aarhusteater.dk/det-sker/forestillinger/aktuelt/leslie",
       "source": "aarhusteater.dk",
       "searchKey": "leslie"
+    },
+    {
+      "person": "Eksistens",
+      "role": "Forestilling (ingen rolleliste tilgængelig)",
+      "profession": "skuespiller",
+      "production": "Eksistens",
+      "venue": "Aarhus Teater",
+      "url": "https://www.aarhusteater.dk/det-sker/forestillinger/aktuelt/eksistens",
+      "source": "aarhusteater.dk",
+      "searchKey": "eksistens"
+    },
+    {
+      "person": "Julekoncert med Aarhus Teaters Kor",
+      "role": "Forestilling (ingen rolleliste tilgængelig)",
+      "profession": "skuespiller",
+      "production": "Julekoncert med Aarhus Teaters Kor",
+      "venue": "Aarhus Teater",
+      "url": "https://www.aarhusteater.dk/det-sker/forestillinger/aktuelt/julekoncert-med-aarhus-teaters-kor",
+      "source": "aarhusteater.dk",
+      "searchKey": "julekoncert med arhus teaters kor"
     },
     {
       "person": "STUDIO Saloner",
@@ -8442,16 +7792,6 @@
       "url": "https://www.aarhusteater.dk/det-sker/forestillinger/aktuelt/teaterkoncert-thomas-helmig-2027",
       "source": "aarhusteater.dk",
       "searchKey": "teaterkoncert thomas helmig 2027"
-    },
-    {
-      "person": "Snehvide - en beauty-horror musical",
-      "role": "Forestilling (ingen rolleliste tilgængelig)",
-      "profession": "skuespiller",
-      "production": "Snehvide - en beauty-horror musical",
-      "venue": "Aarhus Teater",
-      "url": "https://www.aarhusteater.dk/det-sker/forestillinger/aktuelt/snehvide-en-beauty-horror-musical",
-      "source": "aarhusteater.dk",
-      "searchKey": "snehvide - en beauty-horror musical"
     },
     {
       "person": "Ekstra Arrangementer",
@@ -8652,46 +7992,6 @@
       "url": "https://www.odenseteater.dk/forestillinger/en-komedie-om-kaerlighed/",
       "source": "odenseteater.dk",
       "searchKey": "soren hauch fausboll"
-    },
-    {
-      "person": "Jesper Asholt",
-      "role": "Skuespiller",
-      "profession": "skuespiller",
-      "production": "Et CV over Danmark",
-      "venue": "Odense Teater",
-      "url": "https://www.odenseteater.dk/forestillinger/et-cv-over-danmark/",
-      "source": "odenseteater.dk",
-      "searchKey": "jesper asholt"
-    },
-    {
-      "person": "Jacob Morild",
-      "role": "Skuespiller",
-      "profession": "skuespiller",
-      "production": "Et CV over Danmark",
-      "venue": "Odense Teater",
-      "url": "https://www.odenseteater.dk/forestillinger/et-cv-over-danmark/",
-      "source": "odenseteater.dk",
-      "searchKey": "jacob morild"
-    },
-    {
-      "person": "Lasse Schmidt",
-      "role": "Kapelmester / Guitarist / Komponist",
-      "profession": "musiker",
-      "production": "Et CV over Danmark",
-      "venue": "Odense Teater",
-      "url": "https://www.odenseteater.dk/forestillinger/et-cv-over-danmark/",
-      "source": "odenseteater.dk",
-      "searchKey": "lasse schmidt"
-    },
-    {
-      "person": "Morten Wedendahl",
-      "role": "Kapelmester / Pianist / komponist",
-      "profession": "musiker",
-      "production": "Et CV over Danmark",
-      "venue": "Odense Teater",
-      "url": "https://www.odenseteater.dk/forestillinger/et-cv-over-danmark/",
-      "source": "odenseteater.dk",
-      "searchKey": "morten wedendahl"
     },
     {
       "person": "Mads Rømer Brolin-tani",
@@ -9024,86 +8324,6 @@
       "searchKey": "kasper krassimir"
     },
     {
-      "person": "Bjarne Henriksen",
-      "role": "Jens",
-      "profession": "skuespiller",
-      "production": "Når vinden vender",
-      "venue": "Odense Teater",
-      "url": "https://www.odenseteater.dk/forestillinger/naar-vinden-vender/",
-      "source": "odenseteater.dk",
-      "searchKey": "bjarne henriksen"
-    },
-    {
-      "person": "Paw Henriksen",
-      "role": "Henrik",
-      "profession": "skuespiller",
-      "production": "Når vinden vender",
-      "venue": "Odense Teater",
-      "url": "https://www.odenseteater.dk/forestillinger/naar-vinden-vender/",
-      "source": "odenseteater.dk",
-      "searchKey": "paw henriksen"
-    },
-    {
-      "person": "Thor Støvelbæk",
-      "role": "Victor",
-      "profession": "skuespiller",
-      "production": "Når vinden vender",
-      "venue": "Odense Teater",
-      "url": "https://www.odenseteater.dk/forestillinger/naar-vinden-vender/",
-      "source": "odenseteater.dk",
-      "searchKey": "thor stovelbak"
-    },
-    {
-      "person": "Tom Jensen",
-      "role": "skuespiller",
-      "profession": "skuespiller",
-      "production": "Omgivet af idioter",
-      "venue": "Odense Teater",
-      "url": "https://www.odenseteater.dk/forestillinger/omgivet-af-idioter/",
-      "source": "odenseteater.dk",
-      "searchKey": "tom jensen"
-    },
-    {
-      "person": "Sophie Marie Jeppesen",
-      "role": "skuespiller",
-      "profession": "skuespiller",
-      "production": "Omgivet af idioter",
-      "venue": "Odense Teater",
-      "url": "https://www.odenseteater.dk/forestillinger/omgivet-af-idioter/",
-      "source": "odenseteater.dk",
-      "searchKey": "sophie marie jeppesen"
-    },
-    {
-      "person": "Marie Mondrup",
-      "role": "skuespiller",
-      "profession": "skuespiller",
-      "production": "Omgivet af idioter",
-      "venue": "Odense Teater",
-      "url": "https://www.odenseteater.dk/forestillinger/omgivet-af-idioter/",
-      "source": "odenseteater.dk",
-      "searchKey": "marie mondrup"
-    },
-    {
-      "person": "Nadia Jasmin Nielsen",
-      "role": "skuespiller",
-      "profession": "skuespiller",
-      "production": "Omgivet af idioter",
-      "venue": "Odense Teater",
-      "url": "https://www.odenseteater.dk/forestillinger/omgivet-af-idioter/",
-      "source": "odenseteater.dk",
-      "searchKey": "nadia jasmin nielsen"
-    },
-    {
-      "person": "Tobias Shaw",
-      "role": "skuespiller",
-      "profession": "skuespiller",
-      "production": "Omgivet af idioter",
-      "venue": "Odense Teater",
-      "url": "https://www.odenseteater.dk/forestillinger/omgivet-af-idioter/",
-      "source": "odenseteater.dk",
-      "searchKey": "tobias shaw"
-    },
-    {
       "person": "Sara Line Møller Olsen",
       "role": "skuespiller",
       "profession": "skuespiller",
@@ -9222,186 +8442,6 @@
       "url": "https://www.odenseteater.dk/forestillinger/til-stjernerne-falder/",
       "source": "odenseteater.dk",
       "searchKey": "ingrid moller hedegard"
-    },
-    {
-      "person": "EST Gee",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "EST Gee",
-      "venue": "Lille VEGA",
-      "url": "https://vega.dk/en/event/est-gee-2026-10-26",
-      "source": "vega.dk",
-      "searchKey": "est gee"
-    },
-    {
-      "person": "The KILIMANJARO Darkjazz Ensemble",
-      "role": "Hovednavn",
-      "profession": "orkester",
-      "production": "The KILIMANJARO Darkjazz Ensemble",
-      "venue": "Lille VEGA",
-      "url": "https://vega.dk/en/event/the-kilimanjaro-darkjazz-ensemble-2026-10-27",
-      "source": "vega.dk",
-      "searchKey": "the kilimanjaro darkjazz ensemble"
-    },
-    {
-      "person": "Superfan",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "Superfan",
-      "venue": "Ideal Bar",
-      "url": "https://vega.dk/en/event/superfan-2026-10-28",
-      "source": "vega.dk",
-      "searchKey": "superfan"
-    },
-    {
-      "person": "Kelly No Brakes",
-      "role": "Support",
-      "profession": "musiker",
-      "production": "Superfan",
-      "venue": "Ideal Bar",
-      "url": "https://vega.dk/en/event/superfan-2026-10-28",
-      "source": "vega.dk",
-      "searchKey": "kelly no brakes"
-    },
-    {
-      "person": "Alex Vargas - Extra Concert",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "Alex Vargas - Extra Concert",
-      "venue": "Store VEGA",
-      "url": "https://vega.dk/en/event/alex-vargas-extra-concert-2026-10-28",
-      "source": "vega.dk",
-      "searchKey": "alex vargas - extra concert"
-    },
-    {
-      "person": "Alex Vargas ",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "Alex Vargas ",
-      "venue": "Store VEGA",
-      "url": "https://vega.dk/en/event/alex-vargas-2026-10-29",
-      "source": "vega.dk",
-      "searchKey": "alex vargas "
-    },
-    {
-      "person": "Karla Korsbak",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "Karla Korsbak",
-      "venue": "Ideal Bar",
-      "url": "https://vega.dk/en/event/karla-korsbak-2026-10-29",
-      "source": "vega.dk",
-      "searchKey": "karla korsbak"
-    },
-    {
-      "person": "Candidates of Ebba ",
-      "role": "Support",
-      "profession": "musiker",
-      "production": "Karla Korsbak",
-      "venue": "Ideal Bar",
-      "url": "https://vega.dk/en/event/karla-korsbak-2026-10-29",
-      "source": "vega.dk",
-      "searchKey": "candidates of ebba "
-    },
-    {
-      "person": "The Clockworks",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "The Clockworks",
-      "venue": "Lille VEGA",
-      "url": "https://vega.dk/en/event/the-clockworks-2026-10-29",
-      "source": "vega.dk",
-      "searchKey": "the clockworks"
-    },
-    {
-      "person": "Danny Blue",
-      "role": "Support",
-      "profession": "musiker",
-      "production": "The Clockworks",
-      "venue": "Lille VEGA",
-      "url": "https://vega.dk/en/event/the-clockworks-2026-10-29",
-      "source": "vega.dk",
-      "searchKey": "danny blue"
-    },
-    {
-      "person": "Tvivler + Båndet + Birds in Flight + Marí",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "Tvivler + Båndet + Birds in Flight + Marí",
-      "venue": "Ideal Bar",
-      "url": "https://vega.dk/en/event/tvivler-bandet-birds-in-flight-mari-2026-10-30",
-      "source": "vega.dk",
-      "searchKey": "tvivler + bandet + birds in flight + mari"
-    },
-    {
-      "person": "CARLLO YABOY",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "CARLLO YABOY",
-      "venue": "Lille VEGA",
-      "url": "https://vega.dk/en/event/carllo-yaboy-2026-10-30",
-      "source": "vega.dk",
-      "searchKey": "carllo yaboy"
-    },
-    {
-      "person": "Luko + MAISHA",
-      "role": "Support",
-      "profession": "musiker",
-      "production": "CARLLO YABOY",
-      "venue": "Lille VEGA",
-      "url": "https://vega.dk/en/event/carllo-yaboy-2026-10-30",
-      "source": "vega.dk",
-      "searchKey": "luko + maisha"
-    },
-    {
-      "person": "HALO GHOST",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "HALO GHOST",
-      "venue": "Lille VEGA",
-      "url": "https://vega.dk/en/event/halo-ghost-2026-10-31",
-      "source": "vega.dk",
-      "searchKey": "halo ghost"
-    },
-    {
-      "person": "Fancy Lee + Smooch + DJ Rafla",
-      "role": "Support",
-      "profession": "musiker",
-      "production": "HALO GHOST",
-      "venue": "Lille VEGA",
-      "url": "https://vega.dk/en/event/halo-ghost-2026-10-31",
-      "source": "vega.dk",
-      "searchKey": "fancy lee + smooch + dj rafla"
-    },
-    {
-      "person": "SUPER JET KINOKO",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "SUPER JET KINOKO",
-      "venue": "Ideal Bar",
-      "url": "https://vega.dk/en/event/super-jet-kinoko-2026-10-31",
-      "source": "vega.dk",
-      "searchKey": "super jet kinoko"
-    },
-    {
-      "person": "Kenton Slash Demon",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "Kenton Slash Demon",
-      "venue": "Store VEGA",
-      "url": "https://vega.dk/en/event/kenton-slash-demon-2026-10-31",
-      "source": "vega.dk",
-      "searchKey": "kenton slash demon"
-    },
-    {
-      "person": "B FROM E",
-      "role": "Support",
-      "profession": "musiker",
-      "production": "Kenton Slash Demon",
-      "venue": "Store VEGA",
-      "url": "https://vega.dk/en/event/kenton-slash-demon-2026-10-31",
-      "source": "vega.dk",
-      "searchKey": "b from e"
     },
     {
       "person": "KESHAVARA",
@@ -9604,274 +8644,194 @@
       "searchKey": "valter nilsson "
     },
     {
-      "person": "Mercury Rev",
-      "role": "Koncert",
+      "person": "Malk De Koijn",
+      "role": "Hovednavn",
       "profession": "musiker",
-      "production": "Mercury Rev",
-      "venue": "Studie 2",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/mercury-rev/mercury-rev-celebrating-25-years-of-all-is-dream/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "mercury rev"
+      "production": "Malk De Koijn",
+      "venue": "Store VEGA",
+      "url": "https://vega.dk/en/event/malk-de-koijn-2026-11-07",
+      "source": "vega.dk",
+      "searchKey": "malk de koijn"
     },
     {
-      "person": "Signe Moldes Roadshow",
-      "role": "Koncert",
+      "person": "Eros for you ",
+      "role": "Hovednavn",
       "profession": "musiker",
-      "production": "Signe Moldes Roadshow",
-      "venue": "VoxHall, Århus",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/signe-moldes-roadshow-1/signe-moldes-roadshow/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "signe moldes roadshow"
+      "production": "Eros for you ",
+      "venue": "Lille VEGA",
+      "url": "https://vega.dk/en/event/eros-for-you-2026-11-07",
+      "source": "vega.dk",
+      "searchKey": "eros for you "
     },
     {
-      "person": "DR Symfoniorkestret",
-      "role": "Medvirkende",
+      "person": "Jonas Løfgren ",
+      "role": "Support",
       "profession": "musiker",
-      "production": "Luisi & Verdis Requiem",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/luisi-verdis-requiem/luisi-verdis-requiem/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "dr symfoniorkestret"
+      "production": "Eros for you ",
+      "venue": "Lille VEGA",
+      "url": "https://vega.dk/en/event/eros-for-you-2026-11-07",
+      "source": "vega.dk",
+      "searchKey": "jonas lofgren "
     },
     {
-      "person": "DR Koncertkoret",
-      "role": "Medvirkende",
+      "person": "Rita Payés x  Lucía Fumero",
+      "role": "Hovednavn",
       "profession": "musiker",
-      "production": "Luisi & Verdis Requiem",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/luisi-verdis-requiem/luisi-verdis-requiem/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "dr koncertkoret"
+      "production": "Rita Payés x  Lucía Fumero",
+      "venue": "Store VEGA",
+      "url": "https://vega.dk/en/event/rita-payes-x-lucia-fumero-2026-11-08",
+      "source": "vega.dk",
+      "searchKey": "rita payes x  lucia fumero"
     },
     {
-      "person": "BBC Singers",
-      "role": "Medvirkende",
+      "person": "Josiah and The Bonnevilles",
+      "role": "Hovednavn",
       "profession": "musiker",
-      "production": "Luisi & Verdis Requiem",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/luisi-verdis-requiem/luisi-verdis-requiem/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "bbc singers"
+      "production": "Josiah and The Bonnevilles",
+      "venue": "Lille VEGA",
+      "url": "https://vega.dk/en/event/josiah-and-the-bonnevilles-2026-11-09",
+      "source": "vega.dk",
+      "searchKey": "josiah and the bonnevilles"
     },
     {
-      "person": "Fabio Luisi",
-      "role": "Dirigent",
+      "person": "Really Good Time",
+      "role": "Hovednavn",
       "profession": "musiker",
-      "production": "Luisi & Verdis Requiem",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/luisi-verdis-requiem/luisi-verdis-requiem/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "fabio luisi"
+      "production": "Really Good Time",
+      "venue": "Ideal Bar",
+      "url": "https://vega.dk/en/event/really-good-time-2026-11-09",
+      "source": "vega.dk",
+      "searchKey": "really good time"
     },
     {
-      "person": "Saimir Pirgu",
-      "role": "Tenor",
+      "person": "Uro - 2. Extra Concert",
+      "role": "Hovednavn",
       "profession": "musiker",
-      "production": "Luisi & Verdis Requiem",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/luisi-verdis-requiem/luisi-verdis-requiem/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "saimir pirgu"
+      "production": "Uro - 2. Extra Concert",
+      "venue": "Store VEGA",
+      "url": "https://vega.dk/en/event/uro-2-extra-concert-2026-11-09",
+      "source": "vega.dk",
+      "searchKey": "uro - 2. extra concert"
     },
     {
-      "person": "Deniz Uzun",
-      "role": "Sopran",
+      "person": "GUZO",
+      "role": "Support",
       "profession": "musiker",
-      "production": "Luisi & Verdis Requiem",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/luisi-verdis-requiem/luisi-verdis-requiem/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "deniz uzun"
+      "production": "Uro - 2. Extra Concert",
+      "venue": "Store VEGA",
+      "url": "https://vega.dk/en/event/uro-2-extra-concert-2026-11-09",
+      "source": "vega.dk",
+      "searchKey": "guzo"
     },
     {
-      "person": "Freja Kirk",
-      "role": "Koncert",
+      "person": "The Streets ",
+      "role": "Hovednavn",
       "profession": "musiker",
-      "production": "Freja Kirk",
-      "venue": "Studie 2",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/freja-kirk/freja-kirk-hey-freja/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "freja kirk"
+      "production": "The Streets ",
+      "venue": "Store VEGA",
+      "url": "https://vega.dk/en/event/the-streets-2026-11-10",
+      "source": "vega.dk",
+      "searchKey": "the streets "
     },
     {
-      "person": "DR Symfoniorkestret",
-      "role": "Medvirkende",
+      "person": "Mathias Ranch ",
+      "role": "Hovednavn",
       "profession": "musiker",
-      "production": "Luisi & Verdis Requiem",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/luisi-verdis-requiem/luisi-verdis-requiem-1/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "dr symfoniorkestret"
+      "production": "Mathias Ranch ",
+      "venue": "Lille VEGA",
+      "url": "https://vega.dk/en/event/mathias-ranch-2026-11-11",
+      "source": "vega.dk",
+      "searchKey": "mathias ranch "
     },
     {
-      "person": "DR Koncertkoret",
-      "role": "Medvirkende",
+      "person": "Pen Gutt ",
+      "role": "Special Guest ",
       "profession": "musiker",
-      "production": "Luisi & Verdis Requiem",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/luisi-verdis-requiem/luisi-verdis-requiem-1/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "dr koncertkoret"
+      "production": "Mathias Ranch ",
+      "venue": "Lille VEGA",
+      "url": "https://vega.dk/en/event/mathias-ranch-2026-11-11",
+      "source": "vega.dk",
+      "searchKey": "pen gutt "
     },
     {
-      "person": "BBC Singers",
-      "role": "Medvirkende",
+      "person": "Mercedess",
+      "role": "Hovednavn",
       "profession": "musiker",
-      "production": "Luisi & Verdis Requiem",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/luisi-verdis-requiem/luisi-verdis-requiem-1/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "bbc singers"
+      "production": "Mercedess",
+      "venue": "Ideal Bar",
+      "url": "https://vega.dk/en/event/mercedess-2026-11-11",
+      "source": "vega.dk",
+      "searchKey": "mercedess"
     },
     {
-      "person": "Fabio Luisi",
-      "role": "Dirigent",
+      "person": "Agnes Hartwich",
+      "role": "Support",
       "profession": "musiker",
-      "production": "Luisi & Verdis Requiem",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/luisi-verdis-requiem/luisi-verdis-requiem-1/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "fabio luisi"
+      "production": "Mercedess",
+      "venue": "Ideal Bar",
+      "url": "https://vega.dk/en/event/mercedess-2026-11-11",
+      "source": "vega.dk",
+      "searchKey": "agnes hartwich"
     },
     {
-      "person": "Saimir Pirgu",
-      "role": "Tenor",
+      "person": "URO - Extra concert",
+      "role": "Hovednavn",
       "profession": "musiker",
-      "production": "Luisi & Verdis Requiem",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/luisi-verdis-requiem/luisi-verdis-requiem-1/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "saimir pirgu"
+      "production": "URO - Extra concert",
+      "venue": "Store VEGA",
+      "url": "https://vega.dk/en/event/uro-extra-concert-2026-11-11",
+      "source": "vega.dk",
+      "searchKey": "uro - extra concert"
     },
     {
-      "person": "Deniz Uzun",
-      "role": "Sopran",
+      "person": "GUZO",
+      "role": "Support",
       "profession": "musiker",
-      "production": "Luisi & Verdis Requiem",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/luisi-verdis-requiem/luisi-verdis-requiem-1/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "deniz uzun"
+      "production": "URO - Extra concert",
+      "venue": "Store VEGA",
+      "url": "https://vega.dk/en/event/uro-extra-concert-2026-11-11",
+      "source": "vega.dk",
+      "searchKey": "guzo"
     },
     {
-      "person": "Ryan Beatty",
-      "role": "Koncert",
+      "person": "URO",
+      "role": "Hovednavn",
       "profession": "musiker",
-      "production": "Ryan Beatty",
-      "venue": "Studie 2",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/ryan-beatty/ryan-beatty/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "ryan beatty"
+      "production": "URO",
+      "venue": "Store VEGA",
+      "url": "https://vega.dk/en/event/uro-2026-11-12",
+      "source": "vega.dk",
+      "searchKey": "uro"
     },
     {
-      "person": "DR Symfoniorkestret",
-      "role": "Medvirkende",
+      "person": "GUZO",
+      "role": "Support",
       "profession": "musiker",
-      "production": "Luisi & Verdis Requiem",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/luisi-verdis-requiem/luisi-verdis-requiem-2/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "dr symfoniorkestret"
+      "production": "URO",
+      "venue": "Store VEGA",
+      "url": "https://vega.dk/en/event/uro-2026-11-12",
+      "source": "vega.dk",
+      "searchKey": "guzo"
     },
     {
-      "person": "DR Koncertkoret",
-      "role": "Medvirkende",
+      "person": "Rosa På Månen",
+      "role": "Hovednavn",
       "profession": "musiker",
-      "production": "Luisi & Verdis Requiem",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/luisi-verdis-requiem/luisi-verdis-requiem-2/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "dr koncertkoret"
+      "production": "Rosa På Månen",
+      "venue": "Ideal Bar",
+      "url": "https://vega.dk/en/event/rosa-pa-manen-2026-11-12",
+      "source": "vega.dk",
+      "searchKey": "rosa pa manen"
     },
     {
-      "person": "BBC Singers",
-      "role": "Medvirkende",
+      "person": "Matilde Kühnrich",
+      "role": "Support",
       "profession": "musiker",
-      "production": "Luisi & Verdis Requiem",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/luisi-verdis-requiem/luisi-verdis-requiem-2/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "bbc singers"
-    },
-    {
-      "person": "Fabio Luisi",
-      "role": "Dirigent",
-      "profession": "musiker",
-      "production": "Luisi & Verdis Requiem",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/luisi-verdis-requiem/luisi-verdis-requiem-2/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "fabio luisi"
-    },
-    {
-      "person": "Saimir Pirgu",
-      "role": "Tenor",
-      "profession": "musiker",
-      "production": "Luisi & Verdis Requiem",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/luisi-verdis-requiem/luisi-verdis-requiem-2/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "saimir pirgu"
-    },
-    {
-      "person": "Deniz Uzun",
-      "role": "Sopran",
-      "profession": "musiker",
-      "production": "Luisi & Verdis Requiem",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/luisi-verdis-requiem/luisi-verdis-requiem-2/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "deniz uzun"
-    },
-    {
-      "person": "Goldie Boutilier",
-      "role": "Koncert",
-      "profession": "musiker",
-      "production": "Goldie Boutilier",
-      "venue": "Studie 2",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/goldie-boutilier/goldie-boutilier-goldie-boutilier-s-party-26-tour/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "goldie boutilier"
-    },
-    {
-      "person": "Folkeklubben & Danmarks Underholdningsorkester",
-      "role": "Koncert",
-      "profession": "orkester",
-      "production": "Folkeklubben & Danmarks Underholdningsorkester",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/folkeklubben-danmarks-underholdningsorkester/folkeklubben-danmarks-underholdningsorkester/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "folkeklubben & danmarks underholdningsorkester"
-    },
-    {
-      "person": "Folkeklubben & Danmarks Underholdningsorkester",
-      "role": "Koncert",
-      "profession": "orkester",
-      "production": "Folkeklubben & Danmarks Underholdningsorkester",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/folkeklubben-danmarks-underholdningsorkester/folkeklubben-danmarks-underholdningsorkester-3-ekstrakoncert/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "folkeklubben & danmarks underholdningsorkester"
-    },
-    {
-      "person": "Zimmer90",
-      "role": "Koncert",
-      "profession": "musiker",
-      "production": "Zimmer90",
-      "venue": "Studie 2",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/zimmer90/zimmer90-arthouse-tour-2026/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "zimmer90"
-    },
-    {
-      "person": "Folkeklubben & Danmarks Underholdningsorkester",
-      "role": "Koncert",
-      "profession": "orkester",
-      "production": "Folkeklubben & Danmarks Underholdningsorkester",
-      "venue": "Koncertsalen",
-      "url": "https://www.drkoncerthuset.dk/kalender/2026/folkeklubben-danmarks-underholdningsorkester/folkeklubben-danmarks-underholdningsorkester-ekstrakoncert/",
-      "source": "drkoncerthuset.dk",
-      "searchKey": "folkeklubben & danmarks underholdningsorkester"
+      "production": "Rosa På Månen",
+      "venue": "Ideal Bar",
+      "url": "https://vega.dk/en/event/rosa-pa-manen-2026-11-12",
+      "source": "vega.dk",
+      "searchKey": "matilde kuhnrich"
     },
     {
       "person": "Folkeklubben & Danmarks Underholdningsorkester",
@@ -11404,6 +10364,16 @@
       "searchKey": "sebastian & lis – tiderne skifter"
     },
     {
+      "person": "Science & Cocktails: Inside Your Inner Voice",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Science & Cocktails: Inside Your Inner Voice",
+      "venue": "Koncertsalen",
+      "url": "https://www.drkoncerthuset.dk/kalender/2027/science-cocktails-inside-your-inner-voice/science-cocktails-inside-your-inner-voice/",
+      "source": "drkoncerthuset.dk",
+      "searchKey": "science & cocktails: inside your inner voice"
+    },
+    {
       "person": "David Bowie - 80 års Hyldestkoncert",
       "role": "Medvirkende",
       "profession": "musiker",
@@ -11834,6 +10804,16 @@
       "searchKey": "david bowie - 80 ars hyldestkoncert"
     },
     {
+      "person": "Jesse Welles",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Jesse Welles",
+      "venue": "Koncertsalen",
+      "url": "https://www.drkoncerthuset.dk/kalender/2027/jesse-welles/jesse-welles-red-tour/",
+      "source": "drkoncerthuset.dk",
+      "searchKey": "jesse welles"
+    },
+    {
       "person": "Kwamie Liv",
       "role": "Koncert",
       "profession": "musiker",
@@ -12082,6 +11062,16 @@
       "url": "https://www.drkoncerthuset.dk/kalender/2027/michael-learns-to-rock/michael-learns-to-rock-mltr-dk-2027-1/",
       "source": "drkoncerthuset.dk",
       "searchKey": "michal learns to rock"
+    },
+    {
+      "person": "Fireside Talk: Sandheden fra syge kvinder",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Fireside Talk: Sandheden fra syge kvinder",
+      "venue": "Studie 2",
+      "url": "https://www.drkoncerthuset.dk/kalender/2027/fireside-talk-sandheden-fra-syge-kvinder/fireside-talk-sandheden-fra-syge-kvinder-henriette-svarre-nielsen-roja-pakari-og-line-hoffmeyer-modereret-af-emma-holten/",
+      "source": "drkoncerthuset.dk",
+      "searchKey": "fireside talk: sandheden fra syge kvinder"
     },
     {
       "person": "The Tallest Man On Earth",
@@ -12844,6 +11834,16 @@
       "searchKey": "mor ve otesi"
     },
     {
+      "person": "Fireside Talk: Udvalgte kolbøtter",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Fireside Talk: Udvalgte kolbøtter",
+      "venue": "Koncertsalen",
+      "url": "https://www.drkoncerthuset.dk/kalender/2027/fireside-talk-udvalgte-kolboetter/fireside-talk-udvalgte-kolboetter-jakob-ellemann-jensen-og-svend-brinkmann-moderator-natasja-crone/",
+      "source": "drkoncerthuset.dk",
+      "searchKey": "fireside talk: udvalgte kolbotter"
+    },
+    {
       "person": "DR Symfoniorkestret",
       "role": "Medvirkende",
       "profession": "musiker",
@@ -13234,6 +12234,16 @@
       "searchKey": "sira jovina"
     },
     {
+      "person": "Daniel Norgren",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Daniel Norgren",
+      "venue": "Koncertsalen",
+      "url": "https://www.drkoncerthuset.dk/kalender/2027/daniel-norgren/daniel-norgren/",
+      "source": "drkoncerthuset.dk",
+      "searchKey": "daniel norgren"
+    },
+    {
       "person": "DR Symfoniorkestret",
       "role": "Medvirkende",
       "profession": "musiker",
@@ -13492,6 +12502,16 @@
       "url": "https://www.drkoncerthuset.dk/kalender/2027/jo-koy-just-being-koy-tour/jo-koy/",
       "source": "drkoncerthuset.dk",
       "searchKey": "jo koy: just being koy"
+    },
+    {
+      "person": "Søs Fenger",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Søs Fenger",
+      "venue": "Koncertsalen",
+      "url": "https://www.drkoncerthuset.dk/kalender/2027/soes-fenger/soes-fenger/",
+      "source": "drkoncerthuset.dk",
+      "searchKey": "sos fenger"
     },
     {
       "person": "DR Symfoniorkestret",
@@ -13754,6 +12774,16 @@
       "searchKey": "beethoven orkestret bonn: kaftan, shirinyan og beethoven"
     },
     {
+      "person": "Beth Gibbons",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Beth Gibbons",
+      "venue": "Koncertsalen",
+      "url": "https://www.drkoncerthuset.dk/kalender/2027/beth-gibbons/beth-gibbons-lives-outgrown/",
+      "source": "drkoncerthuset.dk",
+      "searchKey": "beth gibbons"
+    },
+    {
       "person": "Fallulah",
       "role": "Koncert",
       "profession": "musiker",
@@ -13794,6 +12824,26 @@
       "searchKey": "michal falch"
     },
     {
+      "person": "HAEVN",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "HAEVN",
+      "venue": "Koncertsalen",
+      "url": "https://www.drkoncerthuset.dk/kalender/2027/haevn/haevn/",
+      "source": "drkoncerthuset.dk",
+      "searchKey": "havn"
+    },
+    {
+      "person": "Milling & Molbech - Madonna",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Milling & Molbech - Madonna",
+      "venue": "Koncertsalen",
+      "url": "https://www.drkoncerthuset.dk/kalender/2027/milling-molbech-madonna/milling-molbech-madonna-historien-bag-musikken-du-elsker/",
+      "source": "drkoncerthuset.dk",
+      "searchKey": "milling & molbech - madonna"
+    },
+    {
       "person": "Ministry of Sound Classical",
       "role": "Koncert",
       "profession": "musiker",
@@ -13822,6 +12872,16 @@
       "url": "https://www.drkoncerthuset.dk/kalender/2027/rasmus-lyberth/rasmus-lyberth-stilhedens-aand/",
       "source": "drkoncerthuset.dk",
       "searchKey": "rasmus lyberth"
+    },
+    {
+      "person": "Acid Arab",
+      "role": "Hovednavn",
+      "profession": "musiker",
+      "production": "Acid Arab",
+      "venue": "Amager Bio",
+      "url": "https://ab-b.dk/k/acid-arab/",
+      "source": "ab-b.dk",
+      "searchKey": "acid arab"
     },
     {
       "person": "Adéla",
@@ -13884,6 +12944,16 @@
       "searchKey": "thenimbwits"
     },
     {
+      "person": "Asger",
+      "role": "Hovednavn",
+      "profession": "musiker",
+      "production": "Asger",
+      "venue": "Amager Bio",
+      "url": "https://ab-b.dk/k/asger/",
+      "source": "ab-b.dk",
+      "searchKey": "asger"
+    },
+    {
       "person": "Aynur",
       "role": "Hovednavn",
       "profession": "musiker",
@@ -13892,16 +12962,6 @@
       "url": "https://ab-b.dk/k/aynur/",
       "source": "ab-b.dk",
       "searchKey": "aynur"
-    },
-    {
-      "person": "Baby Did A Bad Thing",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "Baby Did A Bad Thing",
-      "venue": "Amager Bio",
-      "url": "https://ab-b.dk/k/baby-did-a-bad-thing/",
-      "source": "ab-b.dk",
-      "searchKey": "baby did a bad thing"
     },
     {
       "person": "Bi-2",
@@ -14174,6 +13234,16 @@
       "searchKey": "fyr og flamme – hjem til jul"
     },
     {
+      "person": "Gasbox",
+      "role": "Hovednavn",
+      "profession": "musiker",
+      "production": "Gasbox",
+      "venue": "Amager Bio",
+      "url": "https://ab-b.dk/k/gasbox/",
+      "source": "ab-b.dk",
+      "searchKey": "gasbox"
+    },
+    {
       "person": "Georgios Alevrofas: The 12 Labors Of Hercules",
       "role": "Hovednavn",
       "profession": "musiker",
@@ -14182,36 +13252,6 @@
       "url": "https://ab-b.dk/k/georgios-alevrofas-the-12-labors-of-hercules/",
       "source": "ab-b.dk",
       "searchKey": "georgios alevrofas: the 12 labors of hercules"
-    },
-    {
-      "person": "Gloryhammer",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "Gloryhammer",
-      "venue": "Amager Bio",
-      "url": "https://ab-b.dk/k/gloryhammer/",
-      "source": "ab-b.dk",
-      "searchKey": "gloryhammer"
-    },
-    {
-      "person": "Majestica",
-      "role": "Support",
-      "profession": "musiker",
-      "production": "Gloryhammer",
-      "venue": "Amager Bio",
-      "url": "https://ab-b.dk/k/gloryhammer/",
-      "source": "ab-b.dk",
-      "searchKey": "majestica"
-    },
-    {
-      "person": "Arion",
-      "role": "Support",
-      "profession": "musiker",
-      "production": "Gloryhammer",
-      "venue": "Amager Bio",
-      "url": "https://ab-b.dk/k/gloryhammer/",
-      "source": "ab-b.dk",
-      "searchKey": "arion"
     },
     {
       "person": "Graveyard & Blues Pills",
@@ -14234,6 +13274,36 @@
       "searchKey": "spiders"
     },
     {
+      "person": "Guttural Disgorge",
+      "role": "Hovednavn",
+      "profession": "musiker",
+      "production": "Guttural Disgorge",
+      "venue": "Amager Bio",
+      "url": "https://ab-b.dk/k/guttural-disgorge/",
+      "source": "ab-b.dk",
+      "searchKey": "guttural disgorge"
+    },
+    {
+      "person": "Henret",
+      "role": "Support",
+      "profession": "musiker",
+      "production": "Guttural Disgorge",
+      "venue": "Amager Bio",
+      "url": "https://ab-b.dk/k/guttural-disgorge/",
+      "source": "ab-b.dk",
+      "searchKey": "henret"
+    },
+    {
+      "person": "Infected Smegma",
+      "role": "Support",
+      "profession": "musiker",
+      "production": "Guttural Disgorge",
+      "venue": "Amager Bio",
+      "url": "https://ab-b.dk/k/guttural-disgorge/",
+      "source": "ab-b.dk",
+      "searchKey": "infected smegma"
+    },
+    {
       "person": "Holly Humberstone",
       "role": "Hovednavn",
       "profession": "musiker",
@@ -14254,26 +13324,6 @@
       "searchKey": "tba"
     },
     {
-      "person": "HYD",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "HYD",
-      "venue": "Amager Bio",
-      "url": "https://ab-b.dk/k/hyd-us/",
-      "source": "ab-b.dk",
-      "searchKey": "hyd"
-    },
-    {
-      "person": "Turi Tierrah",
-      "role": "Support",
-      "profession": "musiker",
-      "production": "HYD",
-      "venue": "Amager Bio",
-      "url": "https://ab-b.dk/k/hyd-us/",
-      "source": "ab-b.dk",
-      "searchKey": "turi tierrah"
-    },
-    {
       "person": "Hymn",
       "role": "Hovednavn",
       "profession": "musiker",
@@ -14282,6 +13332,16 @@
       "url": "https://ab-b.dk/k/hymn/",
       "source": "ab-b.dk",
       "searchKey": "hymn"
+    },
+    {
+      "person": "Bethmoora",
+      "role": "Support",
+      "profession": "musiker",
+      "production": "Hymn",
+      "venue": "Amager Bio",
+      "url": "https://ab-b.dk/k/hymn/",
+      "source": "ab-b.dk",
+      "searchKey": "bethmoora"
     },
     {
       "person": "In Gowan Ring + Adaya",
@@ -14294,24 +13354,24 @@
       "searchKey": "in gowan ring + adaya"
     },
     {
-      "person": "Inhuman Nature",
+      "person": "Inhuman Nature + State Power",
       "role": "Hovednavn",
       "profession": "musiker",
-      "production": "Inhuman Nature",
+      "production": "Inhuman Nature + State Power",
       "venue": "Amager Bio",
       "url": "https://ab-b.dk/k/inhuman-nature/",
       "source": "ab-b.dk",
-      "searchKey": "inhuman nature"
+      "searchKey": "inhuman nature + state power"
     },
     {
-      "person": "State Power",
+      "person": "Ninth Realm",
       "role": "Support",
       "profession": "musiker",
-      "production": "Inhuman Nature",
+      "production": "Inhuman Nature + State Power",
       "venue": "Amager Bio",
       "url": "https://ab-b.dk/k/inhuman-nature/",
       "source": "ab-b.dk",
-      "searchKey": "state power"
+      "searchKey": "ninth realm"
     },
     {
       "person": "James Marriott",
@@ -14412,26 +13472,6 @@
       "url": "https://ab-b.dk/k/kovacs/",
       "source": "ab-b.dk",
       "searchKey": "kovacs"
-    },
-    {
-      "person": "Led Zeppelin Jam",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "Led Zeppelin Jam",
-      "venue": "Amager Bio",
-      "url": "https://ab-b.dk/k/led-zeppelin-jam/",
-      "source": "ab-b.dk",
-      "searchKey": "led zeppelin jam"
-    },
-    {
-      "person": "MoonDog",
-      "role": "Support",
-      "profession": "musiker",
-      "production": "Led Zeppelin Jam",
-      "venue": "Amager Bio",
-      "url": "https://ab-b.dk/k/led-zeppelin-jam/",
-      "source": "ab-b.dk",
-      "searchKey": "moondog"
     },
     {
       "person": "Loma + Shearwater",
@@ -14734,6 +13774,16 @@
       "searchKey": "pretty maids"
     },
     {
+      "person": "Defecto",
+      "role": "Support",
+      "profession": "musiker",
+      "production": "Pretty Maids",
+      "venue": "Amager Bio",
+      "url": "https://ab-b.dk/k/pretty-maids/",
+      "source": "ab-b.dk",
+      "searchKey": "defecto"
+    },
+    {
       "person": "Rage Again",
       "role": "Hovednavn",
       "profession": "musiker",
@@ -14824,16 +13874,6 @@
       "searchKey": "ski: zanjani, willow, micass & $ly"
     },
     {
-      "person": "Sømændene",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "Sømændene",
-      "venue": "Amager Bio",
-      "url": "https://ab-b.dk/k/soemaendene/",
-      "source": "ab-b.dk",
-      "searchKey": "somandene"
-    },
-    {
       "person": "Strychnos – Album tour",
       "role": "Hovednavn",
       "profession": "musiker",
@@ -14872,16 +13912,6 @@
       "url": "https://ab-b.dk/k/strychnos-albumrelease/",
       "source": "ab-b.dk",
       "searchKey": "gam"
-    },
-    {
-      "person": "Sturle Dagsland",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "Sturle Dagsland",
-      "venue": "Amager Bio",
-      "url": "https://ab-b.dk/k/sturle-dagsland/",
-      "source": "ab-b.dk",
-      "searchKey": "sturle dagsland"
     },
     {
       "person": "Sunset Images",
@@ -14924,26 +13954,6 @@
       "searchKey": "tarja turunen"
     },
     {
-      "person": "The Chains",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "The Chains",
-      "venue": "Amager Bio",
-      "url": "https://ab-b.dk/k/the-chains/",
-      "source": "ab-b.dk",
-      "searchKey": "the chains"
-    },
-    {
-      "person": "Skaface 2.0",
-      "role": "Support",
-      "profession": "musiker",
-      "production": "The Chains",
-      "venue": "Amager Bio",
-      "url": "https://ab-b.dk/k/the-chains/",
-      "source": "ab-b.dk",
-      "searchKey": "skaface 2.0"
-    },
-    {
       "person": "The Hardkiss",
       "role": "Hovednavn",
       "profession": "musiker",
@@ -14964,6 +13974,16 @@
       "searchKey": "felin"
     },
     {
+      "person": "The Meffs",
+      "role": "Hovednavn",
+      "profession": "musiker",
+      "production": "The Meffs",
+      "venue": "Amager Bio",
+      "url": "https://ab-b.dk/k/the-meffs/",
+      "source": "ab-b.dk",
+      "searchKey": "the meffs"
+    },
+    {
       "person": "The Pineapple Thief",
       "role": "Hovednavn",
       "profession": "musiker",
@@ -14972,26 +13992,6 @@
       "url": "https://ab-b.dk/k/the-pineapple-thief/",
       "source": "ab-b.dk",
       "searchKey": "the pineapple thief"
-    },
-    {
-      "person": "The Rotten Leprechauns",
-      "role": "Hovednavn",
-      "profession": "musiker",
-      "production": "The Rotten Leprechauns",
-      "venue": "Amager Bio",
-      "url": "https://ab-b.dk/k/the-rotten-leprechauns/",
-      "source": "ab-b.dk",
-      "searchKey": "the rotten leprechauns"
-    },
-    {
-      "person": "Pistol Pistol Pistol + Sarah And The Terror Dogs + DJ Gorilla Far",
-      "role": "Support",
-      "profession": "musiker",
-      "production": "The Rotten Leprechauns",
-      "venue": "Amager Bio",
-      "url": "https://ab-b.dk/k/the-rotten-leprechauns/",
-      "source": "ab-b.dk",
-      "searchKey": "pistol pistol pistol + sarah and the terror dogs + dj gorilla far"
     },
     {
       "person": "The Wallflowers",
@@ -15062,6 +14062,26 @@
       "url": "https://ab-b.dk/k/uncle-acid-the-deadbeats/",
       "source": "ab-b.dk",
       "searchKey": "earth tongue"
+    },
+    {
+      "person": "Undergang – ERDM Vol. 34",
+      "role": "Hovednavn",
+      "profession": "musiker",
+      "production": "Undergang – ERDM Vol. 34",
+      "venue": "Amager Bio",
+      "url": "https://ab-b.dk/k/undergang-erdm-vol-34/",
+      "source": "ab-b.dk",
+      "searchKey": "undergang – erdm vol. 34"
+    },
+    {
+      "person": "Malformed",
+      "role": "Support",
+      "profession": "musiker",
+      "production": "Undergang – ERDM Vol. 34",
+      "venue": "Amager Bio",
+      "url": "https://ab-b.dk/k/undergang-erdm-vol-34/",
+      "source": "ab-b.dk",
+      "searchKey": "malformed"
     },
     {
       "person": "Walter Trout",
@@ -15224,6 +14244,76 @@
       "searchKey": "comedyshow – ali siddiq (us)"
     },
     {
+      "person": "INFERNAL HØJTIDSHÆRG!",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "INFERNAL HØJTIDSHÆRG!",
+      "venue": "VEGA",
+      "url": "https://migogkbh.dk/kalender/begivenhed/infernal-hoejtidshaerg-2/",
+      "source": "migogkbh.dk",
+      "searchKey": "infernal hojtidsharg!"
+    },
+    {
+      "person": "INFERNAL HØJTIDSHÆRG!",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "INFERNAL HØJTIDSHÆRG!",
+      "venue": "VEGA",
+      "url": "https://migogkbh.dk/kalender/begivenhed/infernal-hoejtidshaerg/",
+      "source": "migogkbh.dk",
+      "searchKey": "infernal hojtidsharg!"
+    },
+    {
+      "person": "Musik, live talk & after work-stemning",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Musik, live talk & after work-stemning",
+      "venue": "Indre By",
+      "url": "https://migogkbh.dk/kalender/begivenhed/musik-live-talk-after-work-stemning/",
+      "source": "migogkbh.dk",
+      "searchKey": "musik, live talk & after work-stemning"
+    },
+    {
+      "person": "The Chats klar til at vælte VEGA igen",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "The Chats klar til at vælte VEGA igen",
+      "venue": "VEGA",
+      "url": "https://migogkbh.dk/kalender/begivenhed/the-chats-klar-til-at-vaelte-vega-igen/",
+      "source": "migogkbh.dk",
+      "searchKey": "the chats klar til at valte vega igen"
+    },
+    {
+      "person": "The Harlem Spirit of Gospel i Det Ny Teater",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "The Harlem Spirit of Gospel i Det Ny Teater",
+      "venue": "Det Ny Teater",
+      "url": "https://migogkbh.dk/kalender/begivenhed/the-harlem-spirit-of-gospel-i-det-ny-teater/",
+      "source": "migogkbh.dk",
+      "searchKey": "the harlem spirit of gospel i det ny teater"
+    },
+    {
+      "person": "Tysk topproducer, BUNT., fylder Poolen med episke beats",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Tysk topproducer, BUNT., fylder Poolen med episke beats",
+      "venue": "Poolen",
+      "url": "https://migogkbh.dk/kalender/begivenhed/tysk-topproducer-bunt-fylder-poolen-med-episke-beats/",
+      "source": "migogkbh.dk",
+      "searchKey": "tysk topproducer, bunt., fylder poolen med episke beats"
+    },
+    {
+      "person": "Daniel Norgren indtager DR Koncerthuset",
+      "role": "Koncert",
+      "profession": "musiker",
+      "production": "Daniel Norgren indtager DR Koncerthuset",
+      "venue": "DR Koncerthuset",
+      "url": "https://migogkbh.dk/kalender/begivenhed/daniel-norgren-indtager-dr-koncerthuset/",
+      "source": "migogkbh.dk",
+      "searchKey": "daniel norgren indtager dr koncerthuset"
+    },
+    {
       "person": "STØTTEKONCERT TIL FORDEL FOR HJEMLØSE",
       "role": "Koncert",
       "profession": "musiker",
@@ -15314,16 +14404,6 @@
       "searchKey": "orestad sound & science gar nordisk i ar"
     },
     {
-      "person": "Halloween Night med Jimilian",
-      "role": "Koncert",
-      "profession": "musiker",
-      "production": "Halloween Night med Jimilian",
-      "venue": "Halvandet",
-      "url": "https://migogkbh.dk/kalender/begivenhed/halloween-night-med-jimilian/",
-      "source": "migogkbh.dk",
-      "searchKey": "halloween night med jimilian"
-    },
-    {
       "person": "Tivoli-Gardens juleparade",
       "role": "Koncert",
       "profession": "musiker",
@@ -15384,16 +14464,6 @@
       "searchKey": "lizzy mcalpine giver sin forste danske koncert"
     },
     {
-      "person": "De Dødes Dag: Cumbión de Muertos",
-      "role": "Koncert",
-      "profession": "musiker",
-      "production": "De Dødes Dag: Cumbión de Muertos",
-      "venue": "Union",
-      "url": "https://migogkbh.dk/kalender/begivenhed/de-doedes-dag-cumbion-de-muertos/",
-      "source": "migogkbh.dk",
-      "searchKey": "de dodes dag: cumbion de muertos"
-    },
-    {
       "person": "Ronan Keating indtager Royal Arena med hits fra hele karrieren",
       "role": "Koncert",
       "profession": "musiker",
@@ -15414,16 +14484,6 @@
       "searchKey": "klassisk koncert for born & bamser: tomas og julie pa farten"
     },
     {
-      "person": "Operaens mennesker – fra ideal til individ",
-      "role": "Koncert",
-      "profession": "musiker",
-      "production": "Operaens mennesker – fra ideal til individ",
-      "venue": "KU.BE",
-      "url": "https://migogkbh.dk/kalender/begivenhed/operaens-mennesker-fra-ideal-til-individ/",
-      "source": "migogkbh.dk",
-      "searchKey": "operans mennesker – fra ideal til individ"
-    },
-    {
       "person": "The Mary Wallopers, giver koncert i København",
       "role": "Koncert",
       "profession": "musiker",
@@ -15442,16 +14502,6 @@
       "url": "https://migogkbh.dk/kalender/begivenhed/the-tallest-man-on-earth-gaester-dr-koncerthuset/",
       "source": "migogkbh.dk",
       "searchKey": "the tallest man on earth gaster dr koncerthuset"
-    },
-    {
-      "person": "The Prince Tribute Show – Oh No, Let’s Go!",
-      "role": "Koncert",
-      "profession": "musiker",
-      "production": "The Prince Tribute Show – Oh No, Let’s Go!",
-      "venue": "Charlottenlund",
-      "url": "https://migogkbh.dk/kalender/begivenhed/the-prince-tribute-show-oh-no-lets-go/",
-      "source": "migogkbh.dk",
-      "searchKey": "the prince tribute show – oh no, let’s go!"
     },
     {
       "person": "En aften med Jacob Binzer, Billy Cross, Mika Vandborg og Emil Falk",
