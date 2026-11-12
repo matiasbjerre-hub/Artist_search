@@ -199,13 +199,116 @@
   }
 
   footer a { color: inherit; }
+
+  /* Favoritter */
+  .favorites {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.7rem 0.9rem;
+    margin: 0.9rem 0 0.25rem;
+  }
+
+  .favorites-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+
+  .favorites-title {
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .favorites label.include {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.87rem;
+    color: var(--text-dim);
+    cursor: pointer;
+  }
+
+  .favorites label.include input { width: 1rem; height: 1rem; accent-color: var(--accent); }
+
+  .fav-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.55rem;
+  }
+
+  .fav-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.85rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.2rem 0.3rem 0.2rem 0.65rem;
+  }
+
+  .fav-chip .count { color: var(--text-dim); font-size: 0.78rem; }
+
+  .fav-chip button {
+    border: none;
+    background: transparent;
+    color: var(--text-dim);
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0.1rem 0.35rem;
+    border-radius: 999px;
+  }
+
+  .fav-chip button:hover { color: var(--text); background: var(--border); }
+
+  .fav-hint { color: var(--text-dim); font-size: 0.85rem; margin: 0.45rem 0 0; }
+
+  .add-fav {
+    margin-top: 0.55rem;
+    border: 1px dashed var(--border);
+    background: transparent;
+    color: var(--accent);
+    border-radius: var(--radius);
+    padding: 0.35rem 0.7rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+
+  .star {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.15rem;
+    line-height: 1;
+    padding: 0 0.15rem;
+    color: var(--text-dim);
+  }
+
+  .star[aria-pressed="true"] { color: #f5b301; }
+
+  .result-right { display: inline-flex; align-items: center; gap: 0.4rem; }
+
+  li.result.is-fav { border-color: #f5b30166; }
+
+  .group-label {
+    color: var(--text-dim);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin: 0.4rem 0 -0.2rem;
+    list-style: none;
+  }
 </style>
 </head>
 <body>
 <main>
   <header>
     <h1>Artist Search</h1>
-    <p>Indtast et navn og vælg profession for at se hvilke teaterforestillinger eller koncerter personen medvirker i.</p>
+    <p>Indtast et navn og vælg profession for at se hvilke teaterforestillinger eller koncerter personen medvirker i. Markér kunstnere med ☆, så kommer de altid med.</p>
   </header>
 
   <form class="search" id="search-form" autocomplete="off">
@@ -225,10 +328,24 @@
     </div>
   </form>
 
+  <section class="favorites" id="favorites" aria-label="Favoritter">
+    <div class="favorites-head">
+      <span class="favorites-title">★ Favoritter</span>
+      <label class="include">
+        <input type="checkbox" id="include-favs" checked>
+        Medtag favoritter i alle søgninger
+      </label>
+    </div>
+    <div class="fav-chips" id="fav-chips"></div>
+    <p class="fav-hint" id="fav-hint">Tryk på ☆ ved et resultat for at gøre kunstneren til favorit.</p>
+    <button type="button" class="add-fav" id="add-fav" hidden></button>
+  </section>
+
   <p class="status-line" id="status-line" role="status"></p>
 
   <ul class="results" id="results"></ul>
   <div class="intro-state" id="intro-state">Skriv et navn ovenfor for at søge.</div>
+  <div class="empty-state" id="favs-empty" hidden>Ingen aktuelle forestillinger eller koncerter med dine favoritter lige nu.</div>
   <div class="empty-state" id="empty-state" hidden>Ingen resultater. Prøv et andet navn eller stavemåde.</div>
 
   <footer>
@@ -242,10 +359,27 @@
 (function () {
   "use strict";
 
+  var FAV_KEY = "artistSearch.favorites.v1";
+  var INCLUDE_KEY = "artistSearch.includeFavorites.v1";
+
+  function loadJson(key, fallback) {
+    try {
+      var raw = window.localStorage.getItem(key);
+      return raw === null ? fallback : JSON.parse(raw);
+    } catch (e) { return fallback; }
+  }
+
+  function saveJson(key, value) {
+    try { window.localStorage.setItem(key, JSON.stringify(value)); } catch (e) { /* privat vindue o.l. */ }
+  }
+
   var state = {
     entries: [],
     profession: "all",
     query: "",
+    // [{ name: "Anne Linnet", key: "anne linnet" }] -- key er foldName(name)
+    favorites: (loadJson(FAV_KEY, []) || []).filter(function (f) { return f && f.key; }),
+    includeFavorites: loadJson(INCLUDE_KEY, true) !== false,
   };
 
   var els = {
@@ -257,6 +391,11 @@
     intro: document.getElementById("intro-state"),
     empty: document.getElementById("empty-state"),
     dataFooter: document.getElementById("data-footer"),
+    includeFavs: document.getElementById("include-favs"),
+    favChips: document.getElementById("fav-chips"),
+    favHint: document.getElementById("fav-hint"),
+    addFav: document.getElementById("add-fav"),
+    favsEmpty: document.getElementById("favs-empty"),
   };
 
   function foldName(name) {
@@ -285,11 +424,98 @@
     return "Skuespiller";
   }
 
+  function isFavoriteEntry(e) {
+    for (var i = 0; i < state.favorites.length; i++) {
+      if (e.searchKey.indexOf(state.favorites[i].key) !== -1) return true;
+    }
+    return false;
+  }
+
+  function findFavorite(key) {
+    for (var i = 0; i < state.favorites.length; i++) {
+      if (state.favorites[i].key === key) return i;
+    }
+    return -1;
+  }
+
+  function toggleFavorite(name) {
+    var key = foldName(name.trim());
+    if (!key) return;
+    var idx = findFavorite(key);
+    if (idx === -1) {
+      state.favorites.push({ name: name.trim(), key: key });
+      state.favorites.sort(function (a, b) { return a.name.localeCompare(b.name, "da"); });
+    } else {
+      state.favorites.splice(idx, 1);
+    }
+    saveJson(FAV_KEY, state.favorites);
+    render();
+  }
+
+  function renderFavorites() {
+    var query = state.query.trim();
+    els.favChips.innerHTML = state.favorites.map(function (f) {
+      var n = 0;
+      for (var i = 0; i < state.entries.length; i++) {
+        if (state.entries[i].searchKey.indexOf(f.key) !== -1) n++;
+      }
+      return (
+        '<span class="fav-chip">' + escapeHtml(f.name) +
+          ' <span class="count">(' + (n === 0 ? "ingen aktuelle" : n) + ')</span>' +
+          '<button type="button" data-remove-fav="' + escapeHtml(f.key) + '" aria-label="Fjern ' + escapeHtml(f.name) + ' fra favoritter" title="Fjern">×</button>' +
+        "</span>"
+      );
+    }).join("");
+    els.favHint.hidden = state.favorites.length > 0;
+
+    // Gør det muligt at gemme et navn som favorit, selvom personen ikke
+    // optræder i data lige nu (fx et band der ikke har koncerter endnu).
+    var qKey = foldName(query);
+    if (query && findFavorite(qKey) === -1) {
+      els.addFav.textContent = "☆ Tilføj “" + query + "” som favorit";
+      els.addFav.hidden = false;
+    } else {
+      els.addFav.hidden = true;
+    }
+    els.includeFavs.checked = state.includeFavorites;
+  }
+
+  function resultHtml(e, fav) {
+    var link = e.url
+      ? '<a href="' + escapeHtml(e.url) + '" target="_blank" rel="noopener">' + escapeHtml(e.production) + "</a>"
+      : escapeHtml(e.production);
+    var roleBit = e.role ? escapeHtml(e.role) + " · " : "";
+    var starred = findFavorite(e.searchKey) !== -1 || fav;
+    return (
+      '<li class="result' + (fav ? " is-fav" : "") + '">' +
+        '<div class="result-top">' +
+          '<span class="production">' + escapeHtml(e.person) + " — " + link + "</span>" +
+          '<span class="result-right">' +
+            '<span class="tag ' + e.profession + '">' + professionLabel(e.profession) + "</span>" +
+            '<button type="button" class="star" data-fav-name="' + escapeHtml(e.person) + '" aria-pressed="' + starred + '"' +
+              ' title="' + (starred ? "Fjern fra favoritter" : "Gør til favorit") + '"' +
+              ' aria-label="' + (starred ? "Fjern " : "Gør ") + escapeHtml(e.person) + (starred ? " fra favoritter" : " til favorit") + '">' +
+              (starred ? "★" : "☆") + "</button>" +
+          "</span>" +
+        "</div>" +
+        '<div class="meta">' + roleBit + escapeHtml(e.venue) + " · " + escapeHtml(e.source) + "</div>" +
+      "</li>"
+    );
+  }
+
+  function byPerson(a, b) {
+    return a.person.localeCompare(b.person, "da") || a.production.localeCompare(b.production, "da");
+  }
+
   function render() {
+    renderFavorites();
+    if (!state.loaded) return;
     var query = state.query.trim();
     var foldedQuery = foldName(query);
+    var useFavs = state.includeFavorites && state.favorites.length > 0;
 
-    if (!query) {
+    els.favsEmpty.hidden = true;
+    if (!query && !useFavs) {
       els.results.innerHTML = "";
       els.intro.hidden = false;
       els.empty.hidden = true;
@@ -298,41 +524,37 @@
     }
     els.intro.hidden = true;
 
-    var matches = state.entries.filter(function (e) {
-      if (state.profession !== "all" && e.profession !== state.profession) return false;
-      return e.searchKey.indexOf(foldedQuery) !== -1;
+    var favMatches = [];
+    var queryMatches = [];
+    state.entries.forEach(function (e) {
+      if (state.profession !== "all" && e.profession !== state.profession) return;
+      if (useFavs && isFavoriteEntry(e)) favMatches.push(e);
+      else if (query && e.searchKey.indexOf(foldedQuery) !== -1) queryMatches.push(e);
     });
+    favMatches.sort(byPerson);
+    queryMatches.sort(byPerson);
 
-    matches.sort(function (a, b) {
-      return a.person.localeCompare(b.person, "da") || a.production.localeCompare(b.production, "da");
-    });
-
-    if (matches.length === 0) {
+    var total = favMatches.length + queryMatches.length;
+    if (total === 0) {
       els.results.innerHTML = "";
-      els.empty.hidden = false;
+      if (query) { els.empty.hidden = false; } else { els.empty.hidden = true; els.favsEmpty.hidden = false; }
       els.status.textContent = "";
       return;
     }
     els.empty.hidden = true;
 
-    els.status.textContent = matches.length + (matches.length === 1 ? " resultat" : " resultater");
+    els.status.textContent = total + (total === 1 ? " resultat" : " resultater") +
+      (favMatches.length ? " · " + favMatches.length + " fra favoritter" : "");
 
-    var html = matches.map(function (e) {
-      var link = e.url
-        ? '<a href="' + escapeHtml(e.url) + '" target="_blank" rel="noopener">' + escapeHtml(e.production) + "</a>"
-        : escapeHtml(e.production);
-      var roleBit = e.role ? escapeHtml(e.role) + " · " : "";
-      return (
-        '<li class="result">' +
-          '<div class="result-top">' +
-            '<span class="production">' + escapeHtml(e.person) + " — " + link + "</span>" +
-            '<span class="tag ' + e.profession + '">' + professionLabel(e.profession) + "</span>" +
-          "</div>" +
-          '<div class="meta">' + roleBit + escapeHtml(e.venue) + " · " + escapeHtml(e.source) + "</div>" +
-        "</li>"
-      );
-    }).join("");
-
+    var html = "";
+    if (favMatches.length) {
+      if (query) html += '<li class="group-label">★ Favoritter</li>';
+      html += favMatches.map(function (e) { return resultHtml(e, true); }).join("");
+    }
+    if (queryMatches.length) {
+      if (favMatches.length) html += '<li class="group-label">Søgeresultater</li>';
+      html += queryMatches.map(function (e) { return resultHtml(e, false); }).join("");
+    }
     els.results.innerHTML = html;
   }
 
@@ -354,6 +576,35 @@
     var btn = evt.target.closest("button[data-profession]");
     if (btn) setProfession(btn.dataset.profession);
   });
+  els.results.addEventListener("click", function (evt) {
+    var star = evt.target.closest("button[data-fav-name]");
+    if (!star) return;
+    var name = star.getAttribute("data-fav-name");
+    var key = foldName(name);
+    // Et resultat kan være markeret via en bredere favorit (fx "Anne Linnet"
+    // matcher "Anne Linnet Band") -- fjern så den favorit der matcher.
+    if (findFavorite(key) === -1) {
+      for (var i = 0; i < state.favorites.length; i++) {
+        if (key.indexOf(state.favorites[i].key) !== -1) { toggleFavorite(state.favorites[i].name); return; }
+      }
+    }
+    toggleFavorite(name);
+  });
+  els.favChips.addEventListener("click", function (evt) {
+    var btn = evt.target.closest("button[data-remove-fav]");
+    if (!btn) return;
+    var idx = findFavorite(btn.getAttribute("data-remove-fav"));
+    if (idx !== -1) toggleFavorite(state.favorites[idx].name);
+  });
+  els.addFav.addEventListener("click", function () {
+    toggleFavorite(state.query);
+  });
+  els.includeFavs.addEventListener("change", function () {
+    state.includeFavorites = els.includeFavs.checked;
+    saveJson(INCLUDE_KEY, state.includeFavorites);
+    render();
+  });
+  render();
 
   els.status.textContent = "Indlæser data …";
 
@@ -364,6 +615,7 @@
     })
     .then(function (data) {
       state.entries = data.entries || [];
+      state.loaded = true;
       state.entries.forEach(function (e) {
         if (!e.searchKey) e.searchKey = foldName(e.person);
       });
